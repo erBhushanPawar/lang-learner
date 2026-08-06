@@ -46,3 +46,46 @@ create policy "progress_upsert_own" on public.lesson_progress
 drop policy if exists "progress_update_own" on public.lesson_progress;
 create policy "progress_update_own" on public.lesson_progress
   for update using (auth.uid() = user_id);
+
+-- ══════════════ Content tables ══════════════
+-- App content (lessons, exam-prep items) lives here instead of static JSON
+-- files from this point on. Writes only ever happen via the service_role key
+-- (migration/publish scripts run locally), which bypasses RLS entirely -
+-- these policies only govern what the public app (using the anon/publishable
+-- key) is allowed to read.
+
+create table if not exists public.levels (
+  code text primary key,
+  name text not null,
+  tagline text not null,
+  locked boolean not null default true,
+  position integer not null default 0
+);
+alter table public.levels enable row level security;
+drop policy if exists "levels_public_read" on public.levels;
+create policy "levels_public_read" on public.levels for select using (true);
+
+create table if not exists public.lessons (
+  id text primary key,
+  level_code text not null references public.levels(code),
+  position integer not null default 0,
+  status text not null default 'published' check (status in ('draft','pending_review','published')),
+  data jsonb not null,
+  updated_at timestamptz not null default now()
+);
+alter table public.lessons enable row level security;
+drop policy if exists "lessons_public_read_published" on public.lessons;
+create policy "lessons_public_read_published" on public.lessons
+  for select using (status = 'published');
+
+create table if not exists public.exam_items (
+  id integer primary key,
+  section text not null,
+  status text not null default 'published' check (status in ('draft','pending_review','published')),
+  data jsonb not null,
+  updated_at timestamptz not null default now()
+);
+alter table public.exam_items enable row level security;
+drop policy if exists "exam_items_public_read_published" on public.exam_items;
+create policy "exam_items_public_read_published" on public.exam_items
+  for select using (status = 'published');

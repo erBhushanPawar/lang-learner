@@ -75,10 +75,8 @@ window.addEventListener('DOMContentLoaded', () => {
   initSync().catch(err => console.error('Sync init failed:', err));
   document.getElementById('langBadge').textContent = ACTIVE_LANGUAGE.flag + ' ' + ACTIVE_LANGUAGE.name;
 
-  fetch(ACTIVE_LANGUAGE.file)
-    .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-    .then(data => {
-      const raw = data.items;
+  loadExamItems()
+    .then(raw => {
       items = raw.filter(it => it.section !== 'writing');
       writingItems = raw.filter(it => it.section === 'writing');
       // resolve passage refs so ref-based items carry the full passage inline
@@ -92,18 +90,19 @@ window.addEventListener('DOMContentLoaded', () => {
       checkResumable();
       startBtn.addEventListener('click', startPractice);
     })
-    .catch(() => {
+    .catch(err => {
+      console.error('Failed to load exam items from Supabase:', err);
       startBtn.disabled = true;
       loadError.style.display = 'block';
     });
 
-  fetch(ACTIVE_LANGUAGE.lessonsFile)
-    .then(r => { if (!r.ok) throw new Error(); return r.json(); })
-    .then(data => {
-      levels = data.levels;
+  loadLessons()
+    .then(lvls => {
+      levels = lvls;
       renderLevelPath();
     })
-    .catch(() => {
+    .catch(err => {
+      console.error('Failed to load lessons from Supabase:', err);
       document.getElementById('levelPath').innerHTML = '<p class="load-error">Could not load lesson data.</p>';
     });
 
@@ -151,6 +150,33 @@ window.addEventListener('DOMContentLoaded', () => {
     });
   });
 });
+
+/* ── Content loading (Supabase) ──
+   Content lives in the `exam_items` / `levels` / `lessons` tables now, not
+   static JSON — see supabase/schema.sql and scripts/migrate_content_to_supabase.py.
+   Only rows with status='published' are readable by the public/anon key. */
+async function loadExamItems() {
+  const supabase = await getSupabase();
+  const { data: rows, error } = await supabase.from('exam_items').select('data').eq('status', 'published');
+  if (error) throw error;
+  return rows.map(r => r.data);
+}
+
+async function loadLessons() {
+  const supabase = await getSupabase();
+  const { data: levelRows, error: lvlErr } = await supabase.from('levels').select('*').order('position');
+  if (lvlErr) throw lvlErr;
+  const { data: lessonRows, error: lesErr } = await supabase.from('lessons').select('*').eq('status', 'published').order('position');
+  if (lesErr) throw lesErr;
+
+  return levelRows.map(lvl => ({
+    code: lvl.code,
+    name: lvl.name,
+    tagline: lvl.tagline,
+    locked: lvl.locked,
+    lessons: lessonRows.filter(l => l.level_code === lvl.code).map(l => ({ id: l.id, ...l.data }))
+  }));
+}
 
 /* ── Passage resolution ── */
 function resolvePassage(item, raw) {
