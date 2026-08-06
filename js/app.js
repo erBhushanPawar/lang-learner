@@ -72,6 +72,7 @@ const lessonCompleteScreenEl = document.getElementById('lessonCompleteScreen');
 /* ── Boot ── */
 window.addEventListener('DOMContentLoaded', () => {
   buildAvatarGrid();
+  initSync().catch(err => console.error('Sync init failed:', err));
   document.getElementById('langBadge').textContent = ACTIVE_LANGUAGE.flag + ' ' + ACTIVE_LANGUAGE.name;
 
   fetch(ACTIVE_LANGUAGE.file)
@@ -207,6 +208,7 @@ function saveProfile() {
   localStorage.setItem(LS_PROFILE, JSON.stringify(profile));
   profileModal.style.display = 'none';
   renderProfileBar(profile);
+  pushProfile(profile);
 }
 
 function renderProfileBar(p) {
@@ -227,6 +229,121 @@ function renderProfileBar(p) {
   } else {
     document.getElementById('profileBest').textContent = 'No sessions yet';
     document.getElementById('profileAttempts').textContent = '';
+  }
+}
+
+/* ── Cloud sync (Supabase) ──
+   Optional: app works fully offline on localStorage without this. When
+   signed in (magic-link email, no password), profile + lesson progress
+   also get pushed/pulled from Supabase so they follow you across devices. */
+let _supabasePromise = null;
+function getSupabase() {
+  if (!_supabasePromise) _supabasePromise = import('./supabase-client.js').then(m => m.supabase);
+  return _supabasePromise;
+}
+
+async function initSync() {
+  const supabase = await getSupabase();
+
+  supabase.auth.onAuthStateChange((_event, session) => {
+    renderSyncUI(session);
+    if (session) pullRemoteAndMerge(session.user.id);
+  });
+
+  const { data: { session } } = await supabase.auth.getSession();
+  renderSyncUI(session);
+  if (session) pullRemoteAndMerge(session.user.id);
+
+  document.getElementById('syncSendLinkBtn').addEventListener('click', async () => {
+    const email = document.getElementById('syncEmailInput').value.trim();
+    const statusEl = document.getElementById('syncStatus');
+    if (!email) { statusEl.textContent = 'Enter an email first.'; return; }
+    statusEl.textContent = 'Sending…';
+    const { error } = await supabase.auth.signInWithOtp({
+      email,
+      options: { emailRedirectTo: window.location.href.split('?')[0].split('#')[0] }
+    });
+    statusEl.textContent = error ? ('Error: ' + error.message) : 'Check your email for the link!';
+  });
+
+  document.getElementById('syncSignOutBtn').addEventListener('click', async () => {
+    await supabase.auth.signOut();
+  });
+}
+
+function renderSyncUI(session) {
+  const signedOutEl = document.getElementById('syncSignedOut');
+  const signedInEl = document.getElementById('syncSignedIn');
+  if (session) {
+    signedOutEl.style.display = 'none';
+    signedInEl.style.display = 'block';
+    document.getElementById('syncEmailDisplay').textContent = session.user.email;
+  } else {
+    signedOutEl.style.display = 'block';
+    signedInEl.style.display = 'none';
+  }
+}
+
+async function pullRemoteAndMerge(userId) {
+  try {
+    const supabase = await getSupabase();
+
+    const { data: remoteProfile, error: profileErr } = await supabase.from('profiles').select('*').eq('user_id', userId).maybeSingle();
+    if (profileErr) throw profileErr;
+    const localProfile = getProfile();
+    if (remoteProfile && (!localProfile || remoteProfile.updated_at > (localProfile.syncedAt || ''))) {
+      const merged = { name: remoteProfile.name, avatar: remoteProfile.avatar, createdAt: localProfile?.createdAt || Date.now(), syncedAt: remoteProfile.updated_at };
+      localStorage.setItem(LS_PROFILE, JSON.stringify(merged));
+      renderProfileBar(merged);
+    } else if (localProfile && !remoteProfile) {
+      await pushProfile(localProfile);
+    }
+
+    const { data: remoteProgress, error: progressErr } = await supabase.from('lesson_progress').select('*').eq('user_id', userId);
+    if (progressErr) throw progressErr;
+    if (remoteProgress) {
+      const local = getLessonProgress();
+      remoteProgress.forEach(row => {
+        if (!local[row.lesson_id] || row.pct >= local[row.lesson_id].pct) {
+          local[row.lesson_id] = { done: row.done, pct: row.pct };
+        }
+      });
+      localStorage.setItem(LS_PROGRESS, JSON.stringify(local));
+      if (typeof renderLevelPath === 'function' && levels.length) renderLevelPath();
+    }
+  } catch (err) {
+    // Most likely cause: supabase/schema.sql hasn't been run yet in this
+    // project, so the tables don't exist. Sync silently no-ops; app keeps
+    // working fully on localStorage.
+    console.warn('Sync pull skipped (schema not set up yet?):', err.message || err);
+  }
+}
+
+async function pushProfile(profile) {
+  try {
+    const supabase = await getSupabase();
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return;
+    const { error } = await supabase.from('profiles').upsert({
+      user_id: session.user.id, name: profile.name, avatar: profile.avatar, updated_at: new Date().toISOString()
+    });
+    if (error) throw error;
+  } catch (err) {
+    console.warn('Profile sync skipped (schema not set up yet?):', err.message || err);
+  }
+}
+
+async function pushLessonProgress(lessonId, pct) {
+  try {
+    const supabase = await getSupabase();
+    const { data: { session } } = await supabase.auth.getSession();
+    if (!session) return;
+    const { error } = await supabase.from('lesson_progress').upsert({
+      user_id: session.user.id, lesson_id: lessonId, done: true, pct, updated_at: new Date().toISOString()
+    });
+    if (error) throw error;
+  } catch (err) {
+    console.warn('Lesson-progress sync skipped (schema not set up yet?):', err.message || err);
   }
 }
 
@@ -689,6 +806,7 @@ function markLessonDone(lessonId, pct) {
   const p = getLessonProgress();
   p[lessonId] = { done: true, pct };
   localStorage.setItem(LS_PROGRESS, JSON.stringify(p));
+  pushLessonProgress(lessonId, pct);
 }
 
 /* ── Level path ── */

@@ -90,10 +90,26 @@
   <div id="profileModal" class="modal-overlay" style="display:none;">
     <div class="modal-card">
       <h2 class="modal-title">Welcome! Let's set up your profile</h2>
-      <p class="modal-desc">Your name and progress are saved locally on this device only.</p>
+      <p class="modal-desc">Your name and progress are saved on this device. Add an email below to sync across devices too.</p>
       <div class="avatar-grid" id="avatarGrid"></div>
       <input id="profileNameInput" class="name-input" type="text" maxlength="24" placeholder="Your name or nickname" autocomplete="off" />
       <button id="profileSaveBtn" class="btn btn-primary btn-lg" style="width:100%;">Start learning →</button>
+
+      <div class="sync-section">
+        <p class="sync-heading">🔗 Sync across devices</p>
+        <div id="syncSignedOut">
+          <p class="sync-desc">Get a magic link by email — no password needed.</p>
+          <div class="sync-row">
+            <input id="syncEmailInput" class="name-input sync-email-input" type="email" placeholder="you@example.com" autocomplete="off" />
+            <button id="syncSendLinkBtn" class="btn btn-outline">Send link</button>
+          </div>
+          <p id="syncStatus" class="sync-status"></p>
+        </div>
+        <div id="syncSignedIn" style="display:none;">
+          <p class="sync-desc">✓ Synced as <strong id="syncEmailDisplay"></strong></p>
+          <button id="syncSignOutBtn" class="btn-ghost">Sign out</button>
+        </div>
+      </div>
     </div>
   </div>
 
