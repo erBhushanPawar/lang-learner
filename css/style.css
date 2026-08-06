@@ -1029,19 +1029,50 @@ h1 { font-size: 26px; font-weight: 700; letter-spacing: -0.5px; }
 .vocab-grid {
   display: grid;
   grid-template-columns: 1fr;
-  gap: 10px;
+  gap: 12px;
   margin-bottom: 1.5rem;
 }
 .vocab-card {
   background: var(--surface);
   border: 1px solid var(--border);
-  border-radius: var(--radius);
-  padding: 14px 16px;
+  border-radius: var(--radius-lg);
+  padding: 16px 18px;
   box-shadow: var(--shadow);
 }
-.vocab-word { font-size: 16px; font-weight: 700; color: var(--text-primary); }
-.vocab-translation { font-size: 13px; color: var(--green-text); font-weight: 600; margin-top: 2px; }
-.vocab-example { font-size: 13px; color: var(--text-secondary); margin-top: 6px; font-style: italic; }
+.vocab-word-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+.vocab-word { font-size: 17px; font-weight: 700; color: var(--text-primary); }
+.vocab-translation { font-size: 13px; color: var(--green-text); font-weight: 600; margin-top: 4px; }
+.vocab-example-row { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 10px; padding-top: 10px; border-top: 1px solid var(--border); }
+.vocab-example { font-size: 13px; color: var(--text-secondary); font-style: italic; line-height: 1.4; }
+
+.audio-btn {
+  border: none;
+  background: var(--green-bg);
+  color: var(--green-text);
+  border-radius: 50%;
+  width: 34px;
+  height: 34px;
+  min-width: 34px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.12s, transform 0.1s;
+  flex-shrink: 0;
+}
+.audio-btn svg { width: 16px; height: 16px; }
+.audio-btn:hover { background: var(--green-border); transform: scale(1.05); }
+.audio-btn.playing { background: var(--green); color: #fff; transform: scale(1.08); }
+.audio-btn-sm {
+  width: 26px;
+  height: 26px;
+  min-width: 26px;
+  background: transparent;
+  color: var(--text-hint);
+}
+.audio-btn-sm svg { width: 13px; height: 13px; }
+.audio-btn-sm:hover { background: var(--bg); color: var(--green-text); }
+.audio-btn-sm.playing { background: var(--green); color: #fff; }
 
 .grammar-note-card {
   background: linear-gradient(135deg, rgba(22,163,74,0.06), rgba(22,163,74,0.02));

@@ -17,6 +17,10 @@ const SECTION_INFO = {
 
 const AVATARS = ['🧑‍💻','👩‍💻','🧑‍🎓','👩‍🎓','🧑‍🏫','👨‍🏫','🦉','🐺','🦊','🐯','🚀','⚡','🎯','🏆','📚','✍️'];
 
+/* Inline SVG speaker icon — renders identically everywhere, unlike the 🔊
+   emoji glyph which varies wildly by OS/browser font. */
+const ICON_SPEAKER = '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M4 9v6h4l5 5V4L8 9H4z" fill="currentColor"/><path d="M16.5 8.5a5 5 0 0 1 0 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/><path d="M19 6a8.5 8.5 0 0 1 0 12" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" opacity="0.6"/></svg>';
+
 /* ── localStorage keys ── */
 const LS_PROFILE  = 'lang_profile';
 const LS_HISTORY  = 'lang_history';
@@ -757,9 +761,15 @@ function openLesson(level, lesson) {
     <div class="vocab-grid">
       ${lesson.vocab.map(v => `
         <div class="vocab-card">
-          <div class="vocab-word">${v.word}</div>
+          <div class="vocab-word-row">
+            <span class="vocab-word">${v.word}</span>
+            ${v.audioWord ? `<button class="audio-btn" data-audio="${v.audioWord}" title="Play pronunciation">${ICON_SPEAKER}</button>` : ''}
+          </div>
           <div class="vocab-translation">${v.translation}</div>
-          <div class="vocab-example">${v.example}</div>
+          <div class="vocab-example-row">
+            <span class="vocab-example">${v.example}</span>
+            ${v.audioExample ? `<button class="audio-btn audio-btn-sm" data-audio="${v.audioExample}" title="Play example">${ICON_SPEAKER}</button>` : ''}
+          </div>
         </div>
       `).join('')}
     </div>
@@ -770,6 +780,7 @@ function openLesson(level, lesson) {
     <button class="btn btn-primary lesson-practice-btn" id="lessonPracticeBtn">Practice this lesson (${lesson.check.length} questions) →</button>
   `;
   document.getElementById('lessonPracticeBtn').addEventListener('click', startLessonCheck);
+  wireAudioButtons(el);
   hide(learnHomeScreenEl);
   show(lessonScreenEl);
   window.scrollTo(0, 0);
@@ -899,4 +910,19 @@ function showLessonComplete() {
   show(lessonCompleteScreenEl);
   document.getElementById('lcScoreText').textContent = `You scored ${lcScore} / ${lcQueue.length} (${pct}%) on "${currentLesson.title}".`;
   renderLevelPath();
+}
+
+/* ── Audio playback ── */
+let currentAudio = null;
+function wireAudioButtons(container) {
+  container.querySelectorAll('.audio-btn').forEach(btn => {
+    btn.addEventListener('click', () => {
+      const src = btn.dataset.audio;
+      if (currentAudio) { currentAudio.pause(); currentAudio.currentTime = 0; }
+      currentAudio = new Audio(src);
+      btn.classList.add('playing');
+      currentAudio.addEventListener('ended', () => btn.classList.remove('playing'));
+      currentAudio.play().catch(() => btn.classList.remove('playing'));
+    });
+  });
 }
