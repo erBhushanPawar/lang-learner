@@ -1,0 +1,248 @@
+{
+  "language": "cs",
+  "languageName": "Czech",
+  "flag": "🇨🇿",
+  "examName": "CCE–B2 (Certifikovaná zkouška z češtiny pro cizince)",
+  "items": [
+    {
+      "id": 1,
+      "section": "reading",
+      "task": "true_false",
+      "set": 1,
+      "passage": {
+        "title": "Práce z domova",
+        "text": "Stále více firem v Česku umožňuje svým zaměstnancům pracovat z domova alespoň několik dní v týdnu. Podle nedávného průzkumu preferuje kombinaci domácí a kancelářské práce téměř sedmdesát procent dotázaných. Zaměstnavatelé oceňují, že lidé, kteří pracují z domova, jsou často produktivnější a spokojenější. Na druhou stranu si mnozí manažeři stěžují, že je těžší udržet týmového ducha a že nováčci se hůře zapojují do kolektivu, když se s kolegy nesetkávají osobně."
+      },
+      "prompt": "Podle textu preferuje většina zaměstnanců kombinaci práce z domova a z kanceláře.",
+      "options": ["Ano", "Ne"],
+      "answer": 0,
+      "explanation": "Text uvádí, že „téměř sedmdesát procent dotázaných“ preferuje právě kombinaci obou způsobů práce, takže tvrzení je pravdivé (Ano).",
+      "note": "Úlohy typu Ano/Ne (pravda/nepravda) testují, zda dokážete rozpoznat, jestli je tvrzení v souladu s obsahem textu, nebo v rozporu s ním — nejde o to, zda je tvrzení pravdivé obecně, ale zda to text skutečně říká. Pozor na tvrzení, která text ani nepotvrzují, ani nevyvracejí — taková tvrzení nejsou automaticky „Ano“."
+    },
+    {
+      "id": 2,
+      "section": "reading",
+      "task": "true_false",
+      "set": 1,
+      "passage": { "ref": 1 },
+      "prompt": "Podle textu jsou zaměstnanci pracující z domova méně produktivní.",
+      "options": ["Ano", "Ne"],
+      "answer": 1,
+      "explanation": "Text říká pravý opak — zaměstnavatelé oceňují, že lidé pracující z domova jsou často produktivnější, ne méně produktivní. Tvrzení je tedy nepravdivé (Ne).",
+      "note": "Klasická past v tomto typu úlohy: tvrzení používá stejná slova jako text („produktivní“), ale s opačným významem. Vždy si ověřte, zda tvrzení souhlasí se smyslem věty, ne jen s tím, že se v ní objevují stejná slova."
+    },
+    {
+      "id": 3,
+      "section": "reading",
+      "task": "true_false",
+      "set": 1,
+      "passage": { "ref": 1 },
+      "prompt": "Text uvádí, že noví zaměstnanci si při práci z domova hůře zvykají na kolektiv.",
+      "options": ["Ano", "Ne"],
+      "answer": 0,
+      "explanation": "Text explicitně zmiňuje, že „nováčci se hůře zapojují do kolektivu, když se s kolegy nesetkávají osobně“ — tvrzení tedy odpovídá textu (Ano).",
+      "note": "Sledujte klíčová slova jako „nováčci“, „kolektiv“, „osobně“ — hledejte konkrétní větu v textu, o kterou se dá tvrzení opřít, spíš než spoléhat na celkový dojem z textu."
+    },
+    {
+      "id": 4,
+      "section": "reading",
+      "task": "matching_gap",
+      "set": 1,
+      "passage": {
+        "title": "Nová knihovna v Brně",
+        "text": "Minulý týden se v centru Brna otevřela nová městská knihovna. [GAP_1] Podle ředitelky knihovny bude sloužit nejen jako místo pro půjčování knih, ale i jako komunitní centrum s přednáškami a workshopy. [GAP_2] Vstup do knihovny je zdarma pro všechny obyvatele města. [GAP_3] Podle prvních ohlasů jsou návštěvníci s novým prostorem velmi spokojeni.",
+        "gaps": ["GAP_1", "GAP_2", "GAP_3"]
+      },
+      "prompt": "Doplňte do textu chybějící části z nabídky. Dvě možnosti jsou navíc, nebudete je potřebovat.",
+      "candidates": [
+        "Budova stála přes sto milionů korun a stavěla se téměř tři roky.",
+        "Knihovna byla kvůli rekonstrukci zavřená déle, než se původně plánovalo.",
+        "K dispozici jsou také tiché studovny a dětský koutek.",
+        "Bohužel se v okolí knihovny nenachází žádné parkoviště.",
+        "Někteří kritizují, že knihovna nemá dostatek zahraniční literatury."
+      ],
+      "answer": [0, 2, 3],
+      "explanation": "GAP_1 navazuje na větu o otevření knihovny popisem stavby (možnost 0). GAP_2 rozvíjí větu o službách knihovny popisem dalšího vybavení (možnost 2). GAP_3 předchází závěrečné větě o spokojenosti kontrastní informácí o chybějícím parkovišti (možnost 3). Možnosti 1 a 4 do textu logicky nezapadají.",
+      "note": "V úlohách na doplňování částí textu (přiřazování) hledejte návaznost — zájmena, spojky a logickou souvislost mezi větou před mezerou a po ní, ne jen podobné téma. Text má vždy víc nabízených možností, než je mezer, takže dvě budou vždy navíc."
+    },
+    {
+      "id": 5,
+      "section": "reading",
+      "task": "mc",
+      "set": 1,
+      "passage": {
+        "title": "Změny v českém zemědělství",
+        "text": "Čeští zemědělci se v posledních letech stále více zaměřují na ekologické způsoby hospodaření. Zatímco před dvaceti lety tvořily ekofarmy jen zlomek procenta veškeré zemědělské půdy, dnes už je to přes patnáct procent. Odborníci tento trend vysvětlují jednak rostoucí poptávkou spotřebitelů po biopotravinách, jednak státními dotacemi, které ekologické zemědělství podporují. Kritici však upozorňují, že přechod na ekologické hospodaření automaticky neznamená vyšší kvalitu produktů a že by se pozornost měla soustředit spíše na skutečnou udržitelnost než na formální certifikaci."
+      },
+      "prompt": "Co je podle textu jedním z důvodů nárůstu ekologického zemědělství v Česku?",
+      "options": [
+        "Zákaz běžného zemědělství vydaný státem",
+        "Státní dotace podporující ekologické hospodaření",
+        "Nedostatek půdy vhodné pro běžné zemědělství",
+        "Povinná certifikace všech zemědělských produktů"
+      ],
+      "answer": 1,
+      "explanation": "Text uvádí dva důvody: rostoucí poptávku spotřebitelů a „státní dotace, které ekologické zemědělství podporují“. Žádná z ostatních možností se v textu neobjevuje.",
+      "note": "U výběru ze čtyř alternativ (multiple choice) bývá jedna možnost přímo v textu, jedna mírně zkreslená, jedna nesouvisející a jedna „příliš silná“ formulace (např. slovo „zákaz“ nebo „povinná“, které text vůbec nepoužívá). Všímejte si absolutních slov v distraktorech — často signalizují nesprávnou odpověď."
+    },
+    {
+      "id": 6,
+      "section": "reading",
+      "task": "mc",
+      "set": 1,
+      "passage": { "ref": 5 },
+      "prompt": "Jaký postoj zaujímají kritici k ekologickému zemědělství podle textu?",
+      "options": [
+        "Tvrdí, že certifikace sama o sobě nezaručuje skutečnou udržitelnost.",
+        "Domnívají se, že ekologické zemědělství by mělo být úplně zrušeno.",
+        "Souhlasí, že biopotraviny jsou vždy kvalitnější než běžné potraviny.",
+        "Žádají vyšší státní dotace pro ekologické farmy."
+      ],
+      "answer": 0,
+      "explanation": "Krtici upozorňují, že přechod na ekologické hospodaření „automaticky neznamená vyšší kvalitu produktů“ a že pozornost by se měla soustředit na „skutečnou udržitelnost než na formální certifikaci“ — to přesně odpovídá možnosti 0.",
+      "note": "Otázky na postoj/názor („postoj kritiků“, „názor autora“) vyžadují pochopení implicitního významu, ne jen doslovné vyhledání slova v textu — to je jedna z klíčových dovedností testovaných na úrovni B2."
+    },
+    {
+      "id": 7,
+      "section": "grammar",
+      "task": "mc",
+      "set": 1,
+      "prompt": "Doplňte: Kdybych měl více času, __________ na ten kurz.",
+      "options": ["bych se přihlásil", "přihlásím se", "jsem se přihlásil", "přihlásil jsem se"],
+      "answer": 0,
+      "explanation": "V podmiňovém souvětí s nereálnou podmínkou („kdybych měl“) se v hlavní větě používá kondicionál („bych se přihlásil“), ne budoucí nebo minulý čas.",
+      "note": "Podmiňovací způsob (kondicionál) v hypotetických podmínkových větách („kdybych...“) je jedním z nejčastěji testovaných gramatických jevů na úrovni B2 — vždy hledejte shodu mezi podmínkovou a hlavní větou (kdyby + kondicionál, ne budoucí čas)."
+    },
+    {
+      "id": 8,
+      "section": "grammar",
+      "task": "mc",
+      "set": 1,
+      "prompt": "Doplňte správný tvar: Byl jsem velmi rád, že jsi mi __________ pomoct.",
+      "options": ["nabídnul", "nabídla", "nabídli", "nabídneš"],
+      "answer": 0,
+      "explanation": "Podmět „ty“ („ježe jsi mi...“) je zde mužského rodu (mluvčí mluví o osobě, která mu pomohla, a kontext naznačuje mužské příjmení přítomné v původním zadání), tvar slovesa v minulém čase musí odpovídat rodu podmětu: „nabídnul“.",
+      "note": "Shoda přísudku s podmětem podle rodu v minulém čase (l-ové příčestí) je klíčovým gramatickým bodem pro cizince — mužský rod životný, ženský a střední rod mají odlišné koncovky, a chyba v této shodě je jednou z nejčastějších chyb na úrovni B1–B2."
+    },
+    {
+      "id": 9,
+      "section": "grammar",
+      "task": "gap_fill",
+      "set": 1,
+      "prompt": "Doplňte vhodné slovo (jedno slovo, žádná nabídka): Jsem zvědavý, jak dopadne zápas, ale bohužel se na něj nemůžu __________.",
+      "accepted": ["dívat", "podívat"],
+      "explanation": "Správné doplnění je „dívat“ nebo „podívat“ (ve spojení s „nemůžu se“) — sloveso „dívat se na něco“ vyžaduje předložku „na“ s akuzativem, což ve větě sedí.",
+      "note": "V úloze doplňování bez nabídky musíte znát nejen správné slovo, ale i jeho vazbu s předložkou („dívat se NA něco“) a správný tvar (infinitiv po modálním „nemůžu se“). Tyto úlohy testují aktivní znalost slovní zásoby a frazeologie, ne jen pasivní rozpoznávání."
+    },
+    {
+      "id": 10,
+      "section": "grammar",
+      "task": "gap_fill",
+      "set": 1,
+      "prompt": "Doplňte vhodné slovo: Ta zpráva mě velmi __________, vůbec jsem to nečekal.",
+      "accepted": ["překvapila", "zaskočila", "šokovala"],
+      "explanation": "Do věty se hodí sloveso vyjadřující překvapení v ženském rodě (shoda se slovem „zpráva“) v minulém čase, např. „překvapila“, „zaskočila“ nebo „šokovala“.",
+      "note": "Pozor na shodu přídavného jména/slovesa v minulém čase s rodem podmětu — zde „zpráva“ je rodu ženského, takže sloveso musí mít ženskou koncovku (-a), i když podmět stojí před slovesem."
+    },
+    {
+      "id": 11,
+      "section": "grammar",
+      "task": "transformation",
+      "set": 1,
+      "prompt": "Přepište větu pomocí slova v závorce se stejným významem: Petr přišel pozdě, protože zmeškal autobus. (KVŮLI)",
+      "accepted": ["Petr přišel pozdě kvůli zmeškanému autobusu.", "Petr přišel pozdě kvůli tomu, že zmeškal autobus."],
+      "explanation": "Předložka „kvůli“ se pojí s genitivem („kvůli zmeškanému autobusu“) nebo lze použít vazbu „kvůli tomu, že...“ se stejným vědlejším větným smyslem jako původní věta s „protože“.",
+      "note": "Transformační úlohy testují, zda umíte vyjádřit stejný význam (často příčinu, důsledek nebo podmínku) jinou gramatickou strukturou — zde přechod od spojky „protože“ + věta k předložce „kvůli“ + genitiv. Na úrovni B2 se často testuje právě tato flexibilita vyjadřování."
+    },
+    {
+      "id": 12,
+      "section": "vocab",
+      "task": "image_mc",
+      "set": 1,
+      "emoji": "🌧️",
+      "prompt": "Jak se česky řekne \"rain\"?",
+      "options": ["slunce", "déšť", "sníh", "vítr"],
+      "answer": 1,
+      "explanation": "„Déšť“ znamená „rain“. „Slunce“ = sun, „sính“ = snow, „vítr“ = wind.",
+      "note": "Slovní zásoba pro počasí patří k základní tematické oblasti, která se objevuje i v pokročilejších textech (např. v poslechu nebo čtení s aktuálním tématem)."
+    },
+    {
+      "id": 13,
+      "section": "vocab",
+      "task": "image_mc",
+      "set": 1,
+      "emoji": "📚",
+      "prompt": "Jak se česky řekne \"library\"?",
+      "options": ["knihkupectví", "knihovna", "kancelář", "škola"],
+      "answer": 1,
+      "explanation": "„Knihovna“ znamená „library“. „Knihkupectví“ znamená „bookshop“ — častá záměna.",
+      "note": "„Knihovna“ (library) a „knihkupectví“ (bookshop) jsou časté falešní přátelé pro začátečníky kvůli podobnému kořenu slova „kniha“."
+    },
+    {
+      "id": 14,
+      "section": "vocab",
+      "task": "image_mc",
+      "set": 1,
+      "emoji": "💼",
+      "prompt": "Jak se česky řekne \"job interview\"?",
+      "options": ["pracovní pohovor", "pracovní doba", "pracovní smlouva", "pracovní stůl"],
+      "answer": 0,
+      "explanation": "„Pracovní pohovor“ znamená „job interview“. „Pracovní doba“ = working hours, „pracovní smlouva“ = employment contract.",
+      "note": "Slovní spojení se slovem „pracovní“ (working/job-related) jsou velmi produktivní — znalost několika klíčových kombinací (pohovor, smlouva, doba, zkušenost) pokryje širokou slovní zásobu z oblasti zaměstnání."
+    },
+    {
+      "id": 15,
+      "section": "vocab",
+      "task": "image_mc",
+      "set": 1,
+      "emoji": "🏥",
+      "prompt": "Jak se česky řekne \"appointment\" (u lékaře)?",
+      "options": ["recept", "objednávka", "vyšetření", "pojištění"],
+      "answer": 1,
+      "explanation": "„Objednávka“ (nebo „objednat se“) se používá pro dohodnutý termín u lékaře. „Recept“ = prescription, „vyšetření“ = examination, „pojištění“ = insurance.",
+      "note": "V administrativní a zdravotnické slovní zásobě je důležité rozlišovat podobná, ale odlišná slova: objednávka (appointment/booking), vyšetření (the actual examination), and recept (the prescription) — často testováno v kontextu praktických, každodenních situací."
+    },
+    {
+      "id": 16,
+      "section": "vocab",
+      "task": "image_mc",
+      "set": 1,
+      "emoji": "🏙️",
+      "prompt": "Jak se česky řekne \"neighborhood/district\"?",
+      "options": ["čtvrť", "náměstí", "chodník", "ulice"],
+      "answer": 0,
+      "explanation": "„Čtvrť“ znamená „neighborhood/district“. „Náměstí“ = square, „chodník“ = sidewalk, „ulice“ = street.",
+      "note": "Slova pro popis města (čtvrť, náměstí, ulice, chodník) tvoří základ pro čtení textů o městském životě, plánování a bydlení, které se často objevují v testech na úrovni B2."
+    },
+    {
+      "id": 17,
+      "section": "writing",
+      "task": "reference",
+      "set": 1,
+      "title": "Formální dopis / e-mail (min. 100 slov)",
+      "prompt": "Napište formální e-mail zaměstnavateli, ve kterém: (1) se omluvíte, že nemůžete přijít do práce, (2) vysvětlíte důvod, (3) navrhnete náhradní řešení, (4) požádáte o potvrzení.",
+      "rubric": [
+        "Dodržte formální styl a konvence e-mailu (oslovení, závěr, podpis na samostatných řádcích).",
+        "Zpracujte všechny 4 body zadání dostatečně podrobně.",
+        "Text členěte do odstavců.",
+        "Minimální délka: 100 slov."
+      ],
+      "note": "Toto je úloha typu Psaní z reálné zkoušky CCE–B2. Nejde o test s automatickým vyhodnocením — napište si odpověď stranou (např. do poznámek) a nechte si ji zkontrolovat učitelem nebo rodilým mluvčím. Účel zde je nacvičit si strukturu a naučit se, co hodnotitelé očekávají."
+    },
+    {
+      "id": 18,
+      "section": "writing",
+      "task": "reference",
+      "set": 1,
+      "title": "Článek / úvaha (min. 150 slov)",
+      "prompt": "Vyberte si jedno téma a napište článek nebo úvahu (min. 150 slov): (A) Jak podle vás ovlivňují sociální sítě mezilidské vztahy? (B) Je lepší žít ve velkém městě, nebo na venkově? Zdůvodněte svůj názor.",
+      "rubric": [
+        "Rozpoznatelný komunikační záměr a slohový útvar (článek nebo úvaha).",
+        "Text je fyzicky členěn: titulek, úvod, hlavní část, závěr.",
+        "Argumentace je srozumitelná a obsahuje relevantní příklady.",
+        "Minimální délka: 150 slov."
+      ],
+      "note": "V druhé úloze Psaní si vždy vybíráte z nabídky dvou témat. Trénujte psaní s jasnou strukturou: úvod (nastínění tématu) → hlavní část (argumenty + příklady) → závěr (shrnutí vlastního názoru)."
+    }
+  ]
+}

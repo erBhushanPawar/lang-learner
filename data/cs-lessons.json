@@ -1,0 +1,97 @@
+{
+  "language": "cs",
+  "levels": [
+    {
+      "code": "A1",
+      "name": "Survival Czech",
+      "tagline": "Introduce yourself, handle the basics",
+      "locked": false,
+      "lessons": [
+        {
+          "id": "a1-01",
+          "icon": "👋",
+          "title": "Greetings & Introductions",
+          "blurb": "Say hello, introduce yourself, ask how someone is.",
+          "vocab": [
+            { "word": "Dobrý den", "translation": "Hello / Good day (formal)", "example": "Dobrý den, jak se máte?" },
+            { "word": "Ahoj", "translation": "Hi / Bye (informal)", "example": "Ahoj, jak se máš?" },
+            { "word": "Jmenuji se…", "translation": "My name is…", "example": "Jmenuji se Tomáš." },
+            { "word": "Jak se jmenujete?", "translation": "What is your name? (formal)", "example": "Dobrý den, jak se jmenujete?" },
+            { "word": "Odkud jste?", "translation": "Where are you from? (formal)", "example": "Odkud jste? — Jsem z Indie." },
+            { "word": "Na shledanou", "translation": "Goodbye (formal)", "example": "Na shledanou, hezký den!" },
+            { "word": "Děkuji / Díky", "translation": "Thank you (formal / informal)", "example": "Děkuji za pomoc." },
+            { "word": "Prosím", "translation": "Please / You're welcome", "example": "Prosím, posaďte se." }
+          ],
+          "grammarNote": {
+            "title": "Formal (vy) vs. informal (ty)",
+            "text": "Czech has two ways to say \"you\": ty (informal — friends, family, children, peers your age) and vy (formal — strangers, officials, anyone older or in a professional context). This isn't optional politeness, it changes the verb ending too: jak se máš? (informal) vs. jak se máte? (formal). When in doubt, default to vy — Czechs will tell you if they'd rather switch to ty."
+          },
+          "check": [
+            {
+              "task": "mc",
+              "prompt": "You're meeting your new landlord for the first time. Which greeting fits?",
+              "options": ["Ahoj", "Dobrý den", "Čau", "Nazdar"],
+              "answer": 1,
+              "explanation": "„Dobrý den“ is the formal, safe greeting for anyone you don't know well — landlords, officials, shopkeepers.",
+              "note": "„Ahoj“, „čau“, and „nazdar“ are all informal — fine for friends, wrong for a first meeting with someone you should address formally."
+            },
+            {
+              "task": "true_false",
+              "prompt": "„Jmenuji se“ means \"What is your name?\"",
+              "options": ["Ano", "Ne"],
+              "answer": 1,
+              "explanation": "„Jmenuji se“ actually means \"My name is\" — it's how you introduce yourself, not how you ask someone else's name (that's „Jak se jmenujete?“).",
+              "note": "„Jmenuji se“ and „Jak se jmenujete?“ share the verb jmenovat se (\"to be named\") but one is a statement about yourself, the other a question."
+            },
+            {
+              "task": "mc",
+              "prompt": "How do you say \"thank you\" in Czech?",
+              "options": ["Prosím", "Ahoj", "Děkuji", "Dobrý den"],
+              "answer": 2,
+              "explanation": "„Děkuji“ (or informally „díky“) means \"thank you\". „Prosím“ means \"please\" or \"you're welcome\".",
+              "note": "„Prosím“ and „Děkuji“ are a natural pair — you'll use them together constantly, so it's worth memorizing both from lesson one."
+            }
+          ]
+        },
+        {
+          "id": "a1-02",
+          "icon": "🔢",
+          "title": "Numbers 0–100",
+          "blurb": "Count, tell time, and understand prices.",
+          "vocab": [
+            { "word": "nula, jedna, dva, tři", "translation": "0, 1, 2, 3", "example": "Mám dva bratry." },
+            { "word": "čtyři, pět, šest", "translation": "4, 5, 6", "example": "Je pět hodin." },
+            { "word": "sedm, osm, devět, deset", "translation": "7, 8, 9, 10", "example": "Stojí to deset korun." },
+            { "word": "dvacet", "translation": "twenty", "example": "Je mi dvacet let." },
+            { "word": "padesát", "translation": "fifty", "example": "Padesát korun, prosím." },
+            { "word": "sto", "translation": "hundred", "example": "To stojí sto korun." }
+          ],
+          "grammarNote": {
+            "title": "Numbers 21–99 are built like German",
+            "text": "Czech builds compound numbers \"ones-and-tens\", the reverse of English: 21 is dvacet jedna (twenty-one, said as two words) but many learners find it easier to think of it the way German speakers build numbers — the unit often gets glued to the ten with no \"and\": jedenadvacet (one-and-twenty) is an older but still-used alternative form. For everyday use, the simple dvacet jedna, dvacet dva… pattern (ten-word then unit-word) is what you'll hear most and is safest to use yourself."
+          },
+          "check": [
+            {
+              "task": "mc",
+              "prompt": "What is „padesát\"?",
+              "options": ["fifteen", "fifty", "five", "fifty-five"],
+              "answer": 1,
+              "explanation": "„Padesát“ means fifty. „Patnáct“ (not padesát) means fifteen — a very common mix-up for beginners.",
+              "note": "„Patnáct“ (15) and „padesát“ (50) look and sound similar to new learners — say them out loud a few times to build the distinction."
+            },
+            {
+              "task": "gap_fill",
+              "prompt": "Type the Czech word for the number 10.",
+              "accepted": ["deset"],
+              "explanation": "„Deset“ means ten.",
+              "note": "Numbers 1–10 are the foundation for everything else (prices, time, dates, ages) — worth over-learning before moving on."
+            }
+          ]
+        }
+      ]
+    },
+    { "code": "A2", "name": "Everyday Czech", "tagline": "Past/future tense, first grammatical cases", "locked": true, "lessons": [] },
+    { "code": "B1", "name": "Independent Czech", "tagline": "All 7 cases, opinions, hypotheticals", "locked": true, "lessons": [] },
+    { "code": "B2", "name": "Exam-Ready Czech", "tagline": "CCE–B2 exam techniques & full mock exams", "locked": true, "lessons": [] }
+  ]
+}

@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Lang Learner — Learn Czech</title>
+  <meta name="description" content="Free, open-source Czech learning app — bite-sized A1–B2 lessons plus CCE–B2 exam prep." />
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<div class="quiz-wrap">
+
+  <!-- TOP-LEVEL MODE TABS -->
+  <div class="mode-tabs" id="modeTabs">
+    <button class="mode-tab active" data-app-mode="learn">📖 Learn</button>
+    <button class="mode-tab" data-app-mode="exam">🎓 Exam Prep</button>
+  </div>
+
+  <!-- LEARN HOME SCREEN -->
+  <div id="learnHomeScreen" class="screen active">
+    <div class="learn-header">
+      <div class="learn-header-top">
+        <div class="profile-info" id="learnProfileInfo" style="display:none;">
+          <span id="learnProfileAvatar" class="profile-avatar-sm"></span>
+          <span id="learnProfileName" class="profile-name-sm"></span>
+        </div>
+        <button class="btn-ghost" id="learnEditProfileBtn" style="display:none;">Edit</button>
+      </div>
+      <span class="learn-flag">🇨🇿</span>
+      <h1 class="learn-title">Learn Czech</h1>
+      <p class="learn-subtitle">Short, friendly lessons from zero to fluent — at your own pace.</p>
+    </div>
+
+    <div id="levelPath" class="level-path"></div>
+  </div>
+
+  <!-- LESSON DETAIL SCREEN -->
+  <div id="lessonScreen" class="screen">
+    <button class="btn-back" id="lessonBackBtn">← Lessons</button>
+    <div id="lessonContent"></div>
+  </div>
+
+  <!-- LESSON CHECK (mini quiz) SCREEN -->
+  <div id="lessonCheckScreen" class="screen">
+    <header class="quiz-header">
+      <div class="header-left">
+        <button class="btn-back" id="lessonCheckBackBtn">← Exit check</button>
+        <span class="domain-badge" id="lessonCheckLabel"></span>
+      </div>
+    </header>
+    <div class="progress-row">
+      <div class="progress-bg"><div class="progress-fill" id="lcProgressFill"></div></div>
+      <span class="progress-label" id="lcProgressLabel"></span>
+    </div>
+    <div class="q-card">
+      <p class="q-text" id="lcQText"></p>
+      <div id="lcItemBody"></div>
+      <div id="lcExplanationBox" class="explanation-box" style="display:none;">
+        <p class="exp-heading">Explanation</p>
+        <div id="lcExpContent"></div>
+      </div>
+      <div id="lcTopicBox" class="topic-box" style="display:none;">
+        <p class="topic-heading">💡 Good to know</p>
+        <div id="lcTopicContent"></div>
+      </div>
+    </div>
+    <div class="nav-row">
+      <span class="score-running" id="lcScoreRunning"></span>
+      <button class="btn btn-primary" id="lcNextBtn" style="display:none;">Next →</button>
+    </div>
+  </div>
+
+  <!-- LESSON COMPLETE SCREEN -->
+  <div id="lessonCompleteScreen" class="screen">
+    <div class="lesson-complete-card">
+      <div class="lesson-complete-emoji">🎉</div>
+      <h2 id="lcTitle">Lesson complete!</h2>
+      <p id="lcScoreText" class="lesson-complete-score"></p>
+      <div class="result-actions" style="justify-content:center;">
+        <button class="btn btn-primary" id="lcNextLessonBtn">Next lesson →</button>
+        <button class="btn btn-outline" id="lcBackToLessonsBtn">Back to lessons</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- ══════════════ EXAM PREP MODE (unchanged below) ══════════════ -->
+
+  <!-- PROFILE SETUP MODAL -->
+  <div id="profileModal" class="modal-overlay" style="display:none;">
+    <div class="modal-card">
+      <h2 class="modal-title">Welcome! Let's set up your profile</h2>
+      <p class="modal-desc">Your name and progress are saved locally on this device only.</p>
+      <div class="avatar-grid" id="avatarGrid"></div>
+      <input id="profileNameInput" class="name-input" type="text" maxlength="24" placeholder="Your name or nickname" autocomplete="off" />
+      <button id="profileSaveBtn" class="btn btn-primary btn-lg" style="width:100%;">Start learning →</button>
+    </div>
+  </div>
+
+  <!-- START SCREEN -->
+  <div id="startScreen" class="screen">
+    <div class="start-inner">
+
+      <!-- Profile bar -->
+      <div id="profileBar" class="profile-bar" style="display:none;">
+        <div class="profile-info">
+          <span id="profileAvatar" class="profile-avatar-sm"></span>
+          <span id="profileName" class="profile-name-sm"></span>
+        </div>
+        <div class="profile-stats">
+          <span id="profileBest" class="profile-stat"></span>
+          <span id="profileAttempts" class="profile-stat"></span>
+          <button id="editProfileBtn" class="btn-ghost">Edit</button>
+        </div>
+      </div>
+
+      <div class="badge-row">
+        <span class="badge badge-blue" id="langBadge">🇨🇿 Czech</span>
+        <span class="badge badge-gray" id="totalBadge">— Items</span>
+        <span class="badge badge-gray">CCE–B2 aligned</span>
+      </div>
+      <h1>Czech Language Practice</h1>
+      <p class="subtitle">CCE–B2 exam prep — reading, grammar &amp; vocabulary</p>
+      <p class="desc">Practice items modeled on the real CCE–B2 certified exam (accepted for Czech citizenship/permanent residency). Reading passages with matching &amp; true/false, grammar drills, and picture vocabulary — with a study note after every answer explaining the underlying rule, not just whether you got it right.</p>
+
+      <!-- Resume banner -->
+      <div id="resumeBanner" class="resume-banner" style="display:none;">
+        <div class="resume-info">
+          <span class="resume-icon">⏸</span>
+          <div>
+            <p class="resume-title">Resume in-progress session</p>
+            <p class="resume-detail" id="resumeDetail"></p>
+          </div>
+        </div>
+        <div class="resume-actions">
+          <button id="resumeBtn" class="btn btn-primary">Resume</button>
+          <button id="discardBtn" class="btn btn-outline">Discard</button>
+        </div>
+      </div>
+
+      <div class="domain-grid" id="sectionGrid">
+        <div class="domain-card">
+          <span class="domain-num">Čtení</span>
+          <span class="domain-title">Reading comprehension</span>
+          <span class="domain-pct">60 min · 20 pts</span>
+        </div>
+        <div class="domain-card">
+          <span class="domain-num">Gramatika</span>
+          <span class="domain-title">Grammar &amp; vocabulary</span>
+          <span class="domain-pct">30 min · 20 pts</span>
+        </div>
+        <div class="domain-card">
+          <span class="domain-num">Poslech</span>
+          <span class="domain-title">Listening (coming soon)</span>
+          <span class="domain-pct">40–45 min · 20 pts</span>
+        </div>
+        <div class="domain-card">
+          <span class="domain-num">Psaní</span>
+          <span class="domain-title">Writing prompts</span>
+          <span class="domain-pct">80 min · 36 pts</span>
+        </div>
+      </div>
+
+      <!-- MODE SELECTOR -->
+      <div class="config-section">
+        <p class="config-label">Practice mode</p>
+        <div class="mode-row">
+          <button class="mode-btn active" data-mode="full">
+            <span class="mode-icon">📋</span>
+            <span class="mode-title">Full Practice</span>
+            <span class="mode-desc">All gradable items, shuffled</span>
+          </button>
+          <button class="mode-btn" data-mode="section">
+            <span class="mode-icon">🎯</span>
+            <span class="mode-title">By Section</span>
+            <span class="mode-desc">Reading, grammar or vocab</span>
+          </button>
+          <button class="mode-btn" data-mode="writing">
+            <span class="mode-icon">✍️</span>
+            <span class="mode-title">Writing Prompts</span>
+            <span class="mode-desc">Reference tasks, self-checked</span>
+          </button>
+        </div>
+
+        <div id="sectionFilter" class="filter-group" style="display:none;">
+          <p class="filter-label">Select sections</p>
+          <div class="chip-row" id="sectionChipRow"></div>
+        </div>
+      </div>
+
+      <div id="selectionSummary" class="selection-summary"></div>
+
+      <div class="start-meta">
+        <span>📝 Untimed — go at your own pace</span>
+        <span>✓ Shuffled every time</span>
+        <span>📊 Section score breakdown</span>
+      </div>
+      <button id="startBtn" class="btn btn-primary btn-lg">Start practice →</button>
+      <p id="loadError" class="load-error" style="display:none;">Could not load content data.</p>
+    </div>
+  </div>
+
+  <!-- QUIZ SCREEN -->
+  <div id="quizScreen" class="screen">
+    <header class="quiz-header">
+      <div class="header-left">
+        <button class="btn-back" id="backBtn" title="Exit">← Exit</button>
+        <span class="domain-badge" id="sectionLabel"></span>
+        <span class="diff-badge" id="taskLabel"></span>
+      </div>
+    </header>
+
+    <div class="progress-row">
+      <div class="progress-bg"><div class="progress-fill" id="progressFill"></div></div>
+      <span class="progress-label" id="progressLabel">1 / 20</span>
+    </div>
+
+    <div class="q-card">
+      <div id="passageBox" class="passage-box" style="display:none;">
+        <p class="passage-title" id="passageTitle"></p>
+        <p class="passage-text" id="passageText"></p>
+      </div>
+      <p class="q-text" id="qText"></p>
+      <div id="itemBody"></div>
+      <div id="explanationBox" class="explanation-box" style="display:none;">
+        <p class="exp-heading">Explanation</p>
+        <div id="expContent"></div>
+      </div>
+      <div id="topicBox" class="topic-box" style="display:none;">
+        <p class="topic-heading">📘 Study note</p>
+        <div id="topicContent"></div>
+      </div>
+    </div>
+
+    <div class="nav-row">
+      <span class="score-running" id="scoreRunning"></span>
+      <button class="btn btn-primary" id="nextBtn" style="display:none;">Next →</button>
+    </div>
+  </div>
+
+  <!-- WRITING REFERENCE SCREEN -->
+  <div id="writingScreen" class="screen">
+    <header class="quiz-header">
+      <div class="header-left">
+        <button class="btn-back" id="writingBackBtn" title="Exit">← Exit</button>
+        <span class="domain-badge">Psaní · Writing prompts</span>
+      </div>
+    </header>
+    <div id="writingList"></div>
+  </div>
+
+  <!-- RESULT SCREEN -->
+  <div id="resultScreen" class="screen">
+    <div class="result-hero">
+      <div class="score-circle" id="scoreCircle">
+        <span class="score-big" id="finalScore">0%</span>
+        <span class="score-sub" id="passFailLabel"></span>
+      </div>
+    </div>
+
+    <div class="metrics-grid">
+      <div class="metric-card">
+        <span class="metric-val" id="mCorrect">—</span>
+        <span class="metric-lbl">Correct</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val" id="mTotal">—</span>
+        <span class="metric-lbl">Total items</span>
+      </div>
+      <div class="metric-card">
+        <span class="metric-val" id="mBest">—</span>
+        <span class="metric-lbl">Best score</span>
+      </div>
+    </div>
+
+    <div class="section-title">Score by section</div>
+    <div id="sectionScores" class="domain-scores"></div>
+
+    <div class="section-title" style="margin-top:1.75rem;">Your history</div>
+    <div id="scoreHistory" class="score-history"></div>
+
+    <div class="result-actions">
+      <button class="btn btn-primary" id="retakeBtn">Retake</button>
+      <button class="btn btn-outline" id="backToStartBtn">Change mode</button>
+      <button class="btn btn-outline" id="reviewToggleBtn">Review wrong answers</button>
+    </div>
+
+    <div id="reviewSection" style="display:none;">
+      <div class="section-title" style="margin-top:2rem;">Wrong answers</div>
+      <div id="reviewList"></div>
+    </div>
+  </div>
+
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>
