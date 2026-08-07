@@ -1,0 +1,39 @@
+name: Publish reviewed lesson drafts
+
+on:
+  push:
+    branches: ["main"]
+    paths:
+      - "data/drafts/pending-review-*.json"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: "publish-drafts"
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Publish drafts (generate audio, upload, upsert to Supabase)
+        env:
+          GOOGLE_TTS_API_KEY: ${{ secrets.GOOGLE_TTS_API_KEY }}
+          SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+        run: python3 scripts/publish_draft.py
+
+      - name: Commit removal of processed draft files
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          if ! git diff --quiet -- data/drafts; then
+            git add data/drafts
+            git commit -m "Remove published draft(s) [skip ci]"
+            git push
+          else
+            echo "Nothing to commit."
+          fi
