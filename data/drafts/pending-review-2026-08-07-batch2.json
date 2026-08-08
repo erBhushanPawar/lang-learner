@@ -1,0 +1,234 @@
+[
+  {
+    "id": "a1-06",
+    "icon": "🎨",
+    "title": "Adjectives (nominative agreement)",
+    "blurb": "Match adjective endings to noun gender — a small change that makes your Czech sound right.",
+    "vocab": [
+      {
+        "word": "velký, velká, velké",
+        "translation": "big (masc. / fem. / neut.)",
+        "example": "Ten dům je velký. Ta zahrada je velká. To auto je velké."
+      },
+      {
+        "word": "malý, malá, malé",
+        "translation": "small (masc. / fem. / neut.)",
+        "example": "Ten pokoj je malý. Ta kočka je malá. To dítě je malé."
+      },
+      {
+        "word": "nový, nová, nové",
+        "translation": "new (masc. / fem. / neut.)",
+        "example": "Ten telefon je nový. Ta kniha je nová. To kolo je nové."
+      },
+      {
+        "word": "starý, stará, staré",
+        "translation": "old (masc. / fem. / neut.)",
+        "example": "Ten hrad je starý. Ta budova je stará. To město je staré."
+      },
+      {
+        "word": "hezký, hezká, hezké",
+        "translation": "pretty / nice (masc. / fem. / neut.)",
+        "example": "Ten park je hezký. Ta zahrada je hezká. To nádraží je hezké."
+      },
+      {
+        "word": "dobrý, dobrá, dobré",
+        "translation": "good (masc. / fem. / neut.)",
+        "example": "Ten nápad je dobrý. Ta káva je dobrá. To pivo je dobré."
+      }
+    ],
+    "grammarNote": {
+      "title": "Adjectives agree with noun gender: -ý / -á / -é",
+      "text": "Most Czech adjectives end in -ý in their base (masculine) form — velký, nový, starý. To describe a feminine noun, swap -ý for -á: velká, nová, stará. For a neuter noun, swap it for -é: velké, nové, staré. This mirrors the ten/ta/to pattern you already learned for nouns — if a noun pairs with ta (feminine), its adjective takes -á; if it pairs with to (neuter), the adjective takes -é. A smaller group of adjectives (called \"soft\" adjectives, e.g. jarní — \"spring-\") already end in -í and don't change at all across genders, but you'll meet those later — for now, focus on the -ý/-á/-é pattern, since it covers the large majority of everyday adjectives."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which ending matches a feminine noun like „kniha“?",
+        "options": ["-ý", "-á", "-é", "-i"],
+        "answer": 1,
+        "explanation": "Feminine nouns take the -á ending: „nová kniha“ (a new book).",
+        "note": "This is the same -á you saw with „ta“ — feminine nouns and their adjectives share the a-sound."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Velké“ is the correct form to describe the masculine noun „dům“ (house).",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "„Dům“ is masculine, so it needs „velký“, not „velké“ (which is neuter).",
+        "note": "„Dům“ ends in a consonant, a typical masculine pattern — pair it with the -ý adjective ending."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "To auto je ___. (new — neuter form)",
+        "accepted": ["nové"],
+        "explanation": "Auto is neuter, so the adjective takes the -é ending: nové.",
+        "note": "Auto is one of the clearest neuter nouns to remember, since it always pairs with „to“."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Adjust for feminine: „Ten hrad je starý.“ → „Ta budova je ___.“",
+        "accepted": ["stará"],
+        "explanation": "Budova is feminine, so starý becomes stará.",
+        "note": "Once you spot a noun's gender, swapping the adjective ending becomes automatic with practice."
+      }
+    ]
+  },
+  {
+    "id": "a1-07",
+    "icon": "👨‍👩‍👧",
+    "title": "Family & people",
+    "blurb": "Talk about your family using possessives like můj, tvůj, jeho, and její.",
+    "vocab": [
+      {
+        "word": "rodina",
+        "translation": "family",
+        "example": "Mám velkou rodinu."
+      },
+      {
+        "word": "matka / máma",
+        "translation": "mother / mom",
+        "example": "Moje máma je učitelka."
+      },
+      {
+        "word": "otec / táta",
+        "translation": "father / dad",
+        "example": "Můj táta pracuje v Praze."
+      },
+      {
+        "word": "bratr / sestra",
+        "translation": "brother / sister",
+        "example": "Mám staršího bratra a mladší sestru."
+      },
+      {
+        "word": "manžel / manželka",
+        "translation": "husband / wife",
+        "example": "Jeho manželka je Češka."
+      },
+      {
+        "word": "děti",
+        "translation": "children",
+        "example": "Mají dvě děti."
+      },
+      {
+        "word": "můj, tvůj, jeho, její",
+        "translation": "my, your, his, her",
+        "example": "To je můj bratr a to je její sestra."
+      }
+    ],
+    "grammarNote": {
+      "title": "Můj and tvůj change with gender — jeho and její never do",
+      "text": "Můj (my) and tvůj (your) are like adjectives: they agree with the gender of the noun that follows. Můj becomes moje for feminine and neuter nouns — můj bratr, but moje sestra and moje dítě. Tvůj works the same way: tvůj bratr, tvoje sestra. Jeho (his) and její (her), on the other hand, never change — no matter what follows, they stay exactly as they are: jeho bratr, jeho sestra, jeho dítě; její bratr, její sestra, její dítě. If you only remember one rule from this lesson, make it this: můj/tvůj flex, jeho/její don't."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "How do you say \"my sister\" in Czech?",
+        "options": ["Můj sestra", "Moje sestra", "Jeho sestra", "Její sestra"],
+        "answer": 1,
+        "explanation": "Sestra is feminine, so můj becomes moje: moje sestra.",
+        "note": "„Můj sestra“ is a very common beginner mistake — remember to switch to moje before feminine nouns."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Jeho“ changes form depending on the gender of the noun it describes.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Jeho (his) is invariable — it stays jeho whether the noun is masculine, feminine, or neuter.",
+        "note": "This makes jeho and její actually easier than můj/tvůj, once you know not to change them."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ bratr je vysoký. (my brother — bratr is masculine)",
+        "accepted": ["Můj"],
+        "explanation": "Bratr is masculine, so the unchanged form můj is correct.",
+        "note": "No swap needed here since bratr is masculine — moje would be wrong."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Change to feminine: „Můj bratr je starší.“ → „___ sestra je starší.“",
+        "accepted": ["Moje"],
+        "explanation": "Sestra is feminine, so můj becomes moje.",
+        "note": "Compare this to jeho/její, which wouldn't have changed at all in the same sentence."
+      }
+    ]
+  },
+  {
+    "id": "a1-08",
+    "icon": "🍽️",
+    "title": "Food & ordering",
+    "blurb": "Order food and drinks politely with chtěl bych, prosím, and café/restaurant basics.",
+    "vocab": [
+      {
+        "word": "Chtěl bych / Chtěla bych",
+        "translation": "I would like (male / female speaker)",
+        "example": "Chtěl bych kávu, prosím."
+      },
+      {
+        "word": "jídelní lístek",
+        "translation": "menu",
+        "example": "Můžu dostat jídelní lístek, prosím?"
+      },
+      {
+        "word": "voda / pivo / víno",
+        "translation": "water / beer / wine",
+        "example": "Dám si jedno pivo, prosím."
+      },
+      {
+        "word": "chléb / polévka / maso",
+        "translation": "bread / soup / meat",
+        "example": "Dáme si polévku a chléb."
+      },
+      {
+        "word": "účet, prosím",
+        "translation": "the bill, please",
+        "example": "Můžeme dostat účet, prosím?"
+      },
+      {
+        "word": "dobrou chuť",
+        "translation": "enjoy your meal",
+        "example": "Dobrou chuť!"
+      },
+      {
+        "word": "chutná mi to",
+        "translation": "I like the taste of it",
+        "example": "To jídlo je moc dobré, chutná mi to."
+      }
+    ],
+    "grammarNote": {
+      "title": "Chtěl bych — the polite way to order",
+      "text": "Saying „chci kávu“ (I want coffee) is grammatically fine but sounds blunt, almost like a demand — fine between close friends, awkward with a waiter. The polite way to order is „chtěl bych“ / „chtěla bych“ (I would like), which softens the request the same way English \"would like\" softens \"want\". The verb chtít changes form for gender here: a male speaker says chtěl bych, a female speaker says chtěla bych — bych itself stays the same either way. You'll hear and use this construction constantly: in cafés, restaurants, shops, anywhere you're politely asking for something."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "A woman ordering coffee politely says:",
+        "options": ["Chci kávu.", "Chtěl bych kávu.", "Chtěla bych kávu.", "Mám kávu."],
+        "answer": 2,
+        "explanation": "A female speaker uses chtěla bych — the -a ending matches her own gender, not the noun's.",
+        "note": "This gender ending is about the speaker, unlike the noun/adjective agreement from earlier lessons."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Chci kávu“ is a more polite way to order than „Chtěl bych kávu“.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "It's the reverse — chtěl/chtěla bych is the polite, softened request; chci is blunt.",
+        "note": "When in doubt while ordering, default to chtěl/chtěla bych — it's never wrong to be more polite."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Můžeme dostat ___, prosím? (the bill)",
+        "accepted": ["účet"],
+        "explanation": "Účet means \"the bill\" — a essential word for wrapping up a restaurant visit.",
+        "note": "Pair this with prosím, and you have a complete, polite request."
+      },
+      {
+        "task": "transformation",
+        "prompt": "A male speaker orders soup more politely: „Chci polévku.“ → „___ polévku.“",
+        "accepted": ["Chtěl bych"],
+        "explanation": "A male speaker softens chci to chtěl bych — chtěla bych would be used by a female speaker instead.",
+        "note": "Same pattern as the coffee example — only the speaker's own gender changes the ending, not the noun being ordered."
+      }
+    ]
+  }
+]
