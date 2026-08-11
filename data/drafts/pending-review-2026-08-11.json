@@ -1,0 +1,248 @@
+[
+  {
+    "id": "a2-04",
+    "icon": "🔁",
+    "title": "Verb aspect, part 1",
+    "blurb": "Czech verbs come in pairs — one for an ongoing or repeated action, one for a single completed result.",
+    "vocab": [
+      {
+        "word": "dělat / udělat",
+        "translation": "to do (ongoing) / to do (and finish)",
+        "example": "Teď dělám úkol, zítra ho udělám."
+      },
+      {
+        "word": "psát / napsat",
+        "translation": "to write (ongoing) / to write (and finish)",
+        "example": "Píšu e-mail, hned ho napíšu."
+      },
+      {
+        "word": "číst / přečíst",
+        "translation": "to read (ongoing) / to read (and finish)",
+        "example": "Čtu knihu, ale ještě jsem ji nepřečetl."
+      },
+      {
+        "word": "vařit / uvařit",
+        "translation": "to cook (ongoing) / to cook (and finish)",
+        "example": "Vařím oběd, za chvíli ho uvařím."
+      },
+      {
+        "word": "kupovat / koupit",
+        "translation": "to buy (ongoing/repeatedly) / to buy (one time, done)",
+        "example": "Kupuju chleba každý den, dneska ho koupím v novém obchodě."
+      },
+      {
+        "word": "jíst / sníst",
+        "translation": "to eat (ongoing) / to eat up (finish completely)",
+        "example": "Jím polévku, hned ji sním."
+      },
+      {
+        "word": "pít / vypít",
+        "translation": "to drink (ongoing) / to drink up (finish completely)",
+        "example": "Piju kávu, chci ji vypít, než půjdu."
+      },
+      {
+        "word": "učit se / naučit se",
+        "translation": "to study/learn (ongoing) / to learn (master, finish)",
+        "example": "Učím se česky každý den, chci se naučit dobře mluvit."
+      }
+    ],
+    "grammarNote": {
+      "title": "Two verbs, one meaning — but a different focus",
+      "text": "Almost every Czech verb has an aspect partner: an imperfective form for actions seen as ongoing, repeated, or habitual (dělat, psát, číst), and a perfective form for actions seen as a single, complete event with a result (udělat, napsat, přečíst). They're not tenses — both can describe the past (dělal jsem = I was doing / I did repeatedly, udělal jsem = I did it and it's finished) — the difference is whether you're describing the process or the completed result. A useful test: if you can add 'and finished' to the English sentence without changing its meaning, you probably want the perfective. Most perfective verbs are formed by adding a prefix (u-, na-, pře-, vy-, s-) to the imperfective, but some pairs use completely different roots — you just have to learn each pair. One important quirk to know before the future-tense lesson: perfective verbs don't have a true present tense — their present-looking conjugation (udělám, napíšu) actually means future, not 'I am doing it right now'."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which sentence describes an action still in progress (not yet finished)?",
+        "options": ["Napsal jsem dopis.", "Píšu dopis.", "Uvařila oběd.", "Sním polévku."],
+        "answer": 1,
+        "explanation": "Píšu is imperfective present — the writing is happening right now, not finished.",
+        "note": "Perfective verbs like napsal or uvařila describe the action as a completed whole."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Vařit and uvařit have completely different meanings, unrelated to each other.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "They're an aspect pair of the same verb: vařit = cooking as a process, uvařit = cooking through to a finished result.",
+        "note": "The u- prefix is one of several common ways Czech marks the perfective partner."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Dnes ráno jsem ___ celou kávu. (vypít → past tense, masculine 'já')",
+        "accepted": ["vypil"],
+        "explanation": "Vypil (from the perfective vypít) shows the coffee was finished completely."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"číst\" (to read, imperfective) has the perfective partner \"přečíst\" (to read through/finish). Give the perfective partner of \"psát\" (to write): ___",
+        "accepted": ["napsat"],
+        "explanation": "Napsat is the perfective partner of psát, formed with the na- prefix."
+      }
+    ]
+  },
+  {
+    "id": "a2-05",
+    "icon": "⏳",
+    "title": "Future tense",
+    "blurb": "Two ways to talk about what happens next: budu + infinitive for ongoing actions, or a perfective verb's own present-style form for a single future event.",
+    "vocab": [
+      {
+        "word": "Budu pracovat.",
+        "translation": "I will be working / I will work (ongoing).",
+        "example": "Zítra budu pracovat celý den."
+      },
+      {
+        "word": "Budeš doma?",
+        "translation": "Will you be home? (informal)",
+        "example": "Budeš dnes večer doma?"
+      },
+      {
+        "word": "Uděláme to zítra.",
+        "translation": "We'll do it tomorrow (and finish it).",
+        "example": "Nemáme čas, uděláme to zítra."
+      },
+      {
+        "word": "Napíšu ti.",
+        "translation": "I'll write to you (one message, done).",
+        "example": "Napíšu ti, jakmile budu vědět víc."
+      },
+      {
+        "word": "Koupím mléko.",
+        "translation": "I'll buy milk (on the way, one purchase).",
+        "example": "Cestou domů koupím mléko."
+      },
+      {
+        "word": "Budeme cestovat.",
+        "translation": "We will be traveling (ongoing trip).",
+        "example": "V létě budeme cestovat po Evropě."
+      },
+      {
+        "word": "Co budeš dělat?",
+        "translation": "What will you be doing?",
+        "example": "Co budeš dělat o víkendu?"
+      },
+      {
+        "word": "Přijdu pozdě.",
+        "translation": "I'll arrive late (single event).",
+        "example": "Bohužel dnes přijdu pozdě."
+      }
+    ],
+    "grammarNote": {
+      "title": "Budu + infinitive, or just conjugate the perfective verb",
+      "text": "Czech has two future-tense patterns, and which one you use depends on the verb's aspect. For imperfective verbs (the ongoing/habitual ones, like pracovat, dělat, číst), the future is budu/budeš/bude/budeme/budete/budou + the infinitive: budu pracovat (I will be working), budeme číst (we will be reading). For perfective verbs (the completed-result ones, like udělat, napsat, koupit), you don't add budu at all — you simply conjugate the perfective verb the same way you'd conjugate a present-tense verb, and it automatically means future: uděláme (we will do/finish it), napíšu (I will write), koupím (I will buy). This is the payoff of learning aspect pairs first — once you know a verb is perfective, its present-tense-looking form is already the future."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which is the correct future tense of the imperfective verb 'pracovat' (to work) for 'my' (we)?",
+        "options": ["Pracujeme.", "Budeme pracovat.", "Pracovali jsme.", "Uděláme pracovat."],
+        "answer": 1,
+        "explanation": "Imperfective verbs form the future with budu/budeš/bude/budeme/budete/budou + infinitive: budeme pracovat.",
+        "note": "Never combine budu with a perfective verb — perfective verbs already carry future meaning on their own."
+      },
+      {
+        "task": "true_false",
+        "prompt": "\"Napíšu\" (from the perfective napsat) needs 'budu' in front of it to mean 'I will write'.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Napíšu already means 'I will write' on its own — perfective verbs don't take budu.",
+        "note": "Adding budu to a perfective verb is a common learner mistake — watch for it."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Zítra ___ číst novou knihu. (future of the imperfective 'číst', for 'já')",
+        "accepted": ["budu"],
+        "explanation": "Číst is imperfective, so its future needs budu + infinitive: budu číst."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"dělat\" (imperfective) → future: \"budu dělat\". Give the future-tense form (já, I) of the imperfective verb \"cestovat\" (to travel): ___",
+        "accepted": ["budu cestovat"],
+        "explanation": "Cestovat is imperfective, so its future is budu + infinitive: budu cestovat."
+      }
+    ]
+  },
+  {
+    "id": "a2-06",
+    "icon": "🔑",
+    "title": "Modal verbs",
+    "blurb": "Muset, moct, chtít, and smět — the four verbs that combine with an infinitive to express obligation, ability, desire, and permission.",
+    "vocab": [
+      {
+        "word": "Musím jít.",
+        "translation": "I have to go.",
+        "example": "Musím jít, autobus jede za pět minut."
+      },
+      {
+        "word": "Můžu vám pomoct?",
+        "translation": "Can/May I help you?",
+        "example": "Dobrý den, můžu vám pomoct?"
+      },
+      {
+        "word": "Chci kávu, prosím.",
+        "translation": "I want a coffee, please.",
+        "example": "Chci kávu, prosím, bez cukru."
+      },
+      {
+        "word": "Smím se zeptat?",
+        "translation": "May I ask (something)?",
+        "example": "Promiňte, smím se zeptat, kolik je hodin?"
+      },
+      {
+        "word": "Nemusíš to dělat.",
+        "translation": "You don't have to do that.",
+        "example": "Nemusíš to dělat dneska, máš čas do pátku."
+      },
+      {
+        "word": "Nesmíš tady kouřit.",
+        "translation": "You must not smoke here.",
+        "example": "Nesmíš tady kouřit, je to zakázané."
+      },
+      {
+        "word": "Chceš jít se mnou?",
+        "translation": "Do you want to come with me?",
+        "example": "Chceš jít se mnou do kina?"
+      },
+      {
+        "word": "Nemůžu dneska přijít.",
+        "translation": "I can't come today.",
+        "example": "Bohužel nemůžu dneska přijít, jsem nemocný."
+      }
+    ],
+    "grammarNote": {
+      "title": "Nemuset vs. nesmět — the mistake almost every learner makes",
+      "text": "Four modal verbs combine directly with an infinitive: muset (must/have to — obligation), moct/moci (can/may — ability or permission), chtít (want), and smět (be allowed to — permission). They conjugate irregularly, so learn each one's forms directly: musím/musíš/musí/musíme/musíte/musí; můžu(mohu)/můžeš/může/můžeme/můžete/můžou(mohou); chci/chceš/chce/chceme/chcete/chtějí; smím/smíš/smí/smíme/smíte/smějí. The trap is negation: nemuset does NOT mean 'must not' — it means 'don't have to' (no obligation, but still allowed). 'Must not' — a real prohibition — is nesmět. So 'nemusíš tady kouřit' means smoking here is optional, while 'nesmíš tady kouřit' means smoking here is forbidden. Mixing these two up reverses your meaning completely, so it's worth drilling on its own."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which verb do you use to say someone is NOT ALLOWED to do something (a real prohibition)?",
+        "options": ["nemuset", "nesmět", "nechtít", "nemoct"],
+        "answer": 1,
+        "explanation": "Nesmět expresses a prohibition — 'must not'. Nemuset only means the action isn't required, not that it's forbidden.",
+        "note": "This pair (nemuset vs. nesmět) is one of the most common mix-ups for English speakers learning Czech."
+      },
+      {
+        "task": "true_false",
+        "prompt": "\"Nemusíš psát domácí úkol\" means writing the homework is forbidden.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Nemusíš means 'you don't have to' — the homework is optional, not forbidden. Forbidden would be nesmíš.",
+        "note": "Look for 'musíš vs. smíš' in the verb, not just the 'ne-' prefix, to get the meaning right."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Je mi to jedno, jestli ___ jít, nebo zůstat doma. (moct, 'you can' — informal)",
+        "accepted": ["můžeš"],
+        "explanation": "Můžeš (from moct) expresses ability/permission here: 'you can go, or stay home'."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"Musím pracovat.\" (I have to work.) — Turn this into a prohibition instead of an obligation, using \"nesmět\": ___",
+        "accepted": ["Nesmím pracovat.", "Nesmím pracovat"],
+        "explanation": "Nesmím pracovat means 'I am not allowed to work' — a prohibition, unlike nemusím pracovat which would just mean work is optional."
+      }
+    ]
+  }
+]
