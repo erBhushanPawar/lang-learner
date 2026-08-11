@@ -1,0 +1,248 @@
+[
+  {
+    "id": "a2-01",
+    "icon": "🎯",
+    "title": "Accusative case",
+    "blurb": "The case for direct objects — what you see, want, buy, or eat directly.",
+    "vocab": [
+      {
+        "word": "Mám bratra.",
+        "translation": "I have a brother.",
+        "example": "Mám bratra a sestru."
+      },
+      {
+        "word": "Vidím psa.",
+        "translation": "I see a dog.",
+        "example": "Vidím psa před obchodem."
+      },
+      {
+        "word": "Čtu knihu.",
+        "translation": "I'm reading a book.",
+        "example": "Čtu zajímavou knihu."
+      },
+      {
+        "word": "Piju kávu.",
+        "translation": "I'm drinking coffee.",
+        "example": "Ráno piju kávu."
+      },
+      {
+        "word": "Mám rád fotbal.",
+        "translation": "I like football.",
+        "example": "Mám rád fotbal, ale ne hokej."
+      },
+      {
+        "word": "Kupuju mléko.",
+        "translation": "I'm buying milk.",
+        "example": "V obchodě kupuju mléko a chleba."
+      },
+      {
+        "word": "Potřebuju pomoc.",
+        "translation": "I need help.",
+        "example": "Promiňte, potřebuju pomoc."
+      },
+      {
+        "word": "Znám tvou sestru.",
+        "translation": "I know your sister.",
+        "example": "Znám tvou sestru, chodíme spolu do práce."
+      }
+    ],
+    "grammarNote": {
+      "title": "The direct object changes — but not always the same way",
+      "text": "The accusative marks the direct object (what you have, see, read, buy...). The ending you change depends on the noun's gender: feminine nouns ending in -a swap it for -u (kniha → knihu, sestra → sestru). Masculine animate nouns (people, animals) usually add -a (pes → psa, bratr → bratra). Masculine inanimate nouns and neuter nouns don't change at all from the nominative (fotbal stays fotbal, mléko stays mléko). Feminine nouns ending in a consonant (like pomoc) also stay the same. So the two safe rules to memorize first: feminine -a → -u, and 'if it's not animate and not feminine -a, it probably doesn't change.'"
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which sentence correctly says \"I see a dog\" (pes → accusative)?",
+        "options": ["Vidím pes.", "Vidím psa.", "Vidím psu.", "Vidím psi."],
+        "answer": 1,
+        "explanation": "Pes is masculine animate, so the accusative adds -a: psa.",
+        "note": "This -a ending for masculine animate nouns is the same ending you'll see later in the genitive case too."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Neuter nouns change their ending in the accusative case.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Neuter nouns (like mléko) keep the same form in the accusative as in the nominative.",
+        "note": "This makes neuter nouns the easiest gender to handle in the accusative — one less thing to change."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Čtu ___. (kniha, fill in the accusative form)",
+        "accepted": ["knihu"],
+        "explanation": "Kniha is feminine ending in -a, so the accusative swaps -a for -u: knihu."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"kniha\" (book) is feminine and takes -u in the accusative: knihu. Give the accusative form of \"sestra\" (sister): ___",
+        "accepted": ["sestru"],
+        "explanation": "Sestra follows the same feminine -a → -u pattern as kniha, giving sestru."
+      }
+    ]
+  },
+  {
+    "id": "a2-02",
+    "icon": "📦",
+    "title": "Genitive case",
+    "blurb": "The case for possession (\"of\"), quantities (\"a lot of\", \"a little\"), and prepositions like bez, od, and z.",
+    "vocab": [
+      {
+        "word": "sklenice vody",
+        "translation": "a glass of water",
+        "example": "Prosím sklenici vody."
+      },
+      {
+        "word": "kousek chleba",
+        "translation": "a piece of bread",
+        "example": "Dal mi kousek chleba."
+      },
+      {
+        "word": "hodně práce",
+        "translation": "a lot of work",
+        "example": "Dneska mám hodně práce."
+      },
+      {
+        "word": "málo času",
+        "translation": "little time",
+        "example": "Bohužel mám málo času."
+      },
+      {
+        "word": "bez cukru",
+        "translation": "without sugar",
+        "example": "Kávu piju bez cukru."
+      },
+      {
+        "word": "dům mého bratra",
+        "translation": "my brother's house",
+        "example": "Bydlíme v domě mého bratra."
+      },
+      {
+        "word": "Kolik je hodin?",
+        "translation": "What time is it? (lit. how many of the hours)",
+        "example": "Promiňte, kolik je hodin?"
+      },
+      {
+        "word": "Jsem z Prahy.",
+        "translation": "I'm from Prague.",
+        "example": "Nejsem odsud, jsem z Prahy."
+      }
+    ],
+    "grammarNote": {
+      "title": "Genitive: \"of\", quantities, and a fixed set of prepositions",
+      "text": "The genitive shows up in three everyday situations. First, possession — \"the house of my brother\" (dům mého bratra) instead of an apostrophe-s. Second, after quantity words: hodně (a lot of), málo (a little of), kolik (how many/much of), and after numbers five and up (pět korun, deset minut) — the thing being counted goes into the genitive. Third, after a fixed group of common prepositions that always take genitive regardless of meaning: bez (without), od (from), do (into/until), z/ze (out of/from), and u (at/near). There's no shortcut for the endings themselves — feminine -a nouns take -y (voda → vody), most masculine nouns take -a or -u depending on the individual word (bratr → bratra, čas → času) — so for now, focus on recognizing when genitive is required and learn each noun's genitive form as you meet it."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "How do you say \"a glass of water\" in Czech?",
+        "options": ["sklenice voda", "sklenice vody", "sklenice vodu", "sklenice vodou"],
+        "answer": 1,
+        "explanation": "Voda is feminine; after the quantity word sklenice, it takes the genitive ending -y: vody.",
+        "note": "This same pattern applies to any \"container/amount of X\" phrase: kousek chleba, láhev vína, kilo jablek."
+      },
+      {
+        "task": "true_false",
+        "prompt": "The preposition \"bez\" (without) is always followed by the genitive case.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Bez always takes the genitive, no matter what follows it — bez cukru, bez peněz, bez tebe.",
+        "note": "A handful of prepositions (bez, od, do, z/ze, u) always take genitive — worth memorizing as a fixed list."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Jsem z ___. (Praha, genitive)",
+        "accepted": ["Prahy"],
+        "explanation": "Z always takes the genitive, and Praha (feminine -a) becomes Prahy."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"čas\" (time) takes -u in the genitive after málo: málo času. Give the genitive form of \"cukr\" (sugar) after bez: bez ___",
+        "accepted": ["cukru"],
+        "explanation": "Cukr is a masculine noun that also takes -u in the genitive: cukru."
+      }
+    ]
+  },
+  {
+    "id": "a2-03",
+    "icon": "🕰️",
+    "title": "Past tense",
+    "blurb": "Talk about what already happened — the l-participle and how it agrees with who's speaking.",
+    "vocab": [
+      {
+        "word": "Co jsi dělal(a) včera?",
+        "translation": "What did you do yesterday?",
+        "example": "Ahoj, co jsi dělal včera večer?"
+      },
+      {
+        "word": "Byl(a) jsem doma.",
+        "translation": "I was at home.",
+        "example": "Včera jsem byla celý den doma."
+      },
+      {
+        "word": "Viděl(a) jsem film.",
+        "translation": "I watched a movie.",
+        "example": "Včera jsem viděl dobrý film."
+      },
+      {
+        "word": "Šel/šla jsem do práce.",
+        "translation": "I went to work.",
+        "example": "Ráno jsem šla do práce pěšky."
+      },
+      {
+        "word": "Jedl(a) jsem oběd.",
+        "translation": "I ate lunch.",
+        "example": "V poledne jsem jedl oběd v restauraci."
+      },
+      {
+        "word": "Přišli jsme pozdě.",
+        "translation": "We arrived late.",
+        "example": "Bohužel jsme přišli pozdě na schůzku."
+      },
+      {
+        "word": "Koupila jsem nové boty.",
+        "translation": "I bought new shoes.",
+        "example": "Včera jsem koupila nové boty."
+      },
+      {
+        "word": "Měli jsme štěstí.",
+        "translation": "We were lucky.",
+        "example": "Počasí bylo hezké, měli jsme štěstí."
+      }
+    ],
+    "grammarNote": {
+      "title": "The l-participle + jsem/jsi — and why the 3rd person drops it",
+      "text": "Czech forms the past tense with two parts: an l-participle (infinitive stem + -l/-la/-lo/-li/-ly) that agrees with the subject's gender and number, plus the present tense of být as an auxiliary — but only for 1st and 2nd person (já jsem dělal, ty jsi dělal, my jsme dělali, vy jste dělali). The 3rd person (on/ona/ono/oni/ony) drops the auxiliary entirely — just \"dělal\", \"dělala\", \"dělali\" on their own. The l-participle endings: -l (masculine singular), -la (feminine singular), -lo (neuter singular), -li (masculine animate plural), -ly (feminine plural and masculine inanimate plural). One common irregular you'll use constantly: jít (to go) has the irregular past stem šel/šla/šlo/šli/šly instead of a regular -l ending. Also note word order: jsem/jsi are unstressed words that jump to the second position in the sentence, not necessarily right next to the subject — \"Včera jsem byl v práci\", not \"Já včera jsem byl...\"."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "How does a woman say \"I went\" (jít, past tense)?",
+        "options": ["Šel jsem.", "Šla jsem.", "Šlo jsem.", "Šli jsme."],
+        "answer": 1,
+        "explanation": "Jít has an irregular past stem; the feminine singular form is šla, so a woman says šla jsem.",
+        "note": "Jít is one of the most common irregular l-participles — worth memorizing on its own: šel/šla/šlo/šli/šly."
+      },
+      {
+        "task": "true_false",
+        "prompt": "In the 3rd person (on/ona/ono/oni/ony), Czech past tense uses an auxiliary verb like \"jsem\".",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "The 3rd person drops the auxiliary entirely — you just use the l-participle alone: on dělal, ona dělala, oni dělali.",
+        "note": "This trips up a lot of learners going the other way too — don't add jsem/jsi when talking about someone else."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Ona ___ film včera. (vidět, past tense, feminine singular)",
+        "accepted": ["viděla"],
+        "explanation": "Vidět's l-participle is viděl/viděla/vidělo; feminine singular is viděla, and no auxiliary is needed in the 3rd person."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"dělal\" is the masculine singular past tense of dělat. Give the feminine plural form (used for \"they\" when referring to women or things): ___",
+        "accepted": ["dělaly"],
+        "explanation": "Feminine plural (and masculine inanimate plural) takes the -ly ending: dělaly."
+      }
+    ]
+  }
+]
