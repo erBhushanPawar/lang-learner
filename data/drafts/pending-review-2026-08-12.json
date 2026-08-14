@@ -1,0 +1,248 @@
+[
+  {
+    "id": "a2-07",
+    "icon": "⛅",
+    "title": "Weather & seasons",
+    "blurb": "Talk about the weather and seasons using Czech's subject-less impersonal expressions — prší, sněží, je zima.",
+    "vocab": [
+      {
+        "word": "Jaké je dnes počasí?",
+        "translation": "What's the weather like today?",
+        "example": "Jaké je dnes počasí? Podívej se z okna."
+      },
+      {
+        "word": "Prší.",
+        "translation": "It's raining.",
+        "example": "Prší, vezmi si deštník."
+      },
+      {
+        "word": "Sněží.",
+        "translation": "It's snowing.",
+        "example": "V horách už sněží."
+      },
+      {
+        "word": "Je zima.",
+        "translation": "It's cold.",
+        "example": "Dnes je hrozná zima, obleč si bundu."
+      },
+      {
+        "word": "Je horko.",
+        "translation": "It's hot.",
+        "example": "V červenci je tady vždycky horko."
+      },
+      {
+        "word": "Svítí slunce.",
+        "translation": "The sun is shining.",
+        "example": "Svítí slunce, pojďme na procházku."
+      },
+      {
+        "word": "Fouká vítr.",
+        "translation": "The wind is blowing.",
+        "example": "Fouká silný vítr, vezmi si čepici."
+      },
+      {
+        "word": "roční období",
+        "translation": "season (of the year)",
+        "example": "Moje oblíbené roční období je podzim."
+      }
+    ],
+    "grammarNote": {
+      "title": "Impersonal weather expressions — no subject needed",
+      "text": "Czech weather talk doesn't use a subject like English \"it\": there's no word for \"it\" in prší (it's raining) or sněží (it's snowing) — the verb alone, in the 3rd person singular, carries the whole meaning. The other pattern is je + adjective: je zima (it's cold), je horko (it's hot), je teplo (it's warm). Watch out for zima specifically — it's both this impersonal \"cold\" adjective-like word and the feminine noun for the season \"winter\" (jaro/spring is neuter, léto/summer is neuter, podzim/autumn is masculine, zima/winter is feminine). Context tells them apart: je zima describes the weather right now, while v zimě (\"in winter\") refers to the season — that v/na + case pattern for seasons (v zimě, v létě, na jaře, na podzim) uses the locative case, which is coming in a later lesson, so for now just memorize those four phrases as fixed expressions."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which sentence means \"It's raining\"?",
+        "options": ["Sněží.", "Prší.", "Je zima.", "Svítí slunce."],
+        "answer": 1,
+        "explanation": "Prší means \"it's raining\" — an impersonal verb with no subject needed.",
+        "note": "Sněží (snowing), fouká (windy), and prší (raining) are all the same impersonal pattern — learn them as a set."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Je zima“ can mean either \"it's cold\" or refer to the season \"winter\", depending on context.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Zima does double duty: je zima (impersonal, \"it's cold\") versus v zimě (\"in winter\", the season). The surrounding words tell you which one is meant.",
+        "note": "This overlap trips up learners who assume every Czech word has exactly one meaning."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ vítr. (The wind is blowing.)",
+        "accepted": ["Fouká"],
+        "explanation": "Fouká vítr — literally \"blows wind\", another subject-less impersonal weather expression."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Make this negative: „Prší.“ (It's raining.) → ___",
+        "accepted": ["Neprší.", "Neprší"],
+        "explanation": "Negate impersonal weather verbs the same way as any other verb — just add ne- to the front: prší → neprší."
+      }
+    ]
+  },
+  {
+    "id": "a2-08",
+    "icon": "🎸",
+    "title": "Hobbies & free time",
+    "blurb": "Say what you like and don't like doing using mít rád + the accusative case, plus everyday hobby vocabulary.",
+    "vocab": [
+      {
+        "word": "Co rád/a děláš ve volném čase?",
+        "translation": "What do you like to do in your free time?",
+        "example": "Ahoj, co rád děláš ve volném čase?"
+      },
+      {
+        "word": "Mám rád hudbu.",
+        "translation": "I like music. (male speaker)",
+        "example": "Mám rád hudbu, hlavně rock."
+      },
+      {
+        "word": "Mám ráda kávu.",
+        "translation": "I like coffee. (female speaker)",
+        "example": "Mám ráda kávu, ale ne moc silnou."
+      },
+      {
+        "word": "Rád/a čtu knihy.",
+        "translation": "I like reading books.",
+        "example": "Ve volném čase rád čtu knihy."
+      },
+      {
+        "word": "Hraju fotbal.",
+        "translation": "I play soccer.",
+        "example": "O víkendu hraju fotbal s kamarády."
+      },
+      {
+        "word": "Chodím na procházky.",
+        "translation": "I go for walks.",
+        "example": "Každý den chodím na procházky se psem."
+      },
+      {
+        "word": "Nemám rád sport.",
+        "translation": "I don't like sports.",
+        "example": "Nemám rád sport, radši čtu."
+      },
+      {
+        "word": "koníček",
+        "translation": "hobby",
+        "example": "Jaký je tvůj koníček?"
+      }
+    ],
+    "grammarNote": {
+      "title": "Mít rád + accusative — how to say what you like",
+      "text": "To say you like something, Czech uses mít rád (literally \"to have [something] dear\") followed by the thing you like in the accusative case, not the nominative. Rád itself agrees with the speaker, not the object: rád if you're male, ráda if you're female, rádi if you're speaking for a group. That's separate from what happens to the noun after it — for feminine nouns ending in -a, the accusative swaps that -a for -u: hudba (music, nominative) becomes hudbu in Mám rád hudbu; káva (coffee) becomes kávu. Masculine inanimate and neuter nouns often look identical in nominative and accusative (fotbal stays fotbal), so the feminine -a → -u swap is the pattern most worth watching for. To say you dislike something, just negate the verb: nemám rád/ráda."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "How would a female speaker say \"I like music\"?",
+        "options": ["Mám rád hudbu.", "Mám ráda hudbu.", "Mám rádi hudbu.", "Mám ráda hudba."],
+        "answer": 1,
+        "explanation": "Ráda agrees with a female speaker, and hudbu is the accusative form of hudba after mít rád.",
+        "note": "Mixing up rád/ráda/rádi is a very common beginner slip — it marks the speaker's gender, not the object's."
+      },
+      {
+        "task": "true_false",
+        "prompt": "In „Mám rád kávu,“ the change from káva to kávu happens because mít rád requires its object in the accusative case.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — káva is the nominative dictionary form, but as the object of mít rád it must take the accusative ending, kávu.",
+        "note": "This is the same accusative pattern from the a2-01 lesson, just applied to a new verb phrase."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Mám ___ fotbal. (I like soccer — male speaker)",
+        "accepted": ["rád"],
+        "explanation": "A male speaker uses rád: Mám rád fotbal. (Fotbal stays the same in the accusative since it's masculine inanimate.)"
+      },
+      {
+        "task": "transformation",
+        "prompt": "Change this to how a female speaker would say it: „Mám rád knihu.“ → ___",
+        "accepted": ["Mám ráda knihu.", "Mám ráda knihu"],
+        "explanation": "Only rád changes to ráda for a female speaker — knihu (the accusative object) stays exactly the same."
+      }
+    ]
+  },
+  {
+    "id": "a2-09",
+    "icon": "🚆",
+    "title": "Travel & transport",
+    "blurb": "Buy tickets, ask about schedules, and use the prepositions of motion do/z/na to say where you're going and coming from.",
+    "vocab": [
+      {
+        "word": "Jednu jízdenku do Prahy, prosím.",
+        "translation": "One ticket to Prague, please.",
+        "example": "Dobrý den, jednu jízdenku do Prahy, prosím."
+      },
+      {
+        "word": "Kdy jede příští vlak?",
+        "translation": "When does the next train leave?",
+        "example": "Promiňte, kdy jede příští vlak do Brna?"
+      },
+      {
+        "word": "Musím přestoupit?",
+        "translation": "Do I have to transfer?",
+        "example": "Musím přestoupit, nebo jede vlak přímo?"
+      },
+      {
+        "word": "nádraží",
+        "translation": "train station",
+        "example": "Jedu na nádraží, odjíždí mi vlak."
+      },
+      {
+        "word": "zastávka",
+        "translation": "stop (bus/tram)",
+        "example": "Vystupte na další zastávce."
+      },
+      {
+        "word": "odjezd",
+        "translation": "departure",
+        "example": "Odjezd autobusu je v devět hodin."
+      },
+      {
+        "word": "příjezd",
+        "translation": "arrival",
+        "example": "Příjezd vlaku je naplánovaný na dvanáct hodin."
+      },
+      {
+        "word": "Jedu do školy.",
+        "translation": "I'm going to school.",
+        "example": "Každé ráno jedu do školy autobusem."
+      }
+    ],
+    "grammarNote": {
+      "title": "Prepositions of motion: do, z/ze, and na + case",
+      "text": "To say where you're going or coming from, the preposition decides the case. Do (\"to\", into an enclosed place, city, or country) takes the genitive: jedu do Prahy, jedu do školy (Praha → Prahy, škola → školy). Z/ze (\"from\", out of) also takes the genitive, and often uses the exact same noun form as do — only the preposition tells you the direction: jedu z Prahy (\"I'm going from Prague\"). Na (\"to\"/\"onto\") takes the accusative instead, and is used for a specific set of nouns treated as open or event-like spaces rather than enclosed buildings — nádraží (station), zastávka (stop), pošta (post office), and similar: jedu na nádraží, jdu na zastávku. There's no single rule for which nouns take na instead of do — it's largely a fixed list you learn noun by noun, the same way English speakers just learn \"at the station\" vs. \"in the building\" by habit."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which phrase means \"I'm going FROM Prague\"?",
+        "options": ["Jedu do Prahy.", "Jedu z Prahy.", "Jedu na Prahu.", "Jedu v Praze."],
+        "answer": 1,
+        "explanation": "Z Prahy uses z + genitive to express \"from Prague\" — the opposite direction of do Prahy.",
+        "note": "Do and z often share the same genitive noun form (Prahy), so the preposition itself is what carries the direction."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Do and z both take the genitive case, just with opposite meanings (\"to\" vs. \"from\").",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — both prepositions govern the genitive; only their meaning differs.",
+        "note": "This is a handy shortcut: if you know the genitive form of a place, you can use it with either preposition."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Jedu ___ školy. (I'm going to school.)",
+        "accepted": ["do"],
+        "explanation": "Do + genitive (školy) expresses motion into an enclosed place like a school building."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Turn this statement into a question asking when the NEXT train leaves: „Vlak jede v devět.“ → ___",
+        "accepted": ["Kdy jede příští vlak?", "Kdy jede příští vlak"],
+        "explanation": "Příští (\"next\") + jede (\"leaves/goes\") is the standard way to ask about the next departure at a station."
+      }
+    ]
+  }
+]
