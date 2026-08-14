@@ -1,0 +1,248 @@
+[
+  {
+    "id": "a2-10",
+    "icon": "🤒",
+    "title": "Health & body",
+    "blurb": "Describe aches and illness with Czech's reversed bolí mě construction, and handle a basic pharmacy or doctor visit.",
+    "vocab": [
+      {
+        "word": "Co vás bolí?",
+        "translation": "What hurts (you)? (formal)",
+        "example": "Dobrý den, co vás bolí?"
+      },
+      {
+        "word": "Bolí mě hlava.",
+        "translation": "My head hurts.",
+        "example": "Bolí mě hlava, potřebuju lék."
+      },
+      {
+        "word": "Bolí mě v krku.",
+        "translation": "My throat hurts.",
+        "example": "Bolí mě v krku, nemůžu mluvit."
+      },
+      {
+        "word": "Bolí mě zub.",
+        "translation": "I have a toothache.",
+        "example": "Bolí mě zub, musím k zubaři."
+      },
+      {
+        "word": "Bolí mě břicho.",
+        "translation": "My stomach hurts.",
+        "example": "Bolí mě břicho, asi jsem něco snědl."
+      },
+      {
+        "word": "Mám horečku.",
+        "translation": "I have a fever.",
+        "example": "Mám horečku a bolí mě celé tělo."
+      },
+      {
+        "word": "Jsem nemocný / nemocná.",
+        "translation": "I am sick. (male / female speaker)",
+        "example": "Nemůžu přijít do práce, jsem nemocný."
+      },
+      {
+        "word": "lékárna",
+        "translation": "pharmacy",
+        "example": "Lék si můžete koupit v lékárně."
+      }
+    ],
+    "grammarNote": {
+      "title": "Bolí mě + body part — Czech's reversed \"it hurts\" construction",
+      "text": "Czech doesn't say \"my head hurts\" the way English does. The verb bolet (\"to hurt\") takes the body part as its subject in the nominative, while the person who feels the pain goes in the accusative in front of it: Bolí mě hlava is literally \"Hurts me head\" — hlava (head) is the nominative subject the verb agrees with, mě (\"me\") is the accusative sufferer. Swap the pronoun to talk about someone else: bolí tě (you, informal), bolí ho/ji (him/her), bolí nás (us), bolí vás (you, formal/plural), bolí je (them). Because bolí is the same form for 3rd person singular and plural, you don't need to worry about the verb changing even with a plural body part like záda (back) or nohy (legs): Bolí mě záda — no adjustment needed."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which sentence means \"My stomach hurts\"?",
+        "options": ["Bolí mě hlava.", "Bolí mě zub.", "Bolí mě břicho.", "Mám horečku."],
+        "answer": 2,
+        "explanation": "Břicho means stomach, so Bolí mě břicho translates to \"my stomach hurts\".",
+        "note": "hlava (head), zub (tooth), krk (throat), and břicho (stomach) are the most common body parts you'll plug into this pattern."
+      },
+      {
+        "task": "true_false",
+        "prompt": "In „Bolí mě hlava“, hlava is in the accusative case because it's the thing being affected.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Actually hlava is in the nominative — it's the grammatical subject of bolí. The accusative in this sentence is mě, the person who feels the pain.",
+        "note": "This reversed structure trips up learners used to English \"I have a headache\", where \"I\" is the subject."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Bolí ___ zub. (My tooth hurts.)",
+        "accepted": ["mě"],
+        "explanation": "Mě is the accusative form of já (\"I\") used for the person experiencing the pain."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Turn this into a formal question asking someone what hurts them: „Bolí mě hlava.“ → ___",
+        "accepted": ["Co vás bolí?", "Co Vás bolí?"],
+        "explanation": "Co vás bolí? uses the formal accusative pronoun vás to ask a stranger or someone you address formally what's hurting them."
+      }
+    ]
+  },
+  {
+    "id": "a2-11",
+    "icon": "🏠",
+    "title": "Housing & daily routine",
+    "blurb": "Talk about where you live and your daily schedule using reflexive verbs like mýt se and oblékat se.",
+    "vocab": [
+      {
+        "word": "Kde bydlíš?",
+        "translation": "Where do you live? (informal)",
+        "example": "Ahoj, kde bydlíš?"
+      },
+      {
+        "word": "Bydlím v bytě.",
+        "translation": "I live in an apartment.",
+        "example": "Bydlím v bytě v centru města."
+      },
+      {
+        "word": "Vstávám v sedm hodin.",
+        "translation": "I get up at seven o'clock.",
+        "example": "Každý den vstávám v sedm hodin."
+      },
+      {
+        "word": "Myju se.",
+        "translation": "I wash (myself).",
+        "example": "Ráno se myju a čistím si zuby."
+      },
+      {
+        "word": "Oblékám se.",
+        "translation": "I get dressed.",
+        "example": "Oblékám se a jdu do práce."
+      },
+      {
+        "word": "Chystám se do práce.",
+        "translation": "I get ready for work.",
+        "example": "Chystám se do práce už od šesti."
+      },
+      {
+        "word": "Jdu spát v jedenáct.",
+        "translation": "I go to bed at eleven.",
+        "example": "Obvykle jdu spát v jedenáct."
+      },
+      {
+        "word": "nájem",
+        "translation": "rent",
+        "example": "Nájem za byt platím prvního v měsíci."
+      }
+    ],
+    "grammarNote": {
+      "title": "Reflexive verbs — se and si in daily routines",
+      "text": "Many everyday Czech verbs about daily routine are reflexive — they come with a small extra word, se or si, that doesn't translate as a separate word in English but is grammatically required. Mýt se (\"to wash oneself\") uses se because the action happens to yourself: Myju se. If the verb instead affects something that belongs to you rather than your whole self, Czech uses si (a dative reflexive) instead: čistím si zuby (\"I brush my teeth\", literally \"I clean to-myself the teeth\"). Se and si aren't optional style choices — dropping them changes the meaning: mýt (without se) means \"to wash [something else]\", not \"to wash yourself\". Word order note: se/si is a \"clitic\" that wants to sit in the second position of the clause, right after the first stressed word, not necessarily right after the verb — Ráno se myju, not myju se at the very start of a sentence."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which verb form means \"I get dressed\"?",
+        "options": ["Myju se.", "Oblékám se.", "Vstávám.", "Chystám se."],
+        "answer": 1,
+        "explanation": "Oblékám se means \"I get dressed\" — the reflexive se shows the action is done to yourself.",
+        "note": "Vstávám (I get up) isn't reflexive — not every daily-routine verb needs se/si."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Se and si are optional in Czech — you can drop them without changing the meaning.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "They're required, not optional — dropping se from mýt se (to wash yourself) changes the meaning to \"to wash [something else]\", and si marks the item as belonging to you (čistím si zuby = I brush MY teeth).",
+        "note": "Reflexive verbs are one of the first places English speakers forget a word Czech grammatically needs."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Čistím ___ zuby. (I brush my teeth.)",
+        "accepted": ["si"],
+        "explanation": "Si (dative reflexive) marks the teeth as belonging to you — čistím zuby without si would sound like cleaning someone else's teeth."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Change this into a question asking where someone lives (informal): „Bydlím v bytě.“ → ___",
+        "accepted": ["Kde bydlíš?", "Kde bydlíš"],
+        "explanation": "Kde bydlíš? is the informal way to ask \"where do you live?\" — bydlíš is the ty-form of bydlet."
+      }
+    ]
+  },
+  {
+    "id": "a2-12",
+    "icon": "📍",
+    "title": "Locative case",
+    "blurb": "Use the locative case after v, na, and o to talk about where things are and what you're talking about.",
+    "vocab": [
+      {
+        "word": "Kde jsi?",
+        "translation": "Where are you?",
+        "example": "Kde jsi? Čekám před obchodem."
+      },
+      {
+        "word": "Jsem v práci.",
+        "translation": "I'm at work.",
+        "example": "Jsem v práci, zavolám ti večer."
+      },
+      {
+        "word": "Jsem ve škole.",
+        "translation": "I'm at school.",
+        "example": "Dnes jsem celý den ve škole."
+      },
+      {
+        "word": "Bydlím v Praze.",
+        "translation": "I live in Prague.",
+        "example": "Bydlím v Praze už pět let."
+      },
+      {
+        "word": "Mluvíme o filmu.",
+        "translation": "We're talking about a movie.",
+        "example": "Mluvíme o filmu, který jsme včera viděli."
+      },
+      {
+        "word": "Přemýšlím o tom.",
+        "translation": "I'm thinking about it.",
+        "example": "Přemýšlím o tom, jestli mám jít."
+      },
+      {
+        "word": "na horách",
+        "translation": "in the mountains",
+        "example": "V zimě jsme byli na horách."
+      },
+      {
+        "word": "Kniha je na stole.",
+        "translation": "The book is on the table.",
+        "example": "Kniha je na stole vedle lampy."
+      }
+    ],
+    "grammarNote": {
+      "title": "Locative case — after v, na, and o",
+      "text": "The locative case is unusual among Czech cases: it never stands alone, it only appears after certain prepositions — most commonly v/ve (\"in\"), na (\"on/at\"), and o (\"about\"). This is also the case behind the seasonal expressions from the weather lesson: v zimě, na jaře. Typical endings: feminine nouns like Praha and škola take -ě/-e in the locative (v Praze, ve škole — note the consonant change h→z in Praha→Praze, a common locative pattern), masculine inanimate nouns like stůl (table) often take -ě too (na stole), and neuter nouns like město (town) also take -ě (ve městě). The preposition itself decides whether you mean \"inside\" (v) or \"on top of / at an open location\" (na) — the same do/na distinction from the travel lesson carries over here. O + locative is different in flavor: it means \"about\" a topic, not a physical location — mluvíme o filmu (\"we're talking about a movie\"), used with verbs like mluvit, přemýšlet, vědět."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which preposition + case combination means \"about\" a topic, not a place?",
+        "options": ["v + locative", "na + locative", "o + locative", "do + genitive"],
+        "answer": 2,
+        "explanation": "O + locative expresses \"about\" a topic — mluvíme o filmu (\"we're talking about a movie\").",
+        "note": "The same locative case ending appears whether v/na/o mean location or topic — only the preposition tells you which."
+      },
+      {
+        "task": "true_false",
+        "prompt": "The locative case can be used on its own, without a preposition.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Locative is the one Czech case that never appears without a preposition — v, na, or o (among a few others) always precede it.",
+        "note": "This makes locative easy to spot: if you see one of those prepositions plus an unfamiliar noun ending, it's almost certainly locative."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Bydlím v ___. (I live in Prague.)",
+        "accepted": ["Praze"],
+        "explanation": "Praha becomes Praze in the locative after v — note the h→z sound change typical of this pattern."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Change this to say you're talking about a book instead of a movie: „Mluvíme o filmu.“ → ___",
+        "accepted": ["Mluvíme o knize.", "Mluvíme o knize"],
+        "explanation": "Kniha (book) follows the same feminine locative pattern: kniha → knize."
+      }
+    ]
+  }
+]
