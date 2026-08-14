@@ -1,0 +1,248 @@
+[
+  {
+    "id": "a2-13",
+    "icon": "🤝",
+    "title": "Instrumental case",
+    "blurb": "Say how you travel or what you use (no preposition needed), who you're with using s/se, and use the instrumental after stát se and zabývat se.",
+    "vocab": [
+      {
+        "word": "vlakem",
+        "translation": "by train",
+        "example": "Jedu do Prahy vlakem."
+      },
+      {
+        "word": "autem",
+        "translation": "by car",
+        "example": "Jedeme na hory autem."
+      },
+      {
+        "word": "s kamarádem",
+        "translation": "with a friend",
+        "example": "Jdu na oběd s kamarádem."
+      },
+      {
+        "word": "s rodinou",
+        "translation": "with family",
+        "example": "O víkendu jsem byl s rodinou."
+      },
+      {
+        "word": "perem",
+        "translation": "with a pen",
+        "example": "Podepište se, prosím, perem."
+      },
+      {
+        "word": "Stal se lékařem.",
+        "translation": "He became a doctor.",
+        "example": "Po škole se stal lékařem."
+      },
+      {
+        "word": "Zabývám se hudbou.",
+        "translation": "I'm occupied with / into music.",
+        "example": "Ve volném čase se zabývám hudbou."
+      },
+      {
+        "word": "S kým?",
+        "translation": "With whom?",
+        "example": "S kým jedeš na dovolenou?"
+      }
+    ],
+    "grammarNote": {
+      "title": "Instrumental: means, „with“, and after stát se / zabývat se",
+      "text": "The instrumental case answers \"by/with what\" and \"with whom.\" It shows up in three everyday patterns. First, means or instrument — how you do something or get somewhere, with no preposition needed: jedu vlakem (I go by train), píšu perem (I write with a pen). Second, accompaniment after the preposition s/se (with): jdu s kamarádem, byl jsem s rodinou — s always takes the instrumental, just like bez always takes the genitive. Third, a handful of verbs pair with instrumental instead of accusative: stát se (to become) — stal se lékařem, \"he became a doctor\" — and zabývat se (to be occupied with) — zabývám se hudbou. Endings: masculine and neuter nouns add -em (bratr → bratrem, auto → autem); feminine -a nouns swap to -ou (žena → ženou); the question word kdo becomes kým in the instrumental (s kým? — with whom?)."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "How do you say \"by train\" in Czech (instrumental of vlak)?",
+        "options": ["vlak", "vlaku", "vlakem", "vlaky"],
+        "answer": 2,
+        "explanation": "Vlak is a masculine hard noun; the instrumental adds -em: vlakem.",
+        "note": "Means of transport in the instrumental never needs a preposition: jedu vlakem, jedu autem, jedu autobusem."
+      },
+      {
+        "task": "true_false",
+        "prompt": "The preposition „s“ (with) is always followed by the instrumental case.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — s/se always takes the instrumental, whether it's accompaniment (s kamarádem) or a fixed phrase (co je s tebou?).",
+        "note": "This pairs neatly with bez, which always takes the genitive — two prepositions, two fixed cases, no exceptions."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Stal se ___. (lékař, instrumental)",
+        "accepted": ["lékařem"],
+        "explanation": "Lékař is a masculine noun; stát se pairs with the instrumental, so it becomes lékařem."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Change to instrumental: Jedu tam (autobus — bus). → Jedu tam ___.",
+        "accepted": ["autobusem"],
+        "explanation": "Autobus is a masculine hard noun, so its instrumental form adds -em: autobusem."
+      }
+    ]
+  },
+  {
+    "id": "a2-14",
+    "icon": "🔁",
+    "title": "A2 review & mini-check",
+    "blurb": "A cumulative recap pulling together the accusative, past tense, future tense, and modal verbs from across A2.",
+    "vocab": [
+      {
+        "word": "Mám bratra.",
+        "translation": "I have a brother.",
+        "example": "Mám bratra a sestru."
+      },
+      {
+        "word": "bez cukru",
+        "translation": "without sugar",
+        "example": "Kávu piju bez cukru."
+      },
+      {
+        "word": "Byl jsem unavený.",
+        "translation": "I was tired. (male speaker)",
+        "example": "Včera jsem byl unavený, tak jsem šel spát brzy."
+      },
+      {
+        "word": "dělám / udělám",
+        "translation": "I do / I will (finish) doing",
+        "example": "Dnes ten úkol dělám, zítra ho udělám."
+      },
+      {
+        "word": "Budu pracovat.",
+        "translation": "I will work.",
+        "example": "Zítra budu pracovat doma."
+      },
+      {
+        "word": "Musím jít.",
+        "translation": "I have to go.",
+        "example": "Je pozdě, musím jít."
+      },
+      {
+        "word": "Můžu / Mohu",
+        "translation": "I can / I may",
+        "example": "Můžu ti pomoct?"
+      },
+      {
+        "word": "Chtěl(a) bych…",
+        "translation": "I would like…",
+        "example": "Chtěl bych kávu, prosím."
+      }
+    ],
+    "grammarNote": {
+      "title": "A2 in one page: cases, tense, aspect, and modals",
+      "text": "Six building blocks came together across A2. Accusative marks the direct object (mám bratra, not mám bratr), and genitive covers possession, quantities, and a fixed set of prepositions like bez and z (bez cukru). Past tense uses the l-participle and agrees with the subject's gender — byl jsem unavený (male) vs. byla jsem unavená (female). Verb aspect splits every action into an ongoing/repeated imperfective (dělám) and a completed perfective (udělám) — a distinction English usually skips. Future tense either combines budu with an imperfective infinitive (budu pracovat) or simply uses the perfective present form to mean \"will\" (udělám = I will do it). And the four modals — muset (must), moct (can/may), chtít (want), smět (be allowed) — all pair directly with an infinitive: musím jít, můžu pomoct, chtěl bych kávu. With these in place, B1 opens with the last core case, dative, followed by a single lesson mapping all seven cases side by side."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which sentence correctly says \"I have a sister\" using the accusative case?",
+        "options": ["Mám sestra.", "Mám sestru.", "Mám sestře.", "Mám sestrou."],
+        "answer": 1,
+        "explanation": "Sestra is a feminine -a noun; as the direct object of mám it takes the accusative ending -u: sestru.",
+        "note": "Recap from the accusative case lesson — the direct object always shifts out of the plain dictionary (nominative) form."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Byla jsem unavená“ means the speaker is female.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Byla and unavená are both feminine past-tense/adjective forms — a male speaker would say byl jsem unavený.",
+        "note": "Recap from the past tense lesson — the l-participle and adjective endings both track the subject's gender."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Zítra ___ pracovat. (I will work — budu + infinitive)",
+        "accepted": ["budu"],
+        "explanation": "Budu plus an imperfective infinitive is the standard way to build the future tense for ongoing or repeated actions."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Turn this from \"I have to go\" into \"you (informal, ty) have to go\": „Musím jít.“ → „___ jít.“",
+        "accepted": ["Musíš"],
+        "explanation": "Musíš is the ty-form of muset — modal verbs conjugate like any other verb and still pair with an infinitive."
+      }
+    ]
+  },
+  {
+    "id": "b1-01",
+    "icon": "🎁",
+    "title": "Dative case",
+    "blurb": "The last core case: mark who receives an action with giving/telling verbs, and use Czech's reversed „líbí se mi“ (I like it) construction.",
+    "vocab": [
+      {
+        "word": "Dám ti dárek.",
+        "translation": "I'll give you a gift.",
+        "example": "O Vánocích ti dám dárek."
+      },
+      {
+        "word": "Řekni mi…",
+        "translation": "Tell me…",
+        "example": "Řekni mi, co se stalo."
+      },
+      {
+        "word": "Pomůžu ti.",
+        "translation": "I'll help you.",
+        "example": "Neboj se, pomůžu ti."
+      },
+      {
+        "word": "Líbí se mi to.",
+        "translation": "I like it. (lit. it pleases me)",
+        "example": "Ten film se mi moc líbí."
+      },
+      {
+        "word": "Chutná mi to.",
+        "translation": "It tastes good to me.",
+        "example": "Ta polévka mi moc chutná."
+      },
+      {
+        "word": "kvůli tobě",
+        "translation": "because of you",
+        "example": "Přišel jsem pozdě kvůli tobě."
+      },
+      {
+        "word": "Volám mamince.",
+        "translation": "I'm calling (my) mom.",
+        "example": "Každou neděli volám mamince."
+      },
+      {
+        "word": "Věřím ti.",
+        "translation": "I believe/trust you.",
+        "example": "Věřím ti, neboj se."
+      }
+    ],
+    "grammarNote": {
+      "title": "Dative: the „to/for someone“ case, giving verbs, and líbí se mi",
+      "text": "The dative case answers \"to/for whom.\" It marks the indirect object — the receiver of an action — with giving and telling verbs: dát (to give), říct (to tell), napsat (to write to someone), volat (to call someone): dám ti dárek, volám mamince. It also drives Czech's \"impersonal liking\" constructions, where the thing liked is the grammatical subject and the person is in the dative: líbí se mi ten film literally means \"that film is pleasing to me,\" and chutná mi ta polévka works the same way for taste. A handful of prepositions take dative too, especially k (to, towards) and kvůli (because of): kvůli tobě. Personal pronouns have their own dative forms worth memorizing directly: mi/mně (me), ti/tobě (you), mu/jemu (him), jí (her), nám (us), vám (you-formal/plural), jim (them). For nouns, masculine people-words usually take -ovi (bratr → bratrovi), neuter -o nouns take -u (auto → autu), and feminine -a nouns swap to -ě or -i with a consonant softening (matka → matce, Praha → Praze)."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "How do you say \"I'll help you\" (informal ty) in Czech using the dative pronoun?",
+        "options": ["Pomůžu tě.", "Pomůžu ti.", "Pomůžu tebe.", "Pomůžu tvůj."],
+        "answer": 1,
+        "explanation": "Ti is the dative form of ty, used after pomoct — you help \"to\" someone, so the pronoun takes the dative, not the accusative.",
+        "note": "Verbs like pomoct (help), věřit (trust), and rozumět (understand) all pair with the dative, not the accusative — worth learning as a fixed list."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Líbí se mi ten film“ literally means the film is pleasing to me, with „mi“ as the dative pronoun for \"to me.\"",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — Czech flips the English \"I like the film\" so the film is the subject and „mi“ (to me) is the dative experiencer.",
+        "note": "Chutná mi (it tastes good to me) and hodí se mi (it suits me) work the same reversed way."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Dej ___ dárek. (give her a gift — dative of ona)",
+        "accepted": ["jí"],
+        "explanation": "Jí is the dative form of ona (\"she\"), used for the person receiving the gift."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Change to dative: Volám (matka — mother). → Volám ___.",
+        "accepted": ["matce"],
+        "explanation": "Matka is a feminine -a noun; in the dative singular the k softens to c: matce (like Praha → Praze)."
+      }
+    ]
+  }
+]
