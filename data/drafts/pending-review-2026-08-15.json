@@ -1,0 +1,244 @@
+[
+  {
+    "id": "b1-02",
+    "icon": "🗂️",
+    "title": "All 7 cases — consolidated review",
+    "blurb": "See all 7 Czech cases side by side, using the same handful of words, so the whole system finally clicks as one picture.",
+    "vocab": [
+      {
+        "word": "Praha je krásná.",
+        "translation": "Prague is beautiful.",
+        "example": "Praha je krásná, hlavně na jaře."
+      },
+      {
+        "word": "Jsem z Prahy.",
+        "translation": "I'm from Prague.",
+        "example": "Jsem z Prahy, ale bydlím v Brně."
+      },
+      {
+        "word": "Píšu kamarádovi.",
+        "translation": "I'm writing to a friend.",
+        "example": "Píšu kamarádovi dlouhý dopis."
+      },
+      {
+        "word": "Vidím Prahu.",
+        "translation": "I see Prague.",
+        "example": "Vidím Prahu z okna vlaku."
+      },
+      {
+        "word": "Petře, pojď sem!",
+        "translation": "Petr, come here!",
+        "example": "Petře, pojď sem, něco ti ukážu."
+      },
+      {
+        "word": "Bydlím v Praze.",
+        "translation": "I live in Prague.",
+        "example": "Bydlím v Praze už pět let."
+      },
+      {
+        "word": "Jedu vlakem.",
+        "translation": "I'm going by train.",
+        "example": "Jedu vlakem do Prahy."
+      }
+    ],
+    "grammarNote": {
+      "title": "The 7 Czech cases, side by side",
+      "text": "The Czech case system has 7 cases; here they are lined up using familiar words. Nominativ (Praha je krásná) is the subject — the dictionary form. Genitiv (Jsem z Prahy) covers possession, quantities, and follows prepositions like z, bez, do. Dativ (Píšu kamarádovi) marks the indirect object — 'to/for' someone, answering komu/čemu — and often adds -ovi to masculine nouns. Akuzativ (Vidím Prahu) is the direct object, answering koho/co. Vokativ (Petře, pojď sem!) is the odd one out: it doesn't answer a question at all, it's just how you address someone directly, and masculine names like Petr get a form (Petře) no other case shares. Lokál (Bydlím v Praze) never appears without a preposition — v, na, or o. Instrumentál (Jedu vlakem) expresses means or instrument — 'by/with' — answering kým/čím. Notice the pattern: a feminine -a noun like Praha reshapes its ending in nearly every case (Prahy, Praze, Prahu), which is exactly why cases feel hard at first and mechanical once you've drilled one noun through all seven."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which case answers the question 'komu/čemu?' (to whom/what?) and marks an indirect object, like the person you're writing to?",
+        "options": ["Genitiv", "Dativ", "Akuzativ", "Lokál"],
+        "answer": 1,
+        "explanation": "Dativ marks the indirect object — Píšu kamarádovi ('I'm writing to a friend') answers komu? (to whom?).",
+        "note": "Dativ often adds -ovi to masculine nouns, as in kamarád → kamarádovi."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Vokativ is the case used to address someone directly, and it's the one case that doesn't answer a question word.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — vokativ (Petře!) has no question word behind it; it's purely a direct-address form.",
+        "note": "This is why grammar tables usually list vokativ last or set it apart from the other 6 cases."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Bydlím v ___. (I live in Prague.)",
+        "accepted": ["Praze"],
+        "explanation": "Locative always follows a preposition — here v + Praze.",
+        "note": "Same pattern as the a2-12 locative case lesson."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Bez also takes the genitive, same as z. Complete: \"Bez ___ by to nebylo stejné.\" (Without Prague, it wouldn't be the same.)",
+        "accepted": ["Prahy"],
+        "explanation": "Bez + genitive works exactly like z + genitive: Praha → Prahy."
+      }
+    ]
+  },
+  {
+    "id": "b1-03",
+    "icon": "💭",
+    "title": "Conditional mood",
+    "blurb": "Use bych/bys/by with the past participle to make polite requests, give advice, and talk about hypotheticals with kdyby.",
+    "vocab": [
+      {
+        "word": "Chtěl bych kávu, prosím.",
+        "translation": "I would like a coffee, please.",
+        "example": "Dobrý den, chtěl bych kávu, prosím."
+      },
+      {
+        "word": "Mohl bys mi pomoct?",
+        "translation": "Could you help me?",
+        "example": "Mohl bys mi pomoct s taškami?"
+      },
+      {
+        "word": "Kdybych měl čas, šel bych na procházku.",
+        "translation": "If I had time, I would go for a walk.",
+        "example": "Kdybych měl čas, šel bych na procházku k řece."
+      },
+      {
+        "word": "Co bys dělal na mém místě?",
+        "translation": "What would you do in my place?",
+        "example": "Co bys dělal na mém místě? Nevím, jak se rozhodnout."
+      },
+      {
+        "word": "Bylo by lepší počkat.",
+        "translation": "It would be better to wait.",
+        "example": "Bylo by lepší počkat na další autobus."
+      },
+      {
+        "word": "Kdyby pršelo, zůstali bychom doma.",
+        "translation": "If it rained, we would stay home.",
+        "example": "Kdyby pršelo, zůstali bychom doma a dívali se na film."
+      },
+      {
+        "word": "Ráda bych to zkusila.",
+        "translation": "I would like to try it. (female speaker)",
+        "example": "Ráda bych to zkusila, ale trochu se bojím."
+      },
+      {
+        "word": "Měli byste přijít dřív.",
+        "translation": "You (formal/plural) should come earlier.",
+        "example": "Měli byste příště přijít dřív, aby nebylo tak plno."
+      }
+    ],
+    "grammarNote": {
+      "title": "Conditional mood — bych/bys/by + past participle",
+      "text": "The Czech conditional is built the same way as the past tense: take the l-participle (dělal, šel, měl...) and add a conditional particle instead of jsem/jsi/je. The particles are bych (I), bys (you, informal), by (he/she/it), bychom (we), byste (you, formal/plural), by (they) — and just like the past tense, the participle changes for gender: šel bych (male speaker) vs. šla bych (female speaker). Three everyday uses: polite requests and wishes (Chtěl bych kávu — much softer than Chci kávu), advice using měl/a by (Měl bys jít spát — 'you should go to sleep'), and real hypotheticals introduced by kdyby ('if'), where both the if-clause and the result usually take the conditional: Kdybych měl čas, šel bych — 'if I had time, I would go'. Word order is flexible but bych/bys/by tends to land in the second position of the clause (right after the first stressed word), so Já bych to udělal and To bych udělal are both natural, just with a different emphasis."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which set of words combines with the l-participle to form the conditional mood?",
+        "options": ["bych / bys / by...", "budu / budeš / bude...", "jsem / jsi / je...", "mám / máš / má..."],
+        "answer": 0,
+        "explanation": "The conditional particles bych, bys, by, bychom, byste, by attach to the same l-participle used in the past tense.",
+        "note": "Compare: udělal jsem (past) vs. udělal bych (conditional) — only the auxiliary changes."
+      },
+      {
+        "task": "true_false",
+        "prompt": "A kdyby-clause (\"if...\") is normally paired with the conditional in the main clause too, not the present tense.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — Kdyby pršelo, zůstali bychom doma uses the conditional on both sides, unlike English which can mix 'if it rains' (present) with 'I would stay' (conditional).",
+        "note": "Mixing tenses across the two clauses is a common learner mistake — keep both sides conditional."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ bych kávu, prosím. (I would like a coffee, please.)",
+        "accepted": ["Chtěl", "Chtěla"],
+        "explanation": "Chtěl bych (male speaker) or Chtěla bych (female speaker) — the participle agrees with the speaker's gender, same as in the past tense."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Complete the hypothetical to match the English: \"Kdybych měl čas, ___.\" (If I had time, I would go.)",
+        "accepted": ["šel bych", "šla bych"],
+        "explanation": "Jít → conditional šel bych / šla bych, matching the speaker's gender just like Kdybych měl čas already does for 'had'."
+      }
+    ]
+  },
+  {
+    "id": "b1-04",
+    "icon": "🔁",
+    "title": "Verb aspect, part 2",
+    "blurb": "Take aspect further: perfective vs. imperfective in commands and in storytelling, plus the common irregular pairs you'll hit constantly.",
+    "vocab": [
+      {
+        "word": "Zavři dveře!",
+        "translation": "Close the door! (perfective — a one-time command, get it done)",
+        "example": "Zavři dveře, je zima!"
+      },
+      {
+        "word": "Zavírej dveře, prosím.",
+        "translation": "Please keep closing the door. (imperfective — a repeated, ongoing habit)",
+        "example": "Zavírej dveře, pořád je tu průvan."
+      },
+      {
+        "word": "Řekni mi to.",
+        "translation": "Tell me. (perfective — say it, once, done)",
+        "example": "Řekni mi to hned teď."
+      },
+      {
+        "word": "Neříkej mi, co mám dělat.",
+        "translation": "Don't tell me what to do. (imperfective — negative commands are almost always imperfective)",
+        "example": "Neříkej mi pořád, co mám dělat."
+      },
+      {
+        "word": "Vzal jsem si klíče a odešel.",
+        "translation": "I took my keys and left. (perfective — moves the story forward)",
+        "example": "Vzal jsem si klíče a odešel z domu."
+      },
+      {
+        "word": "Každý den beru klíče a jdu do práce.",
+        "translation": "Every day I take my keys and go to work. (imperfective — a habitual routine)",
+        "example": "Každý den beru klíče a jdu pěšky do práce."
+      },
+      {
+        "word": "Koupil jsem chleba.",
+        "translation": "I bought bread. (perfective — the purchase is complete)",
+        "example": "Koupil jsem chleba cestou domů."
+      },
+      {
+        "word": "Kupoval jsem chleba, když jsi zavolal.",
+        "translation": "I was buying bread when you called. (imperfective — action in progress, interrupted)",
+        "example": "Kupoval jsem chleba, když jsi mi zavolal."
+      }
+    ],
+    "grammarNote": {
+      "title": "Aspect beyond the present — commands and storytelling",
+      "text": "Two places where perfective vs. imperfective really matters beyond simple statements. First, imperatives: a perfective command (Zavři dveře!) is a one-off, urgent instruction — do it and it's done. An imperfective command (Zavírej dveře) reads as an ongoing habit, a general instruction, or a softer, more patient request. Negative commands are the one place aspect isn't really a free choice: Czech almost always uses the imperfective for 'don't do X' (Neříkej, not the perfective form) because a negative action has no natural completion point to mark. Second, storytelling: perfective verbs push a narrative forward through a sequence of completed events (Vzal jsem si klíče a odešel — one thing, then the next), while imperfective verbs paint the ongoing background a story happens against, especially in a když-clause that gets interrupted (Kupoval jsem chleba, když jsi zavolal — I was in the middle of buying bread when the call came). Beyond dělat/udělat, expect these common irregular pairs constantly: říct/říkat (say/tell), vzít/brát (take), dát/dávat (give), koupit/kupovat (buy), přijít/přicházet (arrive)."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Negative commands (\"don't do X\") in Czech almost always use which aspect?",
+        "options": ["Perfective", "Imperfective", "Either, freely", "Neither — a different verb form entirely"],
+        "answer": 1,
+        "explanation": "Neříkej, not a perfective form — negative commands default to imperfective because there's no completion point to mark in a negated action.",
+        "note": "Compare the positive Řekni mi to! (perfective, do it once) with the negative Neříkej mi to! (imperfective)."
+      },
+      {
+        "task": "true_false",
+        "prompt": "In narration, perfective verbs typically describe the ongoing background action that gets interrupted by another event.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "False — that's the imperfective's job (Kupoval jsem chleba, když...). Perfective verbs instead push the story forward through a sequence of completed events.",
+        "note": "A good test: can you insert 'and then' before it? If yes, it's probably perfective narration."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ dveře! (Close the door! — one-time, urgent, perfective)",
+        "accepted": ["Zavři"],
+        "explanation": "Zavři is the perfective imperative of zavřít, used for a single, completed action."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Turn this one-time perfective command into a repeated, general instruction: \"Zavři dveře!\" → \"___, prosím.\" (meaning: every time, please close it)",
+        "accepted": ["Zavírej dveře"],
+        "explanation": "Zavírej is the imperfective imperative of zavírat — fitting for a habitual or ongoing instruction rather than a single urgent one."
+      }
+    ]
+  }
+]
