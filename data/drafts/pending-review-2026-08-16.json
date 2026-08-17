@@ -1,0 +1,254 @@
+[
+  {
+    "id": "b1-05",
+    "icon": "⚖️",
+    "title": "Comparatives & superlatives",
+    "blurb": "Compare things and people — bigger, better, the fastest — with Czech comparative and superlative adjectives.",
+    "vocab": [
+      {
+        "word": "lepší",
+        "translation": "better",
+        "example": "Tenhle film je lepší než ten včerejší."
+      },
+      {
+        "word": "horší",
+        "translation": "worse",
+        "example": "Dnešní počasí je horší než včerejší."
+      },
+      {
+        "word": "větší",
+        "translation": "bigger",
+        "example": "Praha je větší než Brno."
+      },
+      {
+        "word": "menší",
+        "translation": "smaller",
+        "example": "Brno je menší než Praha."
+      },
+      {
+        "word": "delší",
+        "translation": "longer",
+        "example": "Tahle cesta je delší než ta minulá."
+      },
+      {
+        "word": "rychlejší",
+        "translation": "faster",
+        "example": "Vlak je rychlejší než autobus."
+      },
+      {
+        "word": "než",
+        "translation": "than",
+        "example": "Mám raději čaj než kávu."
+      },
+      {
+        "word": "nejlepší",
+        "translation": "the best",
+        "example": "To je nejlepší restaurace ve městě."
+      }
+    ],
+    "grammarNote": {
+      "title": "Comparative -ejší/-ší and superlative nej-",
+      "text": "Most Czech adjectives form the comparative by adding -ejší to the stem: rychlý (fast) → rychlejší, levný (cheap) → levnější. Adjectives ending in -ký, -hý, or -oký often shorten and soften instead: vysoký (tall) → vyšší, drahý (expensive) → dražší, hluboký (deep) → hlubší. A handful of very common adjectives are irregular and just have to be memorized: dobrý → lepší (not \"dobřejší\"), špatný → horší, velký → větší, malý → menší, dlouhý → delší. To say \"than\", use než — it doesn't change the case of what follows, so it's the easiest comparative word in the language: Praha je větší než Brno. The superlative is simply nej- glued onto the front of the comparative: lepší → nejlepší, rychlejší → nejrychlejší, větší → největší. Adverbs follow the same idea but with their own endings: rychle (fast) → rychleji → nejrychleji; dobře (well) → lépe → nejlépe."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which is the correct comparative of \"dobrý\" (good)?",
+        "options": ["dobřejší", "lepší", "nejlepší", "více dobrý"],
+        "answer": 1,
+        "explanation": "Dobrý is irregular — its comparative is lepší, not a regular -ejší form. Nejlepší is the superlative, one step further.",
+        "note": "Irregular comparatives (dobrý→lepší, špatný→horší, velký→větší, malý→menší, dlouhý→delší) are the ones worth memorizing first, since they're also the most common."
+      },
+      {
+        "task": "true_false",
+        "prompt": "The superlative is formed by adding nej- to the front of the comparative form.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — rychlejší (faster) becomes nejrychlejší (fastest) just by prefixing nej-, with no other change.",
+        "note": "This makes the superlative the easiest step once you already know the comparative."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Praha je ___ než Brno. (bigger)",
+        "accepted": ["větší"],
+        "explanation": "Velký (big) has the irregular comparative větší — \"Praha je větší než Brno\" (Prague is bigger than Brno).",
+        "note": "Než never forces a case change on what follows it, unlike most Czech comparison structures in other languages."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"rychlý\" (fast) has the comparative \"rychlejší\" (faster). Give its superlative form: ___",
+        "accepted": ["nejrychlejší"],
+        "explanation": "Prefix nej- onto the comparative: rychlejší → nejrychlejší (\"the fastest\").",
+        "note": "Same pattern works on every comparative, regular or irregular: lepší → nejlepší, větší → největší."
+      }
+    ]
+  },
+  {
+    "id": "b1-06",
+    "icon": "💬",
+    "title": "Expressing opinions & agreement/disagreement",
+    "blurb": "Share what you think and agree or disagree naturally — myslím, že..., podle mě, souhlasím, nesouhlasím.",
+    "vocab": [
+      {
+        "word": "Myslím, že...",
+        "translation": "I think that...",
+        "example": "Myslím, že to je dobrý nápad."
+      },
+      {
+        "word": "Podle mě...",
+        "translation": "In my opinion...",
+        "example": "Podle mě je lepší jet vlakem."
+      },
+      {
+        "word": "Souhlasím.",
+        "translation": "I agree.",
+        "example": "Souhlasím s tebou."
+      },
+      {
+        "word": "Nesouhlasím.",
+        "translation": "I disagree.",
+        "example": "Nesouhlasím. Mám jiný názor."
+      },
+      {
+        "word": "Máš pravdu.",
+        "translation": "You're right.",
+        "example": "Máš pravdu, je to lepší řešení."
+      },
+      {
+        "word": "To si nemyslím.",
+        "translation": "I don't think so.",
+        "example": "To si nemyslím, je to příliš drahé."
+      },
+      {
+        "word": "Záleží na tom...",
+        "translation": "It depends on...",
+        "example": "Záleží na tom, kolik to stojí."
+      },
+      {
+        "word": "Souhlasíš se mnou?",
+        "translation": "Do you agree with me?",
+        "example": "Souhlasíš se mnou, nebo ne?"
+      }
+    ],
+    "grammarNote": {
+      "title": "Souhlasit s + instrumental, and myslím vs. myslím si",
+      "text": "Souhlasit (to agree) always pairs with s/se + instrumental: souhlasím s tebou (\"I agree with you\"), souhlasím s vámi, souhlasíš se mnou. To disagree, just add the ne- prefix to the verb: nesouhlasím. To state an opinion, myslím, že... (\"I think that...\") introduces a že-clause with a full sentence; podle mě... (\"in my opinion...\") is a shortcut that skips the clause entirely — podle takes the genitive, so it flexes across persons: podle mě, podle tebe, podle něj/ní, podle nás, podle vás, podle nich. You'll also hear myslím si — the reflexive si version means the same thing but leans slightly more personal/internal (\"I personally think...\"), and it's what you use in the fixed phrase to si nemyslím (\"I don't think so\"). Mít pravdu (\"to have truth\" = to be right) is the idiom for agreeing that someone is correct: máš pravdu, měl(a) jsi pravdu."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which case does the verb souhlasit (to agree) require after s/se?",
+        "options": ["genitive", "instrumental", "locative", "accusative"],
+        "answer": 1,
+        "explanation": "Souhlasit s + instrumental: souhlasím s tebou, souhlasíš se mnou — the instrumental case follows s/se here, as it does after most \"with\" meanings.",
+        "note": "Se mnou (with me) and s tebou (with you) are worth memorizing as fixed chunks."
+      },
+      {
+        "task": "true_false",
+        "prompt": "\"Podle mě\" means \"in my opinion\".",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — podle + genitive gives \"according to\": podle mě, podle tebe, podle něj, and so on.",
+        "note": "Podle mě is a handy shortcut when you don't want to build a full myslím, že... sentence."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Souhlasím s ___. (with you, informal)",
+        "accepted": ["tebou"],
+        "explanation": "Tebou is the instrumental form of ty, required after souhlasit s.",
+        "note": "The formal equivalent is souhlasím s vámi."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Turn this agreement into a disagreement: \"Souhlasím.\" → ___",
+        "accepted": ["Nesouhlasím.", "Nesouhlasím"],
+        "explanation": "Adding the ne- prefix to souhlasím flips it to the opposite meaning: nesouhlasím (\"I disagree\").",
+        "note": "This ne- prefix pattern works on most Czech verbs to negate them, not just souhlasit."
+      }
+    ]
+  },
+  {
+    "id": "b1-07",
+    "icon": "💼",
+    "title": "Work & studies vocabulary",
+    "blurb": "Job interviews, CVs, and the Czech school system — vocabulary for talking about work and education.",
+    "vocab": [
+      {
+        "word": "pracovní pohovor",
+        "translation": "job interview",
+        "example": "Zítra mám pracovní pohovor."
+      },
+      {
+        "word": "životopis",
+        "translation": "CV / résumé",
+        "example": "Poslal jsem svůj životopis e-mailem."
+      },
+      {
+        "word": "Kde pracujete?",
+        "translation": "Where do you work?",
+        "example": "Dobrý den, kde pracujete?"
+      },
+      {
+        "word": "Studuji na vysoké škole.",
+        "translation": "I study at university.",
+        "example": "Studuji na vysoké škole v Praze."
+      },
+      {
+        "word": "Jaké je vaše vzdělání?",
+        "translation": "What is your education?",
+        "example": "Jaké je vaše vzdělání, prosím?"
+      },
+      {
+        "word": "zkušenosti",
+        "translation": "experience",
+        "example": "Mám pět let zkušeností v marketingu."
+      },
+      {
+        "word": "Hledám práci.",
+        "translation": "I'm looking for a job.",
+        "example": "Už měsíc hledám práci."
+      },
+      {
+        "word": "střední škola",
+        "translation": "high school",
+        "example": "Vystudoval jsem střední školu v Brně."
+      }
+    ],
+    "grammarNote": {
+      "title": "Pracovat jako + profession, and studovat vs. vystudovat",
+      "text": "To say what you do for work, use pracovat jako + the profession in the nominative: pracuji jako učitel/učitelka (\"I work as a teacher\"), pracuje jako programátor. Jako (\"as\") doesn't change the case of the word after it, which makes this one of the easier work-vocabulary patterns. For education, studovat + na + locative names the institution you're currently at: studuji na vysoké škole (\"I study at university\"), studuje na střední škole. Vystudovat is the perfective partner of studovat — it means you finished/graduated, and it takes a direct object in the accusative instead of na + locative: vystudoval jsem střední školu (\"I graduated high school\"), vystudovala vysokou školu. The Czech school system runs základní škola (primary/lower-secondary, roughly ages 6–15) → střední škola (secondary, often ending with the maturita exam) → vysoká škola (university). Your résumé is your životopis; a cover letter is a motivační dopis."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "How does a man say \"I work as a teacher\" in Czech?",
+        "options": ["Studuji jako učitel.", "Pracuji jako učitel.", "Jsem pracovat učitel.", "Dělám učitele."],
+        "answer": 1,
+        "explanation": "Pracovat jako + nominative profession is the standard pattern: pracuji jako učitel.",
+        "note": "Jako doesn't trigger any case change on the word that follows it — that's what makes this pattern easy."
+      },
+      {
+        "task": "true_false",
+        "prompt": "\"Vystudovat\" is imperfective and describes a course of study that is still ongoing.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "False — vystudovat is the perfective partner of studovat and means the studies are finished/completed, e.g. vystudoval jsem střední školu (\"I graduated high school\").",
+        "note": "Use studovat for ongoing study (studuji na vysoké škole) and vystudovat only once it's done."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Poslal jsem svůj ___ e-mailem. (CV / résumé)",
+        "accepted": ["životopis"],
+        "explanation": "Životopis (literally \"life-writing\") is the standard Czech word for CV/résumé.",
+        "note": "It's masculine inanimate, so its accusative form here looks identical to the nominative."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"studovat\" describes ongoing study. Give its perfective counterpart meaning \"to graduate / finish studying\": ___",
+        "accepted": ["vystudovat"],
+        "explanation": "Vystudovat adds the vy- prefix to studovat, turning it perfective and shifting the meaning to \"complete a course of study\".",
+        "note": "This vy- perfectivizing prefix shows up on other verbs too, though not with fully predictable meaning each time."
+      }
+    ]
+  }
+]
