@@ -1,0 +1,258 @@
+[
+  {
+    "id": "b1-08",
+    "icon": "🗣️",
+    "title": "Reported speech",
+    "blurb": "Report what someone said or asked — říkal, že..., ptal se, jestli... — without English-style tense backshifting.",
+    "vocab": [
+      {
+        "word": "říct / řekl, že…",
+        "translation": "to say / he said that…",
+        "example": "Řekl, že je unavený."
+      },
+      {
+        "word": "ptát se, jestli…",
+        "translation": "to ask whether…",
+        "example": "Zeptal se mě, jestli mám čas."
+      },
+      {
+        "word": "ptát se, kdy/co/kde…",
+        "translation": "to ask when/what/where…",
+        "example": "Zeptala se, kdy přijedeš."
+      },
+      {
+        "word": "myslet si, že…",
+        "translation": "to think that…",
+        "example": "Myslím si, že má pravdu."
+      },
+      {
+        "word": "prý",
+        "translation": "apparently / they say (that)…",
+        "example": "Prý bude zítra pršet."
+      },
+      {
+        "word": "tvrdit, že…",
+        "translation": "to claim/insist that…",
+        "example": "Tvrdil, že to neudělal."
+      },
+      {
+        "word": "odpovědět, že…",
+        "translation": "to answer that…",
+        "example": "Odpověděla, že souhlasí."
+      },
+      {
+        "word": "jestli / zda",
+        "translation": "whether / if",
+        "example": "Nevím, jestli přijde."
+      }
+    ],
+    "grammarNote": {
+      "title": "No tense backshift — and jestli for yes/no questions",
+      "text": "Unlike English, Czech reported speech does not shift the tense back. If the original statement was in the present tense, it stays present when reported: direct „Jsem unavený“ becomes „Řekl, že je unavený“ — not „byl unavený“. English speakers instinctively want to backshift (\"he said he was tired\"), but Czech simply repeats the original statement's tense from the original speaker's viewpoint. For reported yes/no questions, use jestli (or the more formal zda) where English uses \"whether/if\": Ptá se, jestli přijdeš. For reported wh-questions, keep the original question word and normal statement word order — no inversion: Zeptal se, kdy přijedeš. Finally, prý is a handy indeclinable particle meaning \"apparently / so they say\" that lets you report something secondhand without building a full „že“ clause: Prý je nemocný."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Direct speech: „Jsem unavený.“ How is this correctly reported in Czech?",
+        "options": [
+          "Řekl, že byl unavený.",
+          "Řekl, že je unavený.",
+          "Řekl, že bude unavený.",
+          "Řekl, že unavený."
+        ],
+        "answer": 1,
+        "explanation": "Czech doesn't backshift tense — the original present tense „jsem“ stays present as „je“ in the reported version.",
+        "note": "English backshifts (\"he said he was tired\"); Czech does not. This is the single most common reported-speech mistake for English speakers."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Zeptal se, jestli mám čas“ uses jestli because it reports a yes/no question.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Yes/no questions are reported with jestli (or the more formal zda), the Czech equivalent of \"whether\".",
+        "note": "Wh-questions work differently — they keep their own question word (kdy, kde, co…) instead of switching to jestli."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Přímá řeč: „Mám hlad.“ Nepřímá řeč: Řekla, že ___ hlad.",
+        "accepted": ["má"],
+        "explanation": "The present tense „mám“ stays present in reported speech — only the person changes, to „má“."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Přímá řeč: „Kdy přijedeš?“ (ptala se) → Nepřímá řeč: Zeptala se, ___ přijedu.",
+        "accepted": ["kdy"],
+        "explanation": "Wh-question words are kept unchanged when reporting a question; only the pronoun/verb person shifts."
+      }
+    ]
+  },
+  {
+    "id": "b1-09",
+    "icon": "🔗",
+    "title": "Connecting ideas",
+    "blurb": "Link clauses like a fluent speaker — cause, consequence, and concession beyond a basic a/ale.",
+    "vocab": [
+      {
+        "word": "protože",
+        "translation": "because (cause)",
+        "example": "Nejdu ven, protože prší."
+      },
+      {
+        "word": "takže",
+        "translation": "so / therefore (everyday consequence)",
+        "example": "Prší, takže nejdu ven."
+      },
+      {
+        "word": "proto",
+        "translation": "that's why / therefore",
+        "example": "Byl nemocný, a proto nepřišel."
+      },
+      {
+        "word": "i když",
+        "translation": "even though / although (everyday)",
+        "example": "Šel ven, i když pršelo."
+      },
+      {
+        "word": "přestože",
+        "translation": "even though (more formal)",
+        "example": "Přestože pršelo, šel ven."
+      },
+      {
+        "word": "ačkoli",
+        "translation": "although (literary/formal)",
+        "example": "Ačkoli je mladý, hodně toho ví."
+      },
+      {
+        "word": "i přesto",
+        "translation": "even so / nevertheless",
+        "example": "Bylo mu špatně. I přesto šel do práce."
+      },
+      {
+        "word": "jednak…, jednak…",
+        "translation": "on one hand… on the other…",
+        "example": "Jednak nemám čas, jednak nemám peníze."
+      }
+    ],
+    "grammarNote": {
+      "title": "Cause vs. consequence vs. concession — picking the right connector",
+      "text": "These connectors fall into three families, and mixing them up is the most common B1 mistake. Cause: protože (\"because\") introduces the reason and answers \"why\" — Nejdu ven, protože prší. Consequence: takže and proto both mean \"so/therefore\" and introduce the result, not the reason — takže is the everyday spoken choice and often starts a new clause after a comma (Prší, takže nejdu ven), while proto is slightly more formal and commonly paired with \"a\" (Bylo pozdě, a proto jsme odešli). Concession: i když, přestože, and ačkoli all mean \"even though/although\" and introduce a clause that contrasts with the expected outcome — i když is the everyday spoken choice, přestože and ačkoli are more formal/written, and all three can open the sentence (Přestože pršelo, šel ven). Unlike German, none of these connectors force the verb into a special \"second position\" — Czech word order after them stays as flexible as in any other clause."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Nestihl jsem autobus, ___ jsem přišel pozdě.",
+        "options": ["protože", "takže", "i když", "jednak"],
+        "answer": 1,
+        "explanation": "Takže introduces the consequence/result — \"jsem přišel pozdě\" is the result of missing the bus, not the reason for it.",
+        "note": "Protože would go the other way: „Přišel jsem pozdě, protože jsem nestihl autobus.“"
+      },
+      {
+        "task": "true_false",
+        "prompt": "Přestože and i když both introduce a concession clause and are roughly interchangeable, with přestože sounding more formal.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — both mean \"even though\"; i když is the everyday spoken version, přestože leans more formal/written.",
+        "note": "Ačkoli sits at the most formal/literary end of this same group."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ je mu osmdesát, pořád běhá maraton.",
+        "accepted": ["I když", "Přestože", "Ačkoli", "i když", "přestože", "ačkoli"],
+        "explanation": "Any of the concession connectors (i když, přestože, ačkoli) fits here — the clause contrasts age with an unexpectedly active habit."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Combine with proto: „Prší. Nejdu ven.“ → „Prší, ___ nejdu ven.“",
+        "accepted": ["a proto", "proto"],
+        "explanation": "Proto links the cause (prší) to its consequence (nejdu ven), usually introduced with „a proto“ in running speech."
+      }
+    ]
+  },
+  {
+    "id": "b1-10",
+    "icon": "💬",
+    "title": "Idiomatic & phrasal expressions",
+    "blurb": "Common fixed Czech phrases that don't translate word-for-word — recognize them and start using them naturally.",
+    "vocab": [
+      {
+        "word": "mít něco v malíčku",
+        "translation": "to know something inside out (lit. have it in one's pinky)",
+        "example": "Gramatiku má v malíčku."
+      },
+      {
+        "word": "lámat si s tím hlavu",
+        "translation": "to rack one's brain over it (lit. break one's head)",
+        "example": "Nelámej si s tím hlavu."
+      },
+      {
+        "word": "mít máslo na hlavě",
+        "translation": "to have a guilty conscience (lit. have butter on one's head)",
+        "example": "Mluví o tom málo, asi má máslo na hlavě."
+      },
+      {
+        "word": "chodit kolem horké kaše",
+        "translation": "to beat around the bush (lit. walk around hot porridge)",
+        "example": "Nechoď kolem horké kaše a řekni to rovnou."
+      },
+      {
+        "word": "spadl mi kámen ze srdce",
+        "translation": "what a relief (lit. a stone fell from my heart)",
+        "example": "Když jsem to uslyšel, spadl mi kámen ze srdce."
+      },
+      {
+        "word": "to je mi španělská vesnice",
+        "translation": "it's all Greek to me (lit. it's a Spanish village to me)",
+        "example": "Ta smlouva je mi španělská vesnice."
+      },
+      {
+        "word": "být za vodou",
+        "translation": "to be in the clear / well set up (lit. be beyond the water)",
+        "example": "Když to podepíšeme, jsme za vodou."
+      },
+      {
+        "word": "mít o kolečko víc",
+        "translation": "to be a bit odd/crazy (lit. have one gear more)",
+        "example": "Občas mám pocit, že má o kolečko víc."
+      }
+    ],
+    "grammarNote": {
+      "title": "Idioms don't translate — but they still inflect",
+      "text": "An idiom's meaning belongs to the whole phrase, not to its individual words, so translating word-by-word almost always fails — lámat si hlavu doesn't mean \"to break your head\", it means \"to rack your brain / worry about something\". What doesn't disappear, though, is normal grammar: the verb inside the idiom still conjugates and the fixed noun/case combination stays put around it, e.g. mít v malíčku conjugates exactly like any other mít sentence (mám to v malíčku, máš to v malíčku, má to v malíčku…), while „v malíčku“ itself never changes. A good way to learn these is to lean on the literal image as a memory hook even though it isn't the real meaning — a stone falling off your heart (spadl mi kámen ze srdce) is a vivid enough picture to remember \"relief\" by. One more thing worth knowing: register varies — most of these are perfectly normal in everyday conversation, but a few (like mít máslo na hlavě) feel casual and wouldn't belong in formal writing."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "„Nelámej si s tím hlavu“ means roughly:",
+        "options": [
+          "Don't break your head open.",
+          "Don't worry about it.",
+          "Don't touch your head.",
+          "Don't think at all."
+        ],
+        "answer": 1,
+        "explanation": "Literally \"don't break your head over it\", but idiomatically it means \"don't worry / don't stress about it\".",
+        "note": "The verb lámat (to break) is doing real conjugation work here — já si lámu hlavu, ty si lámeš hlavu, etc. all follow the same pattern."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„To je mi španělská vesnice“ is used when something makes perfect sense to you.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "The opposite — it means something is completely incomprehensible to you, equivalent to \"it's all Greek to me\".",
+        "note": "This is one of many European languages that names a specific place instead of \"Greek\" — always worth double-checking, never assume from your own language."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Když jsem uslyšel dobrou zprávu, spadl mi kámen ___ srdce.",
+        "accepted": ["ze"],
+        "explanation": "This idiom is fixed with the preposition ze (from): spadl mi kámen ze srdce."
+      },
+      {
+        "task": "transformation",
+        "prompt": "„On má máslo na hlavě.“ → Rewrite for „já“: Já ___ máslo na hlavě.",
+        "accepted": ["mám"],
+        "explanation": "Only the verb mít conjugates across persons (mám, máš, má…) — the rest of the idiom, máslo na hlavě, never changes."
+      }
+    ]
+  }
+]
