@@ -1,0 +1,243 @@
+[
+  {
+    "id": "b1-11",
+    "icon": "📰",
+    "title": "Reading short authentic texts",
+    "blurb": "Decode short Czech news snippets and articles by spotting signal words and connectors — your first step toward CCE-style reading tasks.",
+    "vocab": [
+      {
+        "word": "podle",
+        "translation": "according to",
+        "example": "Podle zprávy bude zítra pršet."
+      },
+      {
+        "word": "uvádí se, že...",
+        "translation": "it is stated that...",
+        "example": "V článku se uvádí, že cena bytů roste."
+      },
+      {
+        "word": "dochází k...",
+        "translation": "... occurs / takes place",
+        "example": "Na křižovatce dochází k nehodám."
+      },
+      {
+        "word": "v souvislosti s...",
+        "translation": "in connection with...",
+        "example": "V souvislosti s bouřkou byl zrušen let."
+      },
+      {
+        "word": "oznámil/oznámila",
+        "translation": "announced",
+        "example": "Firma oznámila nový produkt."
+      },
+      {
+        "word": "aktuálně",
+        "translation": "currently, at the moment",
+        "example": "Aktuálně je cena benzínu vysoká."
+      },
+      {
+        "word": "v důsledku...",
+        "translation": "as a result of...",
+        "example": "V důsledku sněžení byly zavřené školy."
+      },
+      {
+        "word": "shrnutí",
+        "translation": "summary",
+        "example": "Na konci článku najdete krátké shrnutí."
+      }
+    ],
+    "grammarNote": {
+      "title": "Reading strategy: signal words, not every word",
+      "text": "Short authentic texts (news snippets, notices, simple articles) don't need to be read word-for-word — spotting a handful of recurring signal words gets you most of the meaning fast. \"Podle\" flags where a claim comes from (podle zprávy, podle ministerstva). \"Uvádí se, že...\" and \"tvrdí se, že...\" are the impersonal reflexive constructions Czech journalism uses instead of naming a speaker directly — treat them as \"it is reported/claimed that...\". Cause-and-effect connectors are worth memorizing as fixed chunks with their case: \"v souvislosti s\" takes the instrumental (s bouřkou), \"v důsledku\" takes the genitive (sněžení), and \"dochází k\" takes the dative (k nehodám) — the preposition, not the verb, tells you which case to expect. Once you can recognize these, you can skim past unfamiliar vocabulary and still follow the structure: source → claim → cause → result."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which phrase typically introduces the source of information in a news text?",
+        "options": ["podle", "aktuálně", "shrnutí", "dochází k"],
+        "answer": 0,
+        "explanation": "\"Podle\" (\"according to\") signals where a claim in the text comes from, e.g. podle zprávy, podle ministerstva.",
+        "note": "Learning to spot source markers like this lets you separate reported facts from the article's own claims."
+      },
+      {
+        "task": "true_false",
+        "prompt": "\"V souvislosti s\" (in connection with) is followed by the instrumental case.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — s always takes the instrumental, so v souvislosti s bouřkou (\"in connection with the storm\") uses bouřkou, the instrumental of bouřka."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Na křižovatce dochází k ___. (nehoda — accidents, dative plural)",
+        "accepted": ["nehodám"],
+        "explanation": "\"Dochází k\" always takes the dative — nehoda becomes nehodám in the dative plural."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Rewrite as a reported claim using \"uvádí se, že\": \"Ceny bytů rostou.\" → ___",
+        "accepted": ["Uvádí se, že ceny bytů rostou.", "V článku se uvádí, že ceny bytů rostou."],
+        "explanation": "\"Uvádí se, že...\" is the standard impersonal way Czech news texts report a claim without naming who said it."
+      }
+    ]
+  },
+  {
+    "id": "b1-12",
+    "icon": "🎧",
+    "title": "Listening to natural speech",
+    "blurb": "Tune your ear to real spoken Czech — interview fillers, colloquial shortcuts, and the fixed phrases used in public announcements.",
+    "vocab": [
+      {
+        "word": "vlastně",
+        "translation": "actually, you know",
+        "example": "Vlastně jsem to nikdy nezkusil."
+      },
+      {
+        "word": "prostě",
+        "translation": "simply, just",
+        "example": "Prostě jsem neměl čas."
+      },
+      {
+        "word": "jakoby",
+        "translation": "like, kind of",
+        "example": "Bylo to jakoby divné."
+      },
+      {
+        "word": "no jasně",
+        "translation": "well, sure / of course",
+        "example": "No jasně, to dává smysl."
+      },
+      {
+        "word": "Vážení cestující, ...",
+        "translation": "Dear passengers, ...",
+        "example": "Vážení cestující, vlak má zpoždění deset minut."
+      },
+      {
+        "word": "Upozorňujeme, že...",
+        "translation": "Please note that...",
+        "example": "Upozorňujeme, že se mění nástupiště."
+      },
+      {
+        "word": "z důvodu...",
+        "translation": "due to...",
+        "example": "Vlak nejede z důvodu opravy trati."
+      },
+      {
+        "word": "Omlouváme se za zpoždění.",
+        "translation": "We apologize for the delay.",
+        "example": "Omlouváme se za zpoždění způsobené počasím."
+      }
+    ],
+    "grammarNote": {
+      "title": "Real speech is faster and looser than lesson audio",
+      "text": "Two things trip learners up when they first listen to authentic Czech. First, casual conversation runs on filler words that carry almost no literal meaning — vlastně, prostě, jakoby, no jasně — they buy the speaker thinking time and signal attitude, not content, so don't stop to translate them word-for-word. Casual spoken Czech (obecná čeština) also shortens and merges sounds compared to the \"correct\" written form you learn from textbooks: já jsem often becomes já sem, and adjective endings like -ý slide toward -ej (mladý → mladej) in relaxed speech. Second, public announcements (trains, planes, stores) use a small set of fixed formal phrases that recur identically everywhere, so they're worth memorizing as whole chunks rather than decoding on the fly: Vážení cestující (dear passengers), Upozorňujeme, že... (please note that...), z důvodu + genitive (due to...), and Omlouváme se za... (we apologize for...)."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which of these is a fixed formal announcement phrase, not a casual filler word?",
+        "options": ["vlastně", "jakoby", "z důvodu", "prostě"],
+        "answer": 2,
+        "explanation": "\"Z důvodu\" (\"due to\") is part of the fixed formal register used in announcements, unlike the casual fillers vlastně, jakoby, and prostě."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Colloquial spoken Czech (obecná čeština) always matches written/standard Czech (spisovná čeština) exactly.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "False — casual speech regularly shortens sounds and changes endings (e.g. mladý → mladej) compared to the standard written form."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Vlak nejede ___ opravy trati. (due to)",
+        "accepted": ["z důvodu"],
+        "explanation": "\"Z důvodu\" + genitive is the standard formal way to state a cause in announcements."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Vlak nejede z důvodu opravy trati. → Change the reason to bouřka (storm): ___",
+        "accepted": ["Vlak nejede z důvodu bouřky."],
+        "explanation": "\"Z důvodu\" takes the genitive — bouřka becomes bouřky in the genitive."
+      }
+    ]
+  },
+  {
+    "id": "b1-13",
+    "icon": "👔",
+    "title": "Formal vs. informal register",
+    "blurb": "Know when to switch from ty to Vy, and how formal Czech letters and emails differ from everyday speech.",
+    "vocab": [
+      {
+        "word": "Jak se máš?",
+        "translation": "How are you? (informal)",
+        "example": "Ahoj Petře, jak se máš?"
+      },
+      {
+        "word": "Jak se máte?",
+        "translation": "How are you? (formal)",
+        "example": "Dobrý den, jak se máte?"
+      },
+      {
+        "word": "Ahoj / Čau",
+        "translation": "Hi / Bye (informal)",
+        "example": "Ahoj, tak zatím!"
+      },
+      {
+        "word": "Dobrý den",
+        "translation": "Hello (formal)",
+        "example": "Dobrý den, jmenuji se Jana Nováková."
+      },
+      {
+        "word": "S pozdravem",
+        "translation": "Sincerely / Best regards",
+        "example": "S pozdravem, Jana Nováková."
+      },
+      {
+        "word": "Prosím Vás o...",
+        "translation": "I would like to ask you for... (formal)",
+        "example": "Prosím Vás o odpověď co nejdříve."
+      },
+      {
+        "word": "Můžeš mi...?",
+        "translation": "Can you...? (informal)",
+        "example": "Můžeš mi poslat ten soubor?"
+      },
+      {
+        "word": "Vážený pane / Vážená paní",
+        "translation": "Dear Sir / Dear Madam",
+        "example": "Vážený pane Nováku, děkuji za Váš e-mail."
+      }
+    ],
+    "grammarNote": {
+      "title": "Ty vs. Vy — and capitalizing Vy in writing",
+      "text": "Czech marks formality directly through the pronoun you use: ty for family, friends, children, and peers your own age; vy for strangers, official contexts, and anyone clearly senior to you at work — the same tu/vous split as French or German. Switching from vy to ty with someone is treated as a small social event, usually marked by asking Budeme si tykat? (\"shall we use ty with each other?\"). In formal written Czech — letters, emails, official forms — the formal Vy, Váš, and Vám are capitalized as a mark of respect, even though vy is never capitalized in formal spoken Czech. Formal letters and emails also follow a fixed shape: open with Vážený pane / Vážená paní + surname, keep the body free of contractions and slang, and close with S pozdravem followed by your full name — this exact structure is what the B2 Writing subtest expects for formal letters."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "In a formal written letter or email, how is the formal \"you\" written?",
+        "options": ["ty", "Vy (capitalized)", "vy (lowercase only)", "ono"],
+        "answer": 1,
+        "explanation": "Formal Vy/Váš/Vám are capitalized in formal writing as a sign of respect, even though this capitalization doesn't apply in speech."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Ty is an appropriate way to address a stranger in a formal business email.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "False — a stranger or business contact should be addressed with the formal Vy, not ty."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Vážený pane Nováku, děkuji za ___ e-mail. (your — formal, capitalized)",
+        "accepted": ["Váš"],
+        "explanation": "Formal Váš is capitalized in written Czech, unlike the informal tvůj."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Rewrite informally as a formal greeting: \"Ahoj, jak se máš?\" → ___",
+        "accepted": ["Dobrý den, jak se máte?"],
+        "explanation": "The formal greeting Dobrý den pairs with the formal verb form máte (vy-form), replacing the informal Ahoj and máš."
+      }
+    ]
+  }
+]
