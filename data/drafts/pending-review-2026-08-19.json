@@ -1,0 +1,248 @@
+[
+  {
+    "id": "b1-14",
+    "icon": "🎓",
+    "title": "B1 review & mini-check",
+    "blurb": "A cumulative recap pulling together the case system, conditional mood, verb aspect, comparatives, opinions, connectors, idioms, and register from across B1 — before B2 pushes into more abstract syntax.",
+    "vocab": [
+      {
+        "word": "Kdybych měl čas...",
+        "translation": "If I had time... (hypothetical)",
+        "example": "Kdybych měl čas, jel bych na hory."
+      },
+      {
+        "word": "Myslím, že...",
+        "translation": "I think that...",
+        "example": "Myslím, že to je dobrý nápad, ale nesouhlasím se vším."
+      },
+      {
+        "word": "lepší / nejlepší",
+        "translation": "better / best",
+        "example": "Tahle kavárna je lepší než ta předchozí, ale ta na rohu je nejlepší."
+      },
+      {
+        "word": "Řekl, že přijde.",
+        "translation": "He said (that) he would come.",
+        "example": "Řekla, že přijde pozdě, protože má schůzku."
+      },
+      {
+        "word": "přestože / i když",
+        "translation": "even though / although",
+        "example": "Přestože pršelo, šli jsme ven na procházku."
+      },
+      {
+        "word": "dát si pozor na něco",
+        "translation": "to watch out for something (idiom)",
+        "example": "Musíš si dát pozor na schody, jsou kluzké."
+      },
+      {
+        "word": "mluvit na ty / na vy",
+        "translation": "to address someone informally / formally",
+        "example": "Se šéfem mluvím na vy, s kamarády na ty."
+      },
+      {
+        "word": "životopis a pohovor",
+        "translation": "CV and (job) interview",
+        "example": "Poslal jsem životopis a v pátek mám pohovor."
+      }
+    ],
+    "grammarNote": {
+      "title": "Everything from B1, in one place",
+      "text": "B1 added four big pieces on top of the A1/A2 foundation. First, the case system is now complete — all 7 cases (nominative, genitive, dative, accusative, vocative, locative, instrumental) each change noun/adjective endings for a specific job, and the b1-02 reference table is worth revisiting whenever a sentence feels unsure. Second, the conditional mood (bych, bys, by, bychom, byste, by + the l-participle) turns statements into hypotheticals and polite requests — kdybych měl, udělal bych. Third, verb aspect stopped being just 'two verbs for one English verb' and started shaping narration, commands, and habitual actions. Fourth, B1 added the connective tissue of fluent speech: comparatives/superlatives, opinion phrases (myslím, že / souhlasím), reported speech (řekl, že), linking words beyond a/ale (přestože, takže, proto), idioms, and the formal/informal register switch (ty vs. vy) that matters for both speaking and the B2 Writing subtest. B2 builds directly on this: it assumes cases and aspect are automatic and shifts focus to cohesion devices, word formation, and exam technique."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which is the correct conditional auxiliary for 'já' (I)?",
+        "options": ["bych", "bys", "by", "byste"],
+        "answer": 0,
+        "explanation": "Bych goes with já: pojedl bych, udělal bych.",
+        "note": "Recap from the conditional mood lesson — the auxiliary changes by person, but the l-participle stays the same shape."
+      },
+      {
+        "task": "true_false",
+        "prompt": "The Czech conditional mood is formed with a 'by' auxiliary plus the l-participle of the verb.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — e.g. udělal bych combines the l-participle udělal with the auxiliary bych.",
+        "note": "Same l-participle you already know from the past tense — the conditional just adds an auxiliary instead of jsem/jsi."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___, že máš pravdu. (I think you're right.)",
+        "accepted": ["Myslím"],
+        "explanation": "Myslím, že... is the standard way to introduce an opinion in Czech."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Switch to the formal register: „Jak se máš?“ → „___“",
+        "accepted": ["Jak se máte?"],
+        "explanation": "The vy-form (máte) replaces the ty-form (máš) when addressing someone formally."
+      }
+    ]
+  },
+  {
+    "id": "b2-01",
+    "icon": "🧵",
+    "title": "Advanced syntax & cohesion devices",
+    "blurb": "Connect ideas smoothly across sentences using pronoun reference and cohesion connectors — the skill tested directly in Grammar Úloha 5 and needed for coherent B2 Writing.",
+    "vocab": [
+      {
+        "word": "nicméně",
+        "translation": "however / nevertheless",
+        "example": "Bylo to těžké, nicméně jsme to nakonec zvládli."
+      },
+      {
+        "word": "tudíž",
+        "translation": "therefore / thus",
+        "example": "Nemá lístek, tudíž nemůže nastoupit do vlaku."
+      },
+      {
+        "word": "jinými slovy",
+        "translation": "in other words",
+        "example": "Byl celý den vzhůru, jinými slovy potřeboval spát."
+      },
+      {
+        "word": "na jedné straně... na druhé straně",
+        "translation": "on one hand... on the other hand",
+        "example": "Na jedné straně chci cestovat, na druhé straně šetřím peníze."
+      },
+      {
+        "word": "v neposlední řadě",
+        "translation": "last but not least",
+        "example": "V neposlední řadě bych chtěl poděkovat všem kolegům."
+      },
+      {
+        "word": "ten / ta / to (jako odkaz)",
+        "translation": "that (referring back to something already mentioned)",
+        "example": "Koupil jsem nové auto. To je červené."
+      },
+      {
+        "word": "což",
+        "translation": "which (referring to a whole preceding idea)",
+        "example": "Přišel pozdě, což mě velmi naštvalo."
+      },
+      {
+        "word": "přičemž",
+        "translation": "whereby / while (contrasting two facts)",
+        "example": "Bratr studuje medicínu, přičemž sestra studuje práva."
+      }
+    ],
+    "grammarNote": {
+      "title": "Cohesion: tying sentences together without repeating nouns",
+      "text": "Fluent Czech writing avoids repeating the same noun sentence after sentence, and this is exactly what Grammar Úloha 5 and the Writing subtest reward. Two tools do most of the work. First, anaphoric pronouns: once a noun has been introduced, ten/ta/to (matching its gender) can stand in for it — Koupil jsem auto. To je červené — instead of repeating auto. Second, což is special: unlike který, which points back to one specific noun and agrees with its gender/number, což always refers to the entire preceding clause or idea — Přišel pozdě, což mě naštvalo (the lateness annoyed me, not 'pozdě' as a word). On top of pronouns, connectors signal how ideas relate: contrast (nicméně, avšak), consequence (tudíž, proto), addition/elaboration (jinými slovy, kromě toho), simultaneous contrast (přičemž), and sequencing/closing a list (v neposlední řadě). Picking the right connector for the logical relationship — not just one that 'sounds fine' — is the core B2 grammar skill this lesson targets."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which connector correctly expresses a result or consequence?",
+        "options": ["nicméně", "tudíž", "jinými slovy", "přičemž"],
+        "answer": 1,
+        "explanation": "Tudíž ('therefore') signals that what follows is a consequence of what came before.",
+        "note": "Nicméně signals contrast, jinými slovy signals rephrasing, and přičemž signals a simultaneous contrasting fact."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Což“ can refer back to an entire preceding clause or idea, not just a single noun.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — unlike který, which agrees with one specific noun, což always points to the whole idea just expressed.",
+        "note": "This is what makes což so useful for commenting on a situation: Zpozdil se, což nikoho nepřekvapilo."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Přišel pozdě, ___ mě velmi naštvalo. (which)",
+        "accepted": ["což"],
+        "explanation": "Což refers back to the whole fact 'přišel pozdě', not to a single noun."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Combine these two sentences using „přičemž“: „Petr pracuje v Praze. Jana pracuje v Brně.“ → „___“",
+        "accepted": ["Petr pracuje v Praze, přičemž Jana pracuje v Brně."],
+        "explanation": "Přičemž joins two contrasting facts about different subjects into one cohesive sentence."
+      }
+    ]
+  },
+  {
+    "id": "b2-02",
+    "icon": "🧩",
+    "title": "Word formation & derivation",
+    "blurb": "Recognize and build words using Czech prefixes and suffixes — the pattern behind Grammar Úloha 3–4's gap-fill and transformation tasks.",
+    "vocab": [
+      {
+        "word": "psát → napsat",
+        "translation": "to write (ongoing) → to write (completed)",
+        "example": "Píšu dopis. Zítra ho napíšu celý."
+      },
+      {
+        "word": "dělat → udělat",
+        "translation": "to do (ongoing) → to do (completed)",
+        "example": "Dělám úkol. Včera jsem udělal těžší úkol."
+      },
+      {
+        "word": "číst → čtení",
+        "translation": "to read → reading (noun, verb + -ní/-tí)",
+        "example": "Čtení knih je můj oblíbený koníček."
+      },
+      {
+        "word": "rychlý → rychlost",
+        "translation": "fast → speed (adjective + -ost)",
+        "example": "Rychlost toho auta byla opravdu vysoká."
+      },
+      {
+        "word": "Praha → pražský",
+        "translation": "Prague → Prague (adjective, noun + -ský/-cký)",
+        "example": "Pražský hrad je jednou z nejnavštěvovanějších památek."
+      },
+      {
+        "word": "šťastný → nešťastný",
+        "translation": "happy → unhappy (negation prefix ne-)",
+        "example": "Byl velmi nešťastný z výsledku zkoušky."
+      },
+      {
+        "word": "zapomínat → zapomnětlivý",
+        "translation": "to forget → forgetful (verb + -livý, tendency)",
+        "example": "Je hrozně zapomnětlivý, pořád něco ztrácí."
+      },
+      {
+        "word": "číst → přečíst",
+        "translation": "to read → to read through / finish reading (prefix pře-)",
+        "example": "Přečetl jsem celou knihu za jeden den."
+      }
+    ],
+    "grammarNote": {
+      "title": "Prefixes and suffixes build most of the vocabulary you already know",
+      "text": "Once you recognize a handful of patterns, a lot of 'new' Czech vocabulary turns out to be old vocabulary with a prefix or suffix attached. Verbal prefixes (na-, u-, pro-, vy-, z-/s-, pře-) most often perfectivize a verb — psát → napsat — but the same prefix can also shift meaning, not just aspect: přepsat means 'to rewrite/transcribe', not just 'finish writing'. Noun-forming suffixes turn other word classes into nouns: -ní/-tí attaches to a verb stem to name the action itself (číst → čtení, dělat → dělání), while -ost attaches to an adjective to name a quality (rychlý → rychlost, možný → možnost). Adjective-forming suffixes work the other direction: -ský/-cký turns a place or noun into a relational adjective (Praha → pražský, Anglie → anglický), and -livý turns a verb into an adjective describing a tendency or quality (zapomínat → zapomnětlivý, starat se → starostlivý). Finally, ne- negates most adjectives and many verbs outright (šťastný → nešťastný, chápat → nechápat). This is precisely the skill CCE B2 Grammar Úloha 3–4 tests: given a base word, produce the correctly derived form the sentence needs."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which suffix typically turns a verb into an action noun, as in číst → čtení?",
+        "options": ["-ost", "-ní/-tí", "-ský", "-livý"],
+        "answer": 1,
+        "explanation": "-ní/-tí attaches to a verb stem to name the action itself: číst → čtení, dělat → dělání.",
+        "note": "-ost instead attaches to adjectives (rychlý → rychlost), and -ský/-livý form adjectives, not nouns."
+      },
+      {
+        "task": "true_false",
+        "prompt": "The prefix „ne-“ can negate an adjective, as in šťastný → nešťastný.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — ne- is the standard negation prefix for most Czech adjectives and many verbs.",
+        "note": "The same prefix also negates verbs: chápat (to understand) → nechápat (to not understand)."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Auto mělo velkou ___. (rychlý → speed)",
+        "accepted": ["rychlost"],
+        "explanation": "The adjective rychlý becomes the noun rychlost with the -ost suffix."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Make it perfective (completed) with a prefix: „Dělám úkol.“ → „___ jsem úkol.“",
+        "accepted": ["Udělal", "Udělala"],
+        "explanation": "The prefix u- turns the imperfective dělat into the perfective udělat, marking the action as completed."
+      }
+    ]
+  }
+]
