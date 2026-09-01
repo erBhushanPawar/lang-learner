@@ -226,3 +226,13 @@ Run: 2026-08-31. Full re-verification, no content drafted this run (nothing new 
 - **Open issues:** none (0 open issues in the repo) — no human has left a scoping note for B2 #10 anywhere (this file, `CURRICULUM.md`, or an issue). `CURRICULUM.md` itself unchanged since the initial commit.
 - **Why nothing was drafted:** every curriculum item through B2 #9 is already published or covered by an open draft PR. The only remaining item, B2 #10 (full-length timed mock exam), still has no human scoping decision on its content shape. Per this routine's own instructions, drafting it without that decision would mean inventing scope rather than following the curriculum, so it was skipped again.
 - **Next up (unchanged):** same three watch items as listed above — (1) CI publish fix + any of PRs #9–#16 merging, (2) a human scoping note for B2 #10, (3) otherwise just re-verify each run.
+
+---
+Run: 2026-09-01. Full re-verification, no content drafted this run (nothing new to draft — see below).
+- **Supabase:** still exactly the same 20 published lessons (a1-01–11, a2-01–06, a2-10–12), confirmed via `select=id,status,data->>title,level_code,position`. No change since 2026-08-15. Exam items: still 18 published (ids 1–18), no change.
+- **Open PRs:** #9–#16 all still open, unchanged, still covering b1-02 through b2-09. No new draft PRs opened, none merged, none closed.
+- **GitHub Actions:** `publish-drafts.yml` has had no run since 2026-08-14 (run #8) — the CI publish issue is still unresolved and blocking a2-07/08/09 and a2-13/14/b1-01 from going live even though PR #6 and PR #8 were merged. Now over 18 days without a run.
+- **`data/drafts/` on `main`:** unchanged — still exactly `pending-review-2026-08-12.json`, `pending-review-2026-08-13.json` (orphan, already published), and `pending-review-2026-08-14.json`.
+- **Open issues:** none (0 open issues in the repo) — no human has left a scoping note for B2 #10 anywhere (this file, `CURRICULUM.md`, or an issue). `CURRICULUM.md` itself unchanged since the initial commit.
+- **Why nothing was drafted:** every curriculum item through B2 #9 is already published or covered by an open draft PR. The only remaining item, B2 #10 (full-length timed mock exam), still has no human scoping decision on its content shape. Per this routine's own instructions, drafting it without that decision would mean inventing scope rather than following the curriculum, so it was skipped again.
+- **Next up (unchanged):** same three watch items as listed above — (1) CI publish fix + any of PRs #9–#16 merging, (2) a human scoping note for B2 #10, (3) otherwise just re-verify each run.
