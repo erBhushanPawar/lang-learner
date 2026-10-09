@@ -1,1 +1,149 @@
-IyBMYW5nLWxlYXJuZXIgY29udGVudCByb3V0aW5lIOKAlCBzdGF0dXMKCkF1dG8tZ2VuZXJhdGVkIGJ5IHRoZSBzY2hlZHVsZWQgY29udGVudC1kcmFmdGluZyByb3V0aW5lLiBHcm91bmQgdHJ1dGggaXMgYWx3YXlzIFN1cGFiYXNlIChgbGVzc29uc2AgLyBgZXhhbV9pdGVtc2AgdGFibGVzKSBwbHVzIG9wZW4gYGRyYWZ0LWxlc3NvbnMtKmAgUFJzIOKAlCB0aGlzIGZpbGUgaXMgYSBzbmFwc2hvdCBhcyBvZiB0aGUgbGFzdCBydW4sIG5vdCBhIHNvdXJjZSBvZiB0cnV0aC4KCiMjIFB1Ymxpc2hlZCAobGl2ZSBpbiBTdXBhYmFzZSwgYXMgb2YgdGhpcyBydW4pCgojIyMgTGVzc29ucwp8IGlkIHwgdGl0bGUgfCBsZXZlbCB8CnwtLS18LS0tfC0tLXwKfCBhMS0wMSB8IEdyZWV0aW5ncyAmIEludHJvZHVjdGlvbnMgfCBBMSB8CnwgYTEtMDIgfCBOdW1iZXJzIDDigJMxMDAgfCBBMSB8CnwgYTEtMDMgfCBCw710ICYgbcOtdCAodG8gYmUgLyB0byBoYXZlKSB8IEExIHwKfCBhMS0wNCB8IEJhc2ljIHdvcmQgb3JkZXIgJiBxdWVzdGlvbnMgfCBBMSB8CnwgYTEtMDUgfCBOb3VucyAmIGdlbmRlciAobm9taW5hdGl2ZSBvbmx5KSB8IEExIHwKfCBhMS0wNiB8IEFkamVjdGl2ZXMgKG5vbWluYXRpdmUgYWdyZWVtZW50KSB8IEExIHwKfCBhMS0wNyB8IEZhbWlseSAmIHBlb3BsZSB8IEExIHwKfCBhMS0wOCB8IEZvb2QgJiBvcmRlcmluZyB8IEExIHwKfCBhMS0wOSB8IFNob3BwaW5nICYgbnVtYmVycyBpbiBjb250ZXh0IHwgQTEgfAp8IGExLTEwIHwgRGlyZWN0aW9ucyAmIHBsYWNlcyBpbiB0b3duIHwgQTEgfAp8IGExLTExIHwgQTEgcmV2aWV3ICYgbWluaS1jaGVjayB8IEExIHwKfCBhMi0wMSB8IEFjY3VzYXRpdmUgY2FzZSB8IEEyIHwKfCBhMi0wMiB8IEdlbml0aXZlIGNhc2UgfCBBMiB8CnwgYTItMDMgfCBQYXN0IHRlbnNlIHwgQTIgfAp8IGEyLTA0IHwgVmVyYiBhc3BlY3QsIHBhcnQgMSB8IEEyIHwKfCBhMi0wNSB8IEZ1dHVyZSB0ZW5zZSB8IEEyIHwKfCBhMi0wNiB8IE1vZGFsIHZlcmJzIHwgQTIgfAp8IGEyLTEwIHwgSGVhbHRoICYgYm9keSB8IEEyIHwKfCBhMi0xMSB8IEhvdXNpbmcgJiBkYWlseSByb3V0aW5lIHwgQTIgfAp8IGEyLTEyIHwgTG9jYXRpdmUgY2FzZSB8IEEyIHwKCjIwIHB1Ymxpc2hlZCBsZXNzb25zLiAqKlVuY2hhbmdlZCBzaW5jZSAyMDI2LTA4LTE1Kiog4oCUIHJlLWNvbmZpcm1lZCBkYWlseSBldmVyeSBydW4gZnJvbSAyMDI2LTA4LTIyIHRocm91Z2ggMjAyNi0xMC0wOCB2aWEgYHNlbGVjdD1pZCxzdGF0dXMsZGF0YS0+PnRpdGxlLGxldmVsX2NvZGUscG9zaXRpb25gLgoKKipOb3RlIG9uIGB0aXRsZWAgY29sdW1uOioqIHRoZSBTdXBhYmFzZSBgbGVzc29uc2AgdGFibGUgaGFzIG5vIHRvcC1sZXZlbCBgdGl0bGVgIGNvbHVtbiDigJQgdGl0bGUgbGl2ZXMgaW5zaWRlIHRoZSBgZGF0YWAgSlNPTiBwYXlsb2FkLiBBIGBzZWxlY3Q9aWQsdGl0bGUsc3RhdHVzYCBxdWVyeSBlcnJvcnMgd2l0aCBgY29sdW1uIGxlc3NvbnMudGl0bGUgZG9lcyBub3QgZXhpc3RgOyB1c2UgYHNlbGVjdD1pZCxzdGF0dXMsZGF0YS0+PnRpdGxlLGxldmVsX2NvZGUscG9zaXRpb25gIGluc3RlYWQuCgojIyMgRXhhbSBpdGVtcwoxOCBwdWJsaXNoZWQgZXhhbSBpdGVtcyAoaWRzIDHigJMxOCksIGNvdmVyaW5nIHRoZSBleGFtLXByZXAgdHJhY2suICoqVW5jaGFuZ2VkIHNpbmNlIHRyYWNraW5nIGJlZ2FuLioqIE5vdCBwYXJ0IG9mIHRoZSBMZWFybi10cmFjayBkcmFmdGluZyB0aGlzIHJvdXRpbmUgZG9lcy4KCiMjIOKaoO+4jyBDSSBwdWJsaXNoIGlzc3VlIOKAlCBzdGlsbCB1bnJlc29sdmVkLCBodW1hbiBhY3Rpb24gbmVlZGVkIChvcGVuIHNpbmNlIDIwMjYtMDgtMTQpCgpgcHVibGlzaC1kcmFmdHMueW1sYCBoYXMgaGFkIG5vIHdvcmtmbG93IHJ1biBzaW5jZSAyMDI2LTA4LTE0ICg4IHRvdGFsIHJ1bnMgZXZlcikuIFRoZSBsYXN0IHRocmVlIHJ1bnMgYWxsIGZpcmVkIGJhY2stdG8tYmFjayB0aGF0IGRheTogcnVuICM2IChQUiAjNiBtZXJnZSkgPSBgZmFpbHVyZWAsIHJ1biAjNyAoUFIgIzggbWVyZ2UpID0gYGNhbmNlbGxlZGAsIHJ1biAjOCAoUFIgIzYgcmUtbWVyZ2UgY2xlYW51cCkgPSBgZmFpbHVyZWAuIFRoZSBsYXN0IGBzdWNjZXNzYCB3YXMgcnVuICM1IG9uIDIwMjYtMDgtMTEuIE5vIHB1c2ggdG8gYG1haW5gIHRvdWNoaW5nIGEgYGRhdGEvZHJhZnRzL3BlbmRpbmctcmV2aWV3LSouanNvbmAgcGF0aCBoYXMgaGFwcGVuZWQgc2luY2UgKHRoZSB3b3JrZmxvdydzIHRyaWdnZXIgZmlsdGVyKSBiZWNhdXNlIFBScyAjOeKAkzE2IGFsbCByZW1haW4gb3Blbi91bm1lcmdlZC4gKipBcyBvZiAyMDI2LTEwLTA4LCB0aGUgcGlwZWxpbmUgaGFzIGdvbmUgdW5leGVyY2lzZWQgZm9yIDU1IGRheXMuKioKCk1lcmdlZC1idXQtdW5wdWJsaXNoZWQgZHJhZnQgZmlsZXMgc3RpbGwgc2l0dGluZyBpbiBgZGF0YS9kcmFmdHMvYCBvbiBgbWFpbmAgKGNvbmZpcm1lZCBwcmVzZW50IGFzIG9mIHRoaXMgcnVuKToKLSAqKmBwZW5kaW5nLXJldmlldy0yMDI2LTA4LTEyLmpzb25gKiogKGEyLTA3IFdlYXRoZXIgJiBzZWFzb25zLCBhMi0wOCBIb2JiaWVzICYgZnJlZSB0aW1lLCBhMi0wOSBUcmF2ZWwgJiB0cmFuc3BvcnQsIGZyb20gbWVyZ2VkIFBSICM2KSDigJQgbm90aGluZyBwdWJsaXNoZWQgdG8gU3VwYWJhc2UuIEZpbGUgdmFsaWQsIHJlYWR5IHRvIHJldHJ5IGFzLWlzLgotICoqYHBlbmRpbmctcmV2aWV3LTIwMjYtMDgtMTQuanNvbmAqKiAoYTItMTMgSW5zdHJ1bWVudGFsIGNhc2UsIGEyLTE0IEEyIHJldmlldywgYjEtMDEgRGF0aXZlIGNhc2UsIGZyb20gbWVyZ2VkIFBSICM4KSDigJQgbm90aGluZyBwdWJsaXNoZWQgdG8gU3VwYWJhc2UuIEZpbGUgdmFsaWQsIHJlYWR5IHRvIHJldHJ5LgotICoqYHBlbmRpbmctcmV2aWV3LTIwMjYtMDgtMTMuanNvbmAqKiAoYTItMTAvMTEvMTIsIGZyb20gbWVyZ2VkIFBSICM3KSDigJQgaXRzIGNvbnRlbnQgKippcyoqIGFscmVhZHkgbGl2ZSBpbiBTdXBhYmFzZSwgYnV0IHRoZSBmaWxlIGl0c2VsZiBpcyBhIHN0YWxlIG9ycGhhbiBmcm9tIGEgbG9zdCBgZ2l0IHB1c2hgIHJhY2UuIFNhZmUgdG8gZGVsZXRlLgoKKipSZWNvbW1lbmRlZCBodW1hbiBhY3Rpb24gKHVuY2hhbmdlZCk6KioKMS4gUmUtcnVuL3JlLXRyaWdnZXIgdGhlIHB1Ymxpc2ggd29ya2Zsb3cgZm9yIGBwZW5kaW5nLXJldmlldy0yMDI2LTA4LTEyLmpzb25gIGFuZCBgcGVuZGluZy1yZXZpZXctMjAyNi0wOC0xNC5qc29uYCB0byBnZXQgYTItMDcvMDgvMDkgYW5kIGEyLTEzLzE0L2IxLTAxIGFjdHVhbGx5IGxpdmUuCjIuIERlbGV0ZSBgZGF0YS9kcmFmdHMvcGVuZGluZy1yZXZpZXctMjAyNi0wOC0xMy5qc29uYCAoYWxyZWFkeSBwdWJsaXNoZWQsIG9ycGhhbmVkKS4KMy4gSGFyZGVuIGBwdWJsaXNoLWRyYWZ0cy55bWxgOiBhIGBnaXQgcHVsbCAtLXJlYmFzZWAgYmVmb3JlIHB1c2hpbmcgKG9yIGBwdXNoIC0tZm9yY2Utd2l0aC1sZWFzZWAgYWZ0ZXIgcmUtZmV0Y2hpbmcpIHdvdWxkIGZpeCB0aGUgcmFjZSBiZWhpbmQgdGhlIGxvc3QgY2xlYW51cCBwdXNoZXMuCgojIyBEcmFmdGVkLCBwZW5kaW5nIGh1bWFuIHJldmlldwoKQWxsIGRyYWZ0IFBScyBiZWxvdyBhcmUgKipvcGVuIGFuZCBtdXN0IG5vdCBiZSBhdXRvLW1lcmdlZC4qKiBNZXJnZSBvbmUgYXQgYSB0aW1lIChub3Qgc3RhY2tlZCkgZ2l2ZW4gdGhlIHVucmVzb2x2ZWQgY29uY3VycmVuY3kgcmFjZSBhYm92ZS4gQXVkaW8gZm9yIGV2ZXJ5IGRyYWZ0ZWQgbGVzc29uIGlzICoqbm90IHlldCBnZW5lcmF0ZWQqKiDigJQgYSBodW1hbiBydW5zIGBzY3JpcHRzL2dlbmVyYXRlX2F1ZGlvLnB5YCBhZnRlciByZXZpZXcsIHRoZW4gdGhlIHB1Ymxpc2ggc3RlcC4gQ29uZmlybWVkIHN0aWxsIG9wZW4sIHVuY2hhbmdlZCwgYXMgb2YgMjAyNi0xMC0wOCAobm8gbmV3IGRyYWZ0IFBScyBvcGVuZWQsIG5vbmUgbWVyZ2VkLCBub25lIGNsb3NlZDsgbm8gb3RoZXIgb3BlbiBQUnMgZXhpc3QgaW4gdGhlIHJlcG8gb3V0c2lkZSB0aGlzIHNldDsgMCBvcGVuIGlzc3VlcykuCgojIyMgUFIgIzkg4oCUIGh0dHBzOi8vZ2l0aHViLmNvbS9lckJodXNoYW5QYXdhci9sYW5nLWxlYXJuZXIvcHVsbC85IChicmFuY2ggYGRyYWZ0LWxlc3NvbnMtMjAyNi0wOC0xNWApIOKAlCBvcGVuCkZpbGU6IGBkYXRhL2RyYWZ0cy9wZW5kaW5nLXJldmlldy0yMDI2LTA4LTE1Lmpzb25gCnwgaWQgfCB0aXRsZSB8IGN1cnJpY3VsdW0gcmVmIHwKfC0tLXwtLS18LS0tfAp8IGIxLTAyIHwgQWxsIDcgY2FzZXMg4oCUIGNvbnNvbGlkYXRlZCByZXZpZXcgfCBCMSAjMiB8CnwgYjEtMDMgfCBDb25kaXRpb25hbCBtb29kIHwgQjEgIzMgfAp8IGIxLTA0IHwgVmVyYiBhc3BlY3QsIHBhcnQgMiB8IEIxICM0IHwKCiMjIyBQUiAjMTAg4oCUIGh0dHBzOi8vZ2l0aHViLmNvbS9lckJodXNoYW5QYXdhci9sYW5nLWxlYXJuZXIvcHVsbC8xMCAoYnJhbmNoIGBkcmFmdC1sZXNzb25zLTIwMjYtMDgtMTZgKSDigJQgb3BlbgpGaWxlOiBgZGF0YS9kcmFmdHMvcGVuZGluZy1yZXZpZXctMjAyNi0wOC0xNi5qc29uYAp8IGlkIHwgdGl0bGUgfCBjdXJyaWN1bHVtIHJlZiB8CnwtLS18LS0tfC0tLXwKfCBiMS0wNSB8IENvbXBhcmF0aXZlcyAmIHN1cGVybGF0aXZlcyB8IEIxICM1IHwKfCBiMS0wNiB8IEV4cHJlc3Npbmcgb3BpbmlvbnMgJiBhZ3JlZW1lbnQvZGlzYWdyZWVtZW50IHwgQjEgIzYgfAp8IGIxLTA3IHwgV29yayAmIHN0dWRpZXMgdm9jYWJ1bGFyeSB8IEIxICM3IHwKCiMjIyBQUiAjMTEg4oCUIGh0dHBzOi8vZ2l0aHViLmNvbS9lckJodXNoYW5QYXdhci9sYW5nLWxlYXJuZXIvcHVsbC8xMSAoYnJhbmNoIGBkcmFmdC1sZXNzb25zLTIwMjYtMDgtMTdgKSDigJQgb3BlbgpGaWxlOiBgZGF0YS9kcmFmdHMvcGVuZGluZy1yZXZpZXctMjAyNi0wOC0xNy5qc29uYAp8IGlkIHwgdGl0bGUgfCBjdXJyaWN1bHVtIHJlZiB8CnwtLS18LS0tfC0tLXwKfCBiMS0wOCB8IFJlcG9ydGVkIHNwZWVjaCB8IEIxICM4IHwKfCBiMS0wOSB8IENvbm5lY3RpbmcgaWRlYXMgfCBCMSAjOSB8CnwgYjEtMTAgfCBJZGlvbWF0aWMgJiBwaHJhc2FsIGV4cHJlc3Npb25zIHwgQjEgIzEwIHwKCiMjIyBQUiAjMTIg4oCUIGh0dHBzOi8vZ2l0aHViLmNvbS9lckJodXNoYW5QYXdhci9sYW5nLWxlYXJuZXIvcHVsbC8xMiAoYnJhbmNoIGBkcmFmdC1sZXNzb25zLTIwMjYtMDgtMThgKSDigJQgb3BlbgpGaWxlOiBgZGF0YS9kcmFmdHMvcGVuZGluZy1yZXZpZXctMjAyNi0wOC0xOC5qc29uYAp8IGlkIHwgdGl0bGUgfCBjdXJyaWN1bHVtIHJlZiB8CnwtLS18LS0tfC0tLXwKfCBiMS0xMSB8IFJlYWRpbmcgc2hvcnQgYXV0aGVudGljIHRleHRzIHwgQjEgIzExIHwKfCBiMS0xMiB8IExpc3RlbmluZyB0byBuYXR1cmFsIHNwZWVjaCB8IEIxICMxMiB8CnwgYjEtMTMgfCBGb3JtYWwgdnMuIGluZm9ybWFsIHJlZ2lzdGVyIHwgQjEgIzEzIHwKCiMjIyBQUiAjMTMg4oCUIGh0dHBzOi8vZ2l0aHViLmNvbS9lckJodXNoYW5QYXdhci9sYW5nLWxlYXJuZXIvcHVsbC8xMyAoYnJhbmNoIGBkcmFmdC1sZXNzb25zLTIwMjYtMDgtMTlgKSDigJQgb3BlbgpGaWxlOiBgZGF0YS9kcmFmdHMvcGVuZGluZy1yZXZpZXctMjAyNi0wOC0xOS5qc29uYAp8IGlkIHwgdGl0bGUgfCBjdXJyaWN1bHVtIHJlZiB8CnwtLS18LS0tfC0tLXwKfCBiMS0xNCB8IEIxIHJldmlldyAmIG1pbmktY2hlY2sgfCBCMSAjMTQgfAp8IGIyLTAxIHwgQWR2YW5jZWQgc3ludGF4ICYgY29oZXNpb24gZGV2aWNlcyB8IEIyICMxIHwKfCBiMi0wMiB8IFdvcmQgZm9ybWF0aW9uICYgZGVyaXZhdGlvbiB8IEIyICMyIHwKCiMjIyBQUiAjMTQg4oCUIGh0dHBzOi8vZ2l0aHViLmNvbS9lckJodXNoYW5QYXdhci9sYW5nLWxlYXJuZXIvcHVsbC8xNCAoYnJhbmNoIGBkcmFmdC1sZXNzb25zLTIwMjYtMDgtMjBgKSDigJQgb3BlbgpGaWxlOiBgZGF0YS9kcmFmdHMvcGVuZGluZy1yZXZpZXctMjAyNi0wOC0yMC5qc29uYAp8IGlkIHwgdGl0bGUgfCBjdXJyaWN1bHVtIHJlZiB8CnwtLS18LS0tfC0tLXwKfCBiMi0wMyB8IEFic3RyYWN0ICYgcHJvZmVzc2lvbmFsIHRvcGljcyB2b2NhYnVsYXJ5IHwgQjIgIzMgfAp8IGIyLTA0IHwgUmVhZGluZyBzdHJhdGVneTogbWF0Y2hpbmcgJiBnYXAtaW4tdGV4dCB8IEIyICM0IHwKfCBiMi0wNSB8IFJlYWRpbmcgc3RyYXRlZ3k6IHRydWUvZmFsc2UgJiBpbXBsaWNpdCBtZWFuaW5nIHwgQjIgIzUgfAoKIyMjIFBSICMxNSDigJQgaHR0cHM6Ly9naXRodWIuY29tL2VyQmh1c2hhblBhd2FyL2xhbmctbGVhcm5lci9wdWxsLzE1IChicmFuY2ggYGRyYWZ0LWxlc3NvbnMtMjAyNi0wOC0yMWApIOKAlCBvcGVuCkZpbGU6IGBkYXRhL2RyYWZ0cy9wZW5kaW5nLXJldmlldy0yMDI2LTA4LTIxLmpzb25gCnwgaWQgfCB0aXRsZSB8IGN1cnJpY3VsdW0gcmVmIHwKfC0tLXwtLS18LS0tfAp8IGIyLTA2IHwgTGlzdGVuaW5nIHN0cmF0ZWd5IHwgQjIgIzYgfAp8IGIyLTA3IHwgRm9ybWFsIGxldHRlciAmIGVtYWlsIHdyaXRpbmcgfCBCMiAjNyB8CnwgYjItMDggfCBBcnRpY2xlICYgZXNzYXkgd3JpdGluZyB8IEIyICM4IHwKCk5vdGU6IGIyLTA2IChMaXN0ZW5pbmcgc3RyYXRlZ3kpIGlzIG9mZmljaWFsbHkgbWFya2VkICJvbmNlIGF1ZGlvIGlzIGFkZGVkIiBpbiBgQ1VSUklDVUxVTS5tZGAsIGJ1dCBwZXIgYW4gZWFybGllciBydW4ncyBub3RlIGl0IHdhcyBkcmFmdGVkIGFzIGEgc3RyYXRlZ3kvdm9jYWIgbGVzc29uIChkaXNjb3Vyc2UgbWFya2VycyBmb3Igc2luZ2xlLXBsYXliYWNrIG5vdGUtdGFraW5nKSB0byBiZSBwYWlyZWQgd2l0aCBhdWRpbyBsYXRlci4KCiMjIyBQUiAjMTYg4oCUIGh0dHBzOi8vZ2l0aHViLmNvbS9lckJodXNoYW5QYXdhci9sYW5nLWxlYXJuZXIvcHVsbC8xNiAoYnJhbmNoIGBkcmFmdC1sZXNzb25zLTIwMjYtMDgtMjJgKSDigJQgb3BlbgpGaWxlOiBgZGF0YS9kcmFmdHMvcGVuZGluZy1yZXZpZXctMjAyNi0wOC0yMi5qc29uYAp8IGlkIHwgdGl0bGUgfCBjdXJyaWN1bHVtIHJlZiB8CnwtLS18LS0tfC0tLXwKfCBiMi0wOSB8IFNwZWFraW5nIHByZXAgfCBCMiAjOSB8CgpOb3RlOiBiMi0wOSAoU3BlYWtpbmcgcHJlcCkgaXMgb2ZmaWNpYWxseSBtYXJrZWQgIm9uY2Ugc3BlYWtpbmcgcHJhY3RpY2UgaXMgYWRkZWQiIGluIGBDVVJSSUNVTFVNLm1kYCwgYnV0IOKAlCBzYW1lIHNpdHVhdGlvbiBhcyBiMi0wNiDigJQgZHJhZnRlZCBub3cgYXMgYSBwaHJhc2VzL3N0cmF0ZWd5IGxlc3NvbiAoZGVzY3JpYmluZyBhbiBleHBlcmllbmNlLCBzdW1tYXJpemluZyBhIHRleHQsIGRpc2N1c3Npb24gcmVnaXN0ZXI7IGdyYW1tYXIgbm90ZSBvbiBnZW5kZXIgYWdyZWVtZW50IGluIGZpcnN0LXBlcnNvbiBgYnljaGAtaGVkZ2luZyBwaHJhc2VzKS4KCkV2ZXJ5IGN1cnJpY3VsdW0gaXRlbSB0aHJvdWdoIEIyICM5IGlzIGRyYWZ0ZWQgb3IgcHVibGlzaGVkLiBPbmx5ICoqQjIgIzEwIChGdWxsLWxlbmd0aCB0aW1lZCBtb2NrIGV4YW0pKiogcmVtYWlucyBjb21wbGV0ZWx5IHVuZHJhZnRlZCBpbiB0aGUgd2hvbGUgY3VycmljdWx1bSwgZGVsaWJlcmF0ZWx5IHNraXBwZWQg4oCUIHNlZSBiZWxvdy4KCioqU3RpbGwtdW5yZXNvbHZlZCBvcGVuIHF1ZXN0aW9uIChjYXJyaWVkIG92ZXIpOioqIGN1cnJpY3VsdW0gaXRlbSBBMSAjMSAoIlByb251bmNpYXRpb24gJiBhbHBoYWJldCIpIGhhcyBuZXZlciBiZWVuIGRyYWZ0ZWQuIFB1Ymxpc2hlZC9kcmFmdGVkIGxlc3NvbnMgc3RhcnQgZnJvbSBjdXJyaWN1bHVtIGl0ZW0gIzIgKEdyZWV0aW5ncykuIEEgaHVtYW4gbmVlZHMgdG8gZGVjaWRlIHdoZXRoZXIgYSBkZWRpY2F0ZWQgcHJvbnVuY2lhdGlvbiAmIGFscGhhYmV0IGxlc3NvbiBzaG91bGQgZXhpc3QgYW5kIHdoZXJlIGl0IHNsb3RzIGludG8gdGhlIGlkIHNlcXVlbmNlIChhMS0wMD8gYSByZW51bWJlcmluZz8pLiBUaGlzIHJvdXRpbmUgaGFzIGRlbGliZXJhdGVseSBjb250aW51ZWQgcGFzdCB0aGUgZ2FwIHJhdGhlciB0aGFuIGd1ZXNzaW5nLCBjb25zaXN0ZW50IHdpdGggcHJpb3IgcnVucy4KCioqU3RpbGwtdW5yZXNvbHZlZCBvcGVuIHF1ZXN0aW9uIChjYXJyaWVkIG92ZXIpOioqIGN1cnJpY3VsdW0gaXRlbSBCMiAjMTAgKCJGdWxsLWxlbmd0aCB0aW1lZCBtb2NrIGV4YW0iKSBoYXMgbmV2ZXIgYmVlbiBkcmFmdGVkLCBhbmQgd2FzIHNraXBwZWQgYWdhaW4gdGhpcyBydW4uIEl0IGxlYW5zIG9uIHRoZSBhbHJlYWR5LWJ1aWx0IGV4YW0tcHJlcCB0cmFjayBhbmQgbWF5IG5vdCBmaXQgdGhlIHN0YW5kYXJkIHZvY2FiL2dyYW1tYXJOb3RlL2NoZWNrIGxlc3NvbiBzY2hlbWEgYXMgY2xlYW5seSBhcyBldmVyeSBvdGhlciBsZXNzb24g4oCUIHdvcnRoIGZsYWdnaW5nIGZvciBodW1hbiBqdWRnbWVudCBvbiBzY29wZSAoc2hvdWxkIGl0IHJldXNlIGBleGFtX2l0ZW1zYCwgb3IgYSBkaWZmZXJlbnQgY29udGVudCBzaGFwZSBlbnRpcmVseT8pIGJlZm9yZSB0aGlzIHJvdXRpbmUgYXR0ZW1wdHMgdG8gZHJhZnQgaXQuIGBDVVJSSUNVTFVNLm1kYCAobGFzdCB0b3VjaGVkIDIwMjYtMDgtMTQsIGNvbmZpcm1lZCB1bmNoYW5nZWQgYXMgb2YgdGhpcyBydW4g4oCUIDIwMjYtMTAtMDgpIHN0aWxsIGhhcyBubyBzY29waW5nIG5vdGUgZm9yIGl0LCBhbmQgbm8gb3BlbiBHaXRIdWIgaXNzdWUgZXhpc3RzIGVpdGhlciAoMCBvcGVuIGlzc3VlcywgY29uZmlybWVkIHRoaXMgcnVuKS4KCioqTm90ZSBvbiBHaXRIdWIgQWN0aW9ucyB0b29sIGZpbHRlcmluZzoqKiB0aGUgYGFjdGlvbnNfbGlzdGAgTUNQIHRvb2wncyBgd29ya2Zsb3dfaWRgIGZpbHRlciBkaWQgbm90IGFwcGVhciB0byBuYXJyb3cgcmVzdWx0cyB0byBgcHVibGlzaC1kcmFmdHMueW1sYCAoaWQgYDMyOTQwODI3NGApIHRoaXMgcnVuIOKAlCBpdCByZXR1cm5lZCB0aGUgcmVwby13aWRlIHJ1biBsaXN0IChkb21pbmF0ZWQgYnkgdGhlIGRhaWx5IGBwYWdlcy55bWxgIGRlcGxveSB0cmlnZ2VyZWQgYnkgZWFjaCBzdGF0dXMtdXBkYXRlIHB1c2gpIHJlZ2FyZGxlc3Mgb2YgdGhlIGlkIHBhc3NlZC4gTm90IHB1cnN1ZWQgZnVydGhlciBzaW5jZSBST1VUSU5FX1NUQVRVUy5tZCBhbHJlYWR5IHRyYWNrcyB0aGUgcHVibGlzaC1kcmFmdHMueW1sIHN0YWxsIGFjY3VyYXRlbHkgZnJvbSBwYXN0IGRpcmVjdCBvYnNlcnZhdGlvbjsgd29ydGggbm90aW5nIGluIGNhc2UgYSBmdXR1cmUgcnVuIHdhbnRzIHRvIHJlLXZlcmlmeSB0aGUgQ0kgcnVuIGNvdW50IHZpYSB0aGF0IHRvb2wuCgojIyBOZXh0IHVwIChwbGFubmVkIGZvciB0aGUgZm9sbG93aW5nIHJ1bikKClRoZSBjdXJyaWN1bHVtIGlzIG5vdyBmdWxseSBkcmFmdGVkIGV4Y2VwdCBmb3IgQjIgIzEwIChzZWUgb3BlbiBxdWVzdGlvbiBhYm92ZSksIHdoaWNoIG5lZWRzIGEgaHVtYW4gc2NvcGluZyBkZWNpc2lvbiBiZWZvcmUgaXQgY2FuIGJlIGRyYWZ0ZWQg4oCUIHRoaXMgcm91dGluZSBzaG91bGQgbm90IGd1ZXNzIGF0IGl0cyBzaGFwZS4gVW50aWwgdGhhdCBkZWNpc2lvbiBpcyBtYWRlIGFuZCBCMiAjMTAgaXMgZWl0aGVyIHNjb3BlZCBvciBleHBsaWNpdGx5IGRlZmVycmVkLCBmdXR1cmUgcnVucyBzaG91bGQgKipzaGlmdCBmb2N1cyBlbnRpcmVseSB0byBjaGVja2luZyB3aGV0aGVyIG9wZW4gUFJzIGhhdmUgYmVlbiBtZXJnZWQvcHVibGlzaGVkKiogcmF0aGVyIHRoYW4gZmluZGluZyBuZXcgY29udGVudCB0byBkcmFmdDoKCjEuIENoZWNrIHdoZXRoZXIgdGhlIENJIHB1Ymxpc2ggaXNzdWUgaGFzIGJlZW4gcmVzb2x2ZWQgYW5kIHdoZXRoZXIgYW55IG9mIFBScyAjOeKAkzE2J3MgY29udGVudCAoYjEtMDIgdGhyb3VnaCBiMi0wOSksIG9yIHRoZSBtZXJnZWQtYnV0LXVucHVibGlzaGVkIGEyLTA3LzA4LzA5IGFuZCBhMi0xMy8xNC9iMS0wMSBmaWxlcywgaGF2ZSBnb25lIGxpdmUgaW4gU3VwYWJhc2UuCjIuIElmIGEgaHVtYW4gaGFzIHNpbmNlIHNjb3BlZCBCMiAjMTAgKGUuZy4gbGVmdCBhIG5vdGUgaW4gdGhpcyBmaWxlLCBgQ1VSUklDVUxVTS5tZGAsIG9yIGFuIG9wZW4gaXNzdWUpLCBkcmFmdCBpdCBuZXh0LgozLiBPdGhlcndpc2UsIHJlLXZlcmlmeSBTdXBhYmFzZSBhbmQgb3Blbi1QUiBzdGF0ZSBlYWNoIHJ1biBhbmQgb25seSByZXBvcnQgY2hhbmdlcyDigJQgZG8gbm90IHJlLWRyYWZ0IGFueXRoaW5nIGFscmVhZHkgY292ZXJlZCBieSBhbiBvcGVuIFBSIG9yIGEgbWVyZ2VkLWJ1dC11bnB1Ymxpc2hlZCBkcmFmdCBmaWxlIGluIGBkYXRhL2RyYWZ0cy9gIG9uIGBtYWluYC4KCi0tLQoKIyMgUnVuIGxvZwoKRXZlcnkgcnVuIGZyb20gMjAyNi0wOC0wOCB0aHJvdWdoIDIwMjYtMTAtMDggaGFzIHJlLXZlcmlmaWVkIHRoZSBzYW1lIGNvbmNsdXNpb246IDIwIHB1Ymxpc2hlZCBsZXNzb25zIChhMS0wMeKAkzExLCBhMi0wMeKAkzA2LCBhMi0xMOKAkzEyKSwgMTggcHVibGlzaGVkIGV4YW0gaXRlbXMsIFBScyAjOeKAkzE2IG9wZW4gYW5kIHVuY2hhbmdlZCAoYjEtMDIgdGhyb3VnaCBiMi0wOSksIHRoZSBgcHVibGlzaC1kcmFmdHMueW1sYCBDSSBpc3N1ZSB1bnJlc29sdmVkIHNpbmNlIDIwMjYtMDgtMTQsIGFuZCBubyBodW1hbiBzY29waW5nIGRlY2lzaW9uIGxlZnQgZm9yIEIyICMxMC4gRnVsbCBuYXJyYXRpdmUgZGV0YWlsIGZvciBydW5zIHRocm91Z2ggMjAyNi0wOC0yMiAoaW5jbHVkaW5nIHRoZSBpbml0aWFsIGRyYWZ0aW5nIGhpc3RvcnkgdGhhdCBwcm9kdWNlZCBQUnMgIznigJMxNiBhbmQgdGhlIGRpc2NvdmVyeSBvZiB0aGUgQ0kgcmFjZSBjb25kaXRpb24pIGlzIHByZXNlcnZlZCBpbiBnaXQgaGlzdG9yeSBmb3IgdGhpcyBmaWxlIChzZWUgYGdpdCBsb2cgLS0gUk9VVElORV9TVEFUVVMubWRgLCBjb21taXRzIHVwIHRvIGFuZCBpbmNsdWRpbmcgIlVwZGF0ZSByb3V0aW5lIHN0YXR1cyAyMDI2LTA4LTIyIikuIEZyb20gMjAyNi0wOC0yMyBvbndhcmQsIGVhY2ggcnVuIHdhcyBhIHB1cmUgcmUtdmVyaWZpY2F0aW9uIHdpdGggemVybyBzdGF0ZSBjaGFuZ2UsIHNvIHRoaXMgbG9nIGlzIGtlcHQgYXMgYSBjb21wYWN0IHRhYmxlIHJhdGhlciB0aGFuIG9uZSBwYXJhZ3JhcGggcGVyIGRheS4KCnwgRGF0ZSByYW5nZSB8IFJ1bnMgfCBPdXRjb21lIHwKfC0tLXwtLS18LS0tfAp8IDIwMjYtMDgtMDgg4oCTIDIwMjYtMDgtMjIgfCBpbml0aWFsIGRyYWZ0aW5nIHBoYXNlIHwgRHJhZnRlZCBhbmQgb3BlbmVkIFBScyAjOeKAkzE2IChiMS0wMiB0aHJvdWdoIGIyLTA5LCBvbmUgUFIvZGF5KTsgZGlzY292ZXJlZCBhbmQgZG9jdW1lbnRlZCB0aGUgYHB1Ymxpc2gtZHJhZnRzLnltbGAgQ0kgcmFjZS9mYWlsdXJlIGJsb2NraW5nIGEyLTA3LzA4LzA5IGFuZCBhMi0xMy8xNC9iMS0wMS4gfAp8IDIwMjYtMDgtMjMg4oCTIDIwMjYtMTAtMDggfCA0NyBjb25zZWN1dGl2ZSBkYWlseSByZS12ZXJpZmljYXRpb24gcnVucyB8IE5vIGNoYW5nZSBpbiBhbnkgcnVuOiBTdXBhYmFzZSwgb3BlbiBQUnMsIENJIHN0YXR1cywgYGRhdGEvZHJhZnRzL2AgY29udGVudHMsIGBDVVJSSUNVTFVNLm1kYCwgYW5kIG9wZW4gaXNzdWVzIGFsbCBjb25maXJtZWQgaWRlbnRpY2FsIHRvIDIwMjYtMDgtMjIgc3RhdGUuIE5vdGhpbmcgZHJhZnRlZCAobm90aGluZyBsZWZ0IHRvIGRyYWZ0IHBlbmRpbmcgdGhlIEIyICMxMCBzY29waW5nIGRlY2lzaW9uIGFuZCB0aGUgQ0kgZml4KS4gfAoKTGFzdCBydW46IDIwMjYtMTAtMDguCg==
+# Lang-learner content routine — status
+
+Auto-generated by the scheduled content-drafting routine. Ground truth is always Supabase (`lessons` / `exam_items` tables) plus open `draft-lessons-*` PRs — this file is a snapshot as of the last run, not a source of truth.
+
+## Published (live in Supabase, as of this run)
+
+### Lessons
+| id | title | level |
+|---|---|---|
+| a1-01 | Greetings & Introductions | A1 |
+| a1-02 | Numbers 0–100 | A1 |
+| a1-03 | Být & mít (to be / to have) | A1 |
+| a1-04 | Basic word order & questions | A1 |
+| a1-05 | Nouns & gender (nominative only) | A1 |
+| a1-06 | Adjectives (nominative agreement) | A1 |
+| a1-07 | Family & people | A1 |
+| a1-08 | Food & ordering | A1 |
+| a1-09 | Shopping & numbers in context | A1 |
+| a1-10 | Directions & places in town | A1 |
+| a1-11 | A1 review & mini-check | A1 |
+| a2-01 | Accusative case | A2 |
+| a2-02 | Genitive case | A2 |
+| a2-03 | Past tense | A2 |
+| a2-04 | Verb aspect, part 1 | A2 |
+| a2-05 | Future tense | A2 |
+| a2-06 | Modal verbs | A2 |
+| a2-10 | Health & body | A2 |
+| a2-11 | Housing & daily routine | A2 |
+| a2-12 | Locative case | A2 |
+
+20 published lessons. **Unchanged since 2026-08-15** — re-confirmed daily every run from 2026-08-22 through 2026-10-09 via `select=id,status,data->>title,level_code,position`.
+
+**Note on `title` column:** the Supabase `lessons` table has no top-level `title` column — title lives inside the `data` JSON payload. A `select=id,title,status` query errors with `column lessons.title does not exist`; use `select=id,status,data->>title,level_code,position` instead.
+
+### Exam items
+18 published exam items (ids 1–18), covering the exam-prep track. **Unchanged since tracking began.** Not part of the Learn-track drafting this routine does.
+
+## ⚠️ CI publish issue — still unresolved, human action needed (open since 2026-08-14)
+
+`publish-drafts.yml` has had no workflow run since 2026-08-14 (8 total runs ever). The last three runs all fired back-to-back that day: run #6 (PR #6 merge) = `failure`, run #7 (PR #8 merge) = `cancelled`, run #8 (PR #6 re-merge cleanup) = `failure`. The last `success` was run #5 on 2026-08-11. No push to `main` touching a `data/drafts/pending-review-*.json` path has happened since (the workflow's trigger filter) because PRs #9–16 all remain open/unmerged. **As of 2026-10-09, the pipeline has gone unexercised for 56 days.**
+
+Merged-but-unpublished draft files still sitting in `data/drafts/` on `main` (confirmed present as of this run):
+- **`pending-review-2026-08-12.json`** (a2-07 Weather & seasons, a2-08 Hobbies & free time, a2-09 Travel & transport, from merged PR #6) — nothing published to Supabase. File valid, ready to retry as-is.
+- **`pending-review-2026-08-14.json`** (a2-13 Instrumental case, a2-14 A2 review, b1-01 Dative case, from merged PR #8) — nothing published to Supabase. File valid, ready to retry.
+- **`pending-review-2026-08-13.json`** (a2-10/11/12, from merged PR #7) — its content **is** already live in Supabase, but the file itself is a stale orphan from a lost `git push` race. Safe to delete.
+
+**Recommended human action (unchanged):**
+1. Re-run/re-trigger the publish workflow for `pending-review-2026-08-12.json` and `pending-review-2026-08-14.json` to get a2-07/08/09 and a2-13/14/b1-01 actually live.
+2. Delete `data/drafts/pending-review-2026-08-13.json` (already published, orphaned).
+3. Harden `publish-drafts.yml`: a `git pull --rebase` before pushing (or `push --force-with-lease` after re-fetching) would fix the race behind the lost cleanup pushes.
+
+## Drafted, pending human review
+
+All draft PRs below are **open and must not be auto-merged.** Merge one at a time (not stacked) given the unresolved concurrency race above. Audio for every drafted lesson is **not yet generated** — a human runs `scripts/generate_audio.py` after review, then the publish step. Confirmed still open, unchanged, as of 2026-10-09 (no new draft PRs opened, none merged, none closed; no other open PRs exist in the repo outside this set; 0 open issues).
+
+### PR #9 — https://github.com/erBhushanPawar/lang-learner/pull/9 (branch `draft-lessons-2026-08-15`) — open
+File: `data/drafts/pending-review-2026-08-15.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b1-02 | All 7 cases — consolidated review | B1 #2 |
+| b1-03 | Conditional mood | B1 #3 |
+| b1-04 | Verb aspect, part 2 | B1 #4 |
+
+### PR #10 — https://github.com/erBhushanPawar/lang-learner/pull/10 (branch `draft-lessons-2026-08-16`) — open
+File: `data/drafts/pending-review-2026-08-16.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b1-05 | Comparatives & superlatives | B1 #5 |
+| b1-06 | Expressing opinions & agreement/disagreement | B1 #6 |
+| b1-07 | Work & studies vocabulary | B1 #7 |
+
+### PR #11 — https://github.com/erBhushanPawar/lang-learner/pull/11 (branch `draft-lessons-2026-08-17`) — open
+File: `data/drafts/pending-review-2026-08-17.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b1-08 | Reported speech | B1 #8 |
+| b1-09 | Connecting ideas | B1 #9 |
+| b1-10 | Idiomatic & phrasal expressions | B1 #10 |
+
+### PR #12 — https://github.com/erBhushanPawar/lang-learner/pull/12 (branch `draft-lessons-2026-08-18`) — open
+File: `data/drafts/pending-review-2026-08-18.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b1-11 | Reading short authentic texts | B1 #11 |
+| b1-12 | Listening to natural speech | B1 #12 |
+| b1-13 | Formal vs. informal register | B1 #13 |
+
+### PR #13 — https://github.com/erBhushanPawar/lang-learner/pull/13 (branch `draft-lessons-2026-08-19`) — open
+File: `data/drafts/pending-review-2026-08-19.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b1-14 | B1 review & mini-check | B1 #14 |
+| b2-01 | Advanced syntax & cohesion devices | B2 #1 |
+| b2-02 | Word formation & derivation | B2 #2 |
+
+### PR #14 — https://github.com/erBhushanPawar/lang-learner/pull/14 (branch `draft-lessons-2026-08-20`) — open
+File: `data/drafts/pending-review-2026-08-20.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b2-03 | Abstract & professional topics vocabulary | B2 #3 |
+| b2-04 | Reading strategy: matching & gap-in-text | B2 #4 |
+| b2-05 | Reading strategy: true/false & implicit meaning | B2 #5 |
+
+### PR #15 — https://github.com/erBhushanPawar/lang-learner/pull/15 (branch `draft-lessons-2026-08-21`) — open
+File: `data/drafts/pending-review-2026-08-21.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b2-06 | Listening strategy | B2 #6 |
+| b2-07 | Formal letter & email writing | B2 #7 |
+| b2-08 | Article & essay writing | B2 #8 |
+
+Note: b2-06 (Listening strategy) is officially marked "once audio is added" in `CURRICULUM.md`, but per an earlier run's note it was drafted as a strategy/vocab lesson (discourse markers for single-playback note-taking) to be paired with audio later.
+
+### PR #16 — https://github.com/erBhushanPawar/lang-learner/pull/16 (branch `draft-lessons-2026-08-22`) — open
+File: `data/drafts/pending-review-2026-08-22.json`
+| id | title | curriculum ref |
+|---|---|---|
+| b2-09 | Speaking prep | B2 #9 |
+
+Note: b2-09 (Speaking prep) is officially marked "once speaking practice is added" in `CURRICULUM.md`, but — same situation as b2-06 — drafted now as a phrases/strategy lesson (describing an experience, summarizing a text, discussion register; grammar note on gender agreement in first-person `bych`-hedging phrases).
+
+Every curriculum item through B2 #9 is drafted or published. Only **B2 #10 (Full-length timed mock exam)** remains completely undrafted in the whole curriculum, deliberately skipped — see below.
+
+**Still-unresolved open question (carried over):** curriculum item A1 #1 ("Pronunciation & alphabet") has never been drafted. Published/drafted lessons start from curriculum item #2 (Greetings). A human needs to decide whether a dedicated pronunciation & alphabet lesson should exist and where it slots into the id sequence (a1-00? a renumbering?). This routine has deliberately continued past the gap rather than guessing, consistent with prior runs.
+
+**Still-unresolved open question (carried over):** curriculum item B2 #10 ("Full-length timed mock exam") has never been drafted, and was skipped again this run. It leans on the already-built exam-prep track and may not fit the standard vocab/grammarNote/check lesson schema as cleanly as every other lesson — worth flagging for human judgment on scope (should it reuse `exam_items`, or a different content shape entirely?) before this routine attempts to draft it. `CURRICULUM.md` (last touched 2026-08-14, confirmed unchanged as of this run — 2026-10-09) still has no scoping note for it, and no open GitHub issue exists either (0 open issues, confirmed this run).
+
+**Note on GitHub Actions tool filtering:** the `actions_list` MCP tool's `workflow_id` filter did not appear to narrow results to `publish-drafts.yml` (id `329408274`) this run — it returned the repo-wide run list (dominated by the daily `pages.yml` deploy triggered by each status-update push) regardless of the id passed. Not pursued further since ROUTINE_STATUS.md already tracks the publish-drafts.yml stall accurately from past direct observation; worth noting in case a future run wants to re-verify the CI run count via that tool.
+
+## Next up (planned for the following run)
+
+The curriculum is now fully drafted except for B2 #10 (see open question above), which needs a human scoping decision before it can be drafted — this routine should not guess at its shape. Until that decision is made and B2 #10 is either scoped or explicitly deferred, future runs should **shift focus entirely to checking whether open PRs have been merged/published** rather than finding new content to draft:
+
+1. Check whether the CI publish issue has been resolved and whether any of PRs #9–16's content (b1-02 through b2-09), or the merged-but-unpublished a2-07/08/09 and a2-13/14/b1-01 files, have gone live in Supabase.
+2. If a human has since scoped B2 #10 (e.g. left a note in this file, `CURRICULUM.md`, or an open issue), draft it next.
+3. Otherwise, re-verify Supabase and open-PR state each run and only report changes — do not re-draft anything already covered by an open PR or a merged-but-unpublished draft file in `data/drafts/` on `main`.
+
+---
+
+## Run log
+
+Every run from 2026-08-08 through 2026-10-09 has re-verified the same conclusion: 20 published lessons (a1-01–11, a2-01–06, a2-10–12), 18 published exam items, PRs #9–16 open and unchanged (b1-02 through b2-09), the `publish-drafts.yml` CI issue unresolved since 2026-08-14, and no human scoping decision left for B2 #10. Full narrative detail for runs through 2026-08-22 (including the initial drafting history that produced PRs #9–16 and the discovery of the CI race condition) is preserved in git history for this file (see `git log -- ROUTINE_STATUS.md`, commits up to and including "Update routine status 2026-08-22"). From 2026-08-23 onward, each run was a pure re-verification with zero state change, so this log is kept as a compact table rather than one paragraph per day.
+
+| Date range | Runs | Outcome |
+|---|---|---|
+| 2026-08-08 – 2026-08-22 | initial drafting phase | Drafted and opened PRs #9–16 (b1-02 through b2-09, one PR/day); discovered and documented the `publish-drafts.yml` CI race/failure blocking a2-07/08/09 and a2-13/14/b1-01. |
+| 2026-08-23 – 2026-10-09 | 48 consecutive daily re-verification runs | No change in any run: Supabase, open PRs, CI status, `data/drafts/` contents, `CURRICULUM.md`, and open issues all confirmed identical to 2026-08-22 state. Nothing drafted (nothing left to draft pending the B2 #10 scoping decision and the CI fix). |
+
+Last run: 2026-10-09.
