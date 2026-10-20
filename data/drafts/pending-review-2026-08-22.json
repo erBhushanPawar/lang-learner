@@ -1,0 +1,90 @@
+[
+  {
+    "id": "b2-09",
+    "icon": "🗣️",
+    "title": "Speaking prep",
+    "blurb": "Phrases for describing a personal experience, summarizing a short text aloud, and keeping a discussion going — the building blocks of the CCE-B2 speaking subtest.",
+    "vocab": [
+      {
+        "word": "Chtěl/a bych vám vyprávět o...",
+        "translation": "I'd like to tell you about...",
+        "example": "Chtěla bych vám vyprávět o cestě, kterou nikdy nezapomenu."
+      },
+      {
+        "word": "Stalo se mi, že...",
+        "translation": "It happened to me that...",
+        "example": "Jednou se mi stalo, že jsem zmeškala poslední vlak."
+      },
+      {
+        "word": "Abych to shrnul/a...",
+        "translation": "To sum it up...",
+        "example": "Abych to shrnula, text popisuje hlavní výhody a nevýhody práce z domova."
+      },
+      {
+        "word": "Podle mého názoru...",
+        "translation": "In my opinion...",
+        "example": "Podle mého názoru je to nejlepší řešení."
+      },
+      {
+        "word": "Souhlasím do jisté míry, ale...",
+        "translation": "I agree to some extent, but...",
+        "example": "Souhlasím do jisté míry, ale myslím, že je to složitější."
+      },
+      {
+        "word": "Co se týče...",
+        "translation": "As for.../Regarding...",
+        "example": "Co se týče ceny, je to poměrně drahé."
+      },
+      {
+        "word": "Kdybych si měl/a vybrat...",
+        "translation": "If I had to choose...",
+        "example": "Kdybych si měla vybrat, dala bych přednost vlaku."
+      },
+      {
+        "word": "Můžete mi dát chvilku na rozmyšlenou?",
+        "translation": "Can you give me a moment to think?",
+        "example": "Promiňte, můžete mi dát chvilku na rozmyšlenou?"
+      }
+    ],
+    "grammarNote": {
+      "title": "Matching your own gender in bych-phrases",
+      "text": "Speaking tasks are full of self-referential hedging phrases built on bych (the conditional particle): chtěl/a bych ('I would like'), řekl/a bych ('I would say'), musel/a bych ('I would have to'), kdybych měl/a ('if I had to'). The ending on the participle before bych has to agree with the speaker's own gender — masculine speakers use -l (chtěl bych, řekl bych), feminine speakers use -la (chtěla bych, řekla bych) — the same l-participle agreement you learned for the past tense (A2: Past tense) and the conditional mood (B1: Conditional mood), just now applied to yourself in real time rather than to a third person in a story. Getting this wrong doesn't just sound like an accent — a man saying 'chtěla bych' or a woman saying 'chtěl bych' is a real grammatical error that examiners will notice, so it's worth rehearsing your own hedging phrases in your own gender until they're automatic, especially since under exam pressure people often default to the form they hear most often rather than the form that matches themselves."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "A female speaker wants to say \"I would like to tell you about...\". Which is correct?",
+        "options": [
+          "Chtěl bych vám vyprávět o...",
+          "Chtěla bych vám vyprávět o...",
+          "Chtějí bych vám vyprávět o...",
+          "Chci bych vám vyprávět o..."
+        ],
+        "answer": 1,
+        "explanation": "A female speaker uses the feminine l-participle ending -la with bych: chtěla bych. Chtěl bych would be a male speaker; the other two options aren't valid conditional forms at all."
+      },
+      {
+        "task": "true_false",
+        "prompt": "\"Abych to shrnul\" and \"abych to shrnula\" express two different meanings, not just two different speaker genders.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Ne — both mean exactly the same thing (\"to sum up\"). The only difference is that shrnul is what a male speaker says and shrnula is what a female speaker says, matching their own gender."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Kdybych si ___ vybrat, dala bych přednost vlaku. (a female speaker: 'if I had to choose')",
+        "accepted": ["měla"],
+        "explanation": "The speaker already reveals her gender later in the sentence with \"dala bych\" (feminine), so the participle before bych must also take the feminine ending: kdybych si měla vybrat."
+      },
+      {
+        "task": "transformation",
+        "prompt": "\"Myslím, že je to dobré řešení.\" — Rephrase this as a hedged opinion using \"Podle mého názoru\": ___",
+        "accepted": [
+          "Podle mého názoru je to dobré řešení.",
+          "Podle mého názoru je to dobré řešení"
+        ],
+        "explanation": "Podle mého názoru (\"in my opinion\") is a more formal, exam-register way to introduce an opinion than the plain myslím, že construction."
+      }
+    ]
+  }
+]
