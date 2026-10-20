@@ -1,0 +1,257 @@
+[
+  {
+    "id": "b2-06",
+    "icon": "🎧",
+    "title": "Listening strategy",
+    "blurb": "Learn how to take notes and catch structure cues during a single playback — the CCE-B2 listening subtest only plays each recording twice.",
+    "vocab": [
+      {
+        "word": "za prvé... za druhé",
+        "translation": "firstly... secondly",
+        "example": "Za prvé musíme snížit náklady, za druhé zlepšit kvalitu."
+      },
+      {
+        "word": "kromě toho",
+        "translation": "besides that / in addition",
+        "example": "Kromě toho bych chtěl zmínit ještě jeden problém."
+      },
+      {
+        "word": "na druhou stranu",
+        "translation": "on the other hand",
+        "example": "Na druhou stranu je to řešení dost drahé."
+      },
+      {
+        "word": "to znamená",
+        "translation": "that means / in other words",
+        "example": "Firma omezuje výrobu, to znamená, že propustí část zaměstnanců."
+      },
+      {
+        "word": "jinými slovy",
+        "translation": "in other words",
+        "example": "Jinými slovy, plán se nepodařilo splnit."
+      },
+      {
+        "word": "shrnu to",
+        "translation": "to sum up / let me summarize",
+        "example": "Shrnu to: projekt bude hotový do konce měsíce."
+      },
+      {
+        "word": "hlavní myšlenka",
+        "translation": "main idea",
+        "example": "Hlavní myšlenka přednášky byla jasná už po prvních větách."
+      },
+      {
+        "word": "jak už bylo řečeno",
+        "translation": "as already mentioned",
+        "example": "Jak už bylo řečeno, termín se nemění."
+      }
+    ],
+    "grammarNote": {
+      "title": "Discourse markers: predicting structure before you hear the content",
+      "text": "In a single-playback listening task, you cannot afford to process every word — you need to predict where the recording is going and take notes only at the turning points. Czech speakers signal those turning points with a small, reusable set of discourse markers, and recognizing them is more valuable than understanding every word around them. Sequencing markers (za prvé... za druhé..., nejdříve... potom... nakonec) tell you a list is coming, so you can pre-draw numbered slots in your notes. Contrast markers (na druhou stranu, ale, nicméně) signal the speaker is about to reverse or qualify what they just said — the exact moment CCE-B2 questions often target, since they test whether you caught the reversal, not just the first half. Reformulation markers (jinými slovy, to znamená) mean the speaker is about to restate their point more simply — a second chance to catch something you missed the first time. Summary markers (shrnu to, závěrem) flag that the main idea is about to be stated explicitly, often the single most answer-dense sentence in the whole recording. Training yourself to react to these words, rather than trying to transcribe everything, is what makes single-playback listening manageable."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "You hear a speaker say \"...na druhou stranu...\" partway through a recording. What should you expect next?",
+        "options": [
+          "A list of items is about to start",
+          "The speaker is about to contradict or qualify what they just said",
+          "The recording is ending",
+          "The speaker is repeating the previous sentence"
+        ],
+        "answer": 1,
+        "explanation": "Na druhou stranu (\"on the other hand\") signals a contrast or reversal — exactly the kind of shift CCE-B2 listening questions like to test."
+      },
+      {
+        "task": "true_false",
+        "prompt": "Hearing \"shrnu to\" (\"to sum up\") means you can stop paying close attention, because the recording is basically over.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "The opposite — \"shrnu to\" usually introduces the single most information-dense sentence of the recording, restating the main idea explicitly. Pay closer attention, not less."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ myšlenka celého rozhovoru byla, že se ceny dál zvýší. (The main idea of the whole conversation was that prices will keep rising.)",
+        "accepted": ["Hlavní"],
+        "explanation": "Hlavní myšlenka = \"main idea\", a fixed phrase worth recognizing instantly since summary questions often ask for exactly this."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Rephrase using a reformulation marker: „Firma nebude letos najímat nové lidi.“ → „To znamená, že ___.“",
+        "accepted": ["firma letos nebude najímat nové lidi", "firma nebude letos najímat nové lidi"],
+        "explanation": "\"To znamená, že...\" (\"that means that...\") restates the same fact in reformulated form — recognizing this pattern helps you catch a second chance at information you may have missed the first time."
+      }
+    ]
+  },
+  {
+    "id": "b2-07",
+    "icon": "✉️",
+    "title": "Formal letter & email writing",
+    "blurb": "Master the structure, fixed phrases, and formal register that CCE-B2 Writing Úloha 1 (a formal letter or email) is graded on.",
+    "vocab": [
+      {
+        "word": "Vážený pane / Vážená paní,",
+        "translation": "Dear Sir / Dear Madam,",
+        "example": "Vážená paní ředitelko, obracím se na Vás s dotazem."
+      },
+      {
+        "word": "Dovoluji si Vás informovat, že...",
+        "translation": "I am writing to inform you that...",
+        "example": "Dovoluji si Vás informovat, že se termín schůzky mění."
+      },
+      {
+        "word": "Obracím se na Vás s žádostí o...",
+        "translation": "I am writing to you with a request for...",
+        "example": "Obracím se na Vás s žádostí o prodloužení lhůty."
+      },
+      {
+        "word": "V příloze zasílám...",
+        "translation": "Attached, I am sending...",
+        "example": "V příloze zasílám vyplněný formulář."
+      },
+      {
+        "word": "Děkuji předem za Vaši odpověď.",
+        "translation": "Thank you in advance for your reply.",
+        "example": "Děkuji předem za Vaši odpověď a zůstávám s pozdravem."
+      },
+      {
+        "word": "S pozdravem",
+        "translation": "Sincerely / Best regards",
+        "example": "S pozdravem, Jana Nováková."
+      },
+      {
+        "word": "v případě dotazů mě neváhejte kontaktovat",
+        "translation": "should you have any questions, do not hesitate to contact me",
+        "example": "V případě dotazů mě neváhejte kontaktovat na uvedeném čísle."
+      },
+      {
+        "word": "s ohledem na",
+        "translation": "with regard to / in light of",
+        "example": "S ohledem na uvedené skutečnosti Vás žádám o vyjádření."
+      }
+    ],
+    "grammarNote": {
+      "title": "Formal register: capitalized Vy, fixed structure, and the 4-point rubric",
+      "text": "CCE-B2 Writing Úloha 1 grades a formal letter or email on four points: task fulfillment (did you cover every point the prompt asked for), coherence and structure, range and accuracy of language, and register — and register is where informal habits cost the most points. The clearest marker of formal register in written Czech is capitalizing the formal \"you\": Vy, Vás, Váš, Vaše are capitalized only in direct address to one specific person in letters and emails (Dovoluji si Vás informovat, Váš dopis) — this is a hard rule graders check for, unlike spoken Czech where it makes no audible difference. A formal letter follows a fixed skeleton: a salutation (Vážený pane / Vážená paní, plus a title if known), an opening line stating the purpose (Obracím se na Vás s..., Dovoluji si Vás informovat...), a body covering every point the task requires, a closing formula (Děkuji předem za odpověď, V případě dotazů mě neváhejte kontaktovat), and a sign-off (S pozdravem, followed by your name on the next line — no comma after S pozdravem). Two failure patterns cost points every time: switching to informal ty/tvůj mid-letter, and skipping one of the prompt's required points because the letter was structured as free-form prose rather than around a checklist."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which of these correctly uses formal written register in a letter?",
+        "options": [
+          "Dovoluji si tě informovat, že...",
+          "Dovoluji si Vás informovat, že...",
+          "Dovoluji si vás informovat, že...",
+          "Dovoluji si vám informovat, že..."
+        ],
+        "answer": 1,
+        "explanation": "Formal written address capitalizes Vy/Vás/Váš when addressing one specific person in a letter or email — \"vás\" lowercase or \"tě\" (the informal form) are both register errors."
+      },
+      {
+        "task": "true_false",
+        "prompt": "A formal Czech letter typically puts a comma directly after \"S pozdravem\" before the signature.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Unlike English \"Sincerely,\", the Czech closing \"S pozdravem\" is not followed by a comma — the signature simply goes on the next line."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ pane řediteli, obracím se na Vás s žádostí o schůzku. (Dear Director,)",
+        "accepted": ["Vážený"],
+        "explanation": "Vážený pane / Vážená paní is the standard formal salutation — Vážený agrees with the masculine \"pane\"."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Make this request more formal: „Chci se zeptat na termín.“ → „Obracím se na Vás s žádostí o ___.“",
+        "accepted": ["informaci o termínu", "informace o termínu"],
+        "explanation": "Formal letters replace a blunt \"chci\" (\"I want\") statement with the fixed request formula \"obracím se na Vás s žádostí o...\" plus a noun phrase, which reads far more appropriately in written formal register."
+      }
+    ]
+  },
+  {
+    "id": "b2-08",
+    "icon": "📝",
+    "title": "Article & essay writing",
+    "blurb": "Structure an opinion piece, article, or review with the cohesion devices CCE-B2 Writing Úloha 2 rewards — for/against arguments, examples, and a clear conclusion.",
+    "vocab": [
+      {
+        "word": "na jedné straně... na druhé straně",
+        "translation": "on one hand... on the other hand",
+        "example": "Na jedné straně práce z domova šetří čas, na druhé straně chybí kontakt s kolegy."
+      },
+      {
+        "word": "z mého pohledu",
+        "translation": "from my point of view",
+        "example": "Z mého pohledu je vzdělání důležitější než peníze."
+      },
+      {
+        "word": "je třeba zmínit, že",
+        "translation": "it should be mentioned that",
+        "example": "Je třeba zmínit, že se situace v posledních letech výrazně změnila."
+      },
+      {
+        "word": "co se týče",
+        "translation": "as for / regarding",
+        "example": "Co se týče dopravy, situace ve městě se zlepšila."
+      },
+      {
+        "word": "je zřejmé, že",
+        "translation": "it is clear that",
+        "example": "Je zřejmé, že bez investic se problém nevyřeší."
+      },
+      {
+        "word": "například",
+        "translation": "for example",
+        "example": "Mnoho zemí, například Švédsko, už tento systém zavedlo."
+      },
+      {
+        "word": "závěrem lze říci, že",
+        "translation": "in conclusion, one can say that",
+        "example": "Závěrem lze říci, že výhody převažují nad nevýhodami."
+      },
+      {
+        "word": "podle mého názoru",
+        "translation": "in my opinion",
+        "example": "Podle mého názoru by se mělo více investovat do školství."
+      }
+    ],
+    "grammarNote": {
+      "title": "Essay structure: introduction, balanced argument, conclusion",
+      "text": "CCE-B2 Writing Úloha 2 asks for an article, úvaha (reflective essay), or recenze (review), and all three share one graded skeleton: an introduction that states the topic and your angle on it, a body that develops at least two sides or supporting points, and a conclusion that closes the argument rather than just trailing off. The opening should avoid restating the prompt word-for-word — instead frame it with a phrase like je zřejmé, že or co se týče to establish the topic is under discussion. The body is where na jedné straně... na druhé straně earns its keep: presenting a counterargument before your own conclusion, rather than only listing points that support one side, is specifically what separates a B2-level úvaha from a simple opinion list, because it shows you can weigh evidence rather than just state a view. Concrete examples anchored with například are worth more than abstract claims — graders reward specificity. The conclusion should use a clear closing marker (závěrem lze říci, že / shrnuto) and restate your position in one sentence, tying back to the introduction rather than introducing a new point at the last minute — a common structural error that costs coherence points even when the language itself is accurate."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "What structural feature separates a strong B2 úvaha (reflective essay) from a simple list of opinions?",
+        "options": [
+          "Using as many idioms as possible",
+          "Presenting a counterargument before stating your own conclusion",
+          "Writing only in the conditional mood",
+          "Avoiding any concrete examples"
+        ],
+        "answer": 1,
+        "explanation": "Weighing both sides (na jedné straně... na druhé straně) before concluding shows the balanced reasoning graders look for — a one-sided list of opinions scores lower on coherence."
+      },
+      {
+        "task": "true_false",
+        "prompt": "A strong conclusion in a CCE-B2 essay should introduce a new argument that wasn't discussed in the body.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "A conclusion should restate your position and tie back to the introduction — introducing a brand-new point at the end breaks coherence rather than strengthening the argument."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ mého názoru by se mělo více investovat do veřejné dopravy. (In my opinion...)",
+        "accepted": ["Podle"],
+        "explanation": "Podle mého názoru (\"in my opinion\") is the standard fixed opener for stating a personal view in essay writing."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Add a concrete example using \"například\": „Mnoho zemí zavedlo čtyřdenní pracovní týden.“ → „Mnoho zemí, ___, zavedlo čtyřdenní pracovní týden.“",
+        "accepted": ["například Belgie", "například Island", "například Švédsko"],
+        "explanation": "Inserting \"například\" plus a specific country turns a vague generalization into a concrete, gradeable example — exactly what CCE-B2 essay grading rewards over abstract claims."
+      }
+    ]
+  }
+]
