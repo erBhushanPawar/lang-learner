@@ -1,0 +1,258 @@
+[
+  {
+    "id": "b2-03",
+    "icon": "🏛️",
+    "title": "Abstract & professional topics vocabulary",
+    "blurb": "Build the abstract, professional-register vocabulary — society, environment, technology, culture — that CCE-B2 reading passages assume you already know.",
+    "vocab": [
+      {
+        "word": "společnost",
+        "translation": "society / company",
+        "example": "Moderní společnost čelí mnoha výzvám."
+      },
+      {
+        "word": "životní prostředí",
+        "translation": "environment",
+        "example": "Musíme chránit životní prostředí pro další generace."
+      },
+      {
+        "word": "udržitelnost",
+        "translation": "sustainability",
+        "example": "Udržitelnost je dnes klíčovým tématem v hospodářství."
+      },
+      {
+        "word": "rozvoj",
+        "translation": "development",
+        "example": "Technologický rozvoj mění způsob, jakým pracujeme."
+      },
+      {
+        "word": "hospodářství",
+        "translation": "economy",
+        "example": "Hospodářství země roste už třetí rok po sobě."
+      },
+      {
+        "word": "globalizace",
+        "translation": "globalization",
+        "example": "Globalizace usnadňuje obchod mezi zeměmi."
+      },
+      {
+        "word": "názor",
+        "translation": "opinion / view",
+        "example": "Každý má právo na vlastní názor."
+      },
+      {
+        "word": "dopad",
+        "translation": "impact",
+        "example": "Dopad klimatických změn je čím dál patrnější."
+      }
+    ],
+    "grammarNote": {
+      "title": "Abstract nouns from adjectives & verbs: the -ost / -ství pattern",
+      "text": "CCE-B2 reading passages lean heavily on abstract nouns built from adjectives and verbs, and recognizing the pattern makes unfamiliar words easier to decode on the fly. The suffix -ost turns an adjective into an abstract noun of quality, always feminine: udržitelný (sustainable) → udržitelnost (sustainability), možný (possible) → možnost (possibility), schopný (capable) → schopnost (ability). The suffix -ství/-ctví similarly builds abstract nouns, often for fields, states, or institutions, and is neuter: hospodářský (economic) → hospodářství (economy), přátelský (friendly) → přátelství (friendship). A third common pattern turns a verb stem into a process noun with -ní/-tí: vzdělávat (to educate) → vzdělávání (education), rozvíjet (to develop) → rozvoj (development, an irregular but very frequent case). Spotting these suffixes lets you infer the meaning of a word you've never seen from a root you already know — exactly the skill B2 reading passages test."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "Which suffix most reliably turns a Czech adjective into an abstract noun meaning a quality or state?",
+        "options": ["-ovat", "-ost", "-ný", "-ing"],
+        "answer": 1,
+        "explanation": "-ost is the standard suffix for building feminine abstract nouns from adjectives: udržitelný → udržitelnost.",
+        "note": "Watch for this pattern throughout B2 reading passages — it's one of the fastest ways to decode unfamiliar vocabulary."
+      },
+      {
+        "task": "true_false",
+        "prompt": "„Hospodářství“ is a neuter noun meaning \"economy,\" built from the adjective hospodářský with the -ství suffix.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — hospodářský (economic) + -ství gives hospodářství (economy), a neuter abstract noun.",
+        "note": "-ství/-ctví nouns are almost always neuter, unlike -ost nouns which are always feminine."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Text má velký ___ na to, jak lidé přemýšlejí o klimatu. (impact)",
+        "accepted": ["dopad"],
+        "explanation": "Dopad means \"impact/effect\" — a common abstract noun in discussions of environment and society."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Turn the adjective možný (possible) into the abstract noun meaning \"possibility\" using the -ost pattern: možný → ___",
+        "accepted": ["možnost"],
+        "explanation": "Adding -ost to the adjective stem možn- gives možnost (possibility), following the same pattern as udržitelný → udržitelnost."
+      }
+    ]
+  },
+  {
+    "id": "b2-04",
+    "icon": "🧩",
+    "title": "Reading strategy: matching & gap-in-text",
+    "blurb": "Learn the specific technique for CCE-B2 Úloha 1 and Úloha 3 — reconstructing paragraph order and matching titles to text — using cohesive-device clues instead of guesswork.",
+    "vocab": [
+      {
+        "word": "co se týče",
+        "translation": "as for / regarding",
+        "example": "Co se týče ceny, ta zůstává stejná."
+      },
+      {
+        "word": "na druhou stranu",
+        "translation": "on the other hand",
+        "example": "Na druhou stranu je potřeba zmínit i rizika."
+      },
+      {
+        "word": "z tohoto důvodu",
+        "translation": "for this reason",
+        "example": "Z tohoto důvodu firma změnila strategii."
+      },
+      {
+        "word": "kromě toho",
+        "translation": "besides that / in addition",
+        "example": "Kromě toho stoupají i ceny energií."
+      },
+      {
+        "word": "jak již bylo zmíněno",
+        "translation": "as already mentioned",
+        "example": "Jak již bylo zmíněno, situace se rychle mění."
+      },
+      {
+        "word": "v neposlední řadě",
+        "translation": "last but not least",
+        "example": "V neposlední řadě je třeba myslet na budoucí generace."
+      },
+      {
+        "word": "naopak",
+        "translation": "on the contrary / conversely",
+        "example": "Naopak mladí lidé o tom problému moc nevědí."
+      },
+      {
+        "word": "proto",
+        "translation": "therefore",
+        "example": "Proto je důležité o tom mluvit včas."
+      }
+    ],
+    "grammarNote": {
+      "title": "Matching & gap-in-text: read for cohesion, not vocabulary",
+      "text": "Úloha 1 (matching titles to paragraphs) and Úloha 3 (reconstructing the correct order of a scrambled text) don't test whether you understood every word — they test whether you can track how a text holds together. Two clues matter most. First, cohesive devices: connectors like na druhou stranu, kromě toho, z tohoto důvodu, and proto signal how one sentence relates to the next (contrast, addition, cause, consequence) — a paragraph opening with naopak almost never comes first, since it needs something to contrast with. Second, reference chains: pronouns (ten, ta, to, tam) and phrases like jak již bylo zmíněno point backward to something already introduced, so a paragraph using them can't be the opening paragraph either. For title-matching, skim for the paragraph's key noun phrase rather than reading every sentence — titles are usually built from a paraphrase of that noun phrase, not a literal repeat of it, so expect synonyms rather than exact matches. Practically: find the paragraph with no backward-pointing pronoun and no contrastive opener first (that's your anchor, usually the introduction), then chain the rest by matching connectors and pronouns to what precedes them."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "A paragraph opening with „naopak“ (on the contrary) is most likely to be:",
+        "options": [
+          "The very first paragraph of the text",
+          "A paragraph following one that made a contrasting point",
+          "A paragraph with no connection to the rest",
+          "The title of the passage"
+        ],
+        "answer": 1,
+        "explanation": "Naopak signals contrast with something already stated, so it needs a preceding paragraph to contrast against — it can't open the text.",
+        "note": "This is the core trick for Úloha 3: contrastive and backward-pointing connectors rule out the opening position."
+      },
+      {
+        "task": "true_false",
+        "prompt": "In title-matching tasks (Úloha 1), the correct title usually repeats the paragraph's key phrase word-for-word.",
+        "options": ["Ano", "Ne"],
+        "answer": 1,
+        "explanation": "Ne — titles are usually a paraphrase using synonyms, not a literal repeat, so scanning for exact word matches will mislead you.",
+        "note": "Practice recognizing synonyms for common CCE-B2 topics (e.g., životní prostředí ↔ ekologie ↔ příroda) rather than only exact-word scanning."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "___ je nutné zmínit i to, kolik to bude stát. (besides that / in addition)",
+        "accepted": ["Kromě toho"],
+        "explanation": "Kromě toho (besides that) signals an additive connection, adding a new point to what came before."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Rewrite to signal contrast instead of addition: „Kromě toho stoupají i ceny energií.“ → using naopak: ___",
+        "accepted": ["Naopak stoupají i ceny energií.", "Naopak, stoupají i ceny energií."],
+        "explanation": "Swapping the additive kromě toho for the contrastive naopak changes the logical relationship the sentence signals to the previous one."
+      }
+    ]
+  },
+  {
+    "id": "b2-05",
+    "icon": "🔍",
+    "title": "Reading strategy: true/false & implicit meaning",
+    "blurb": "Master the CCE-B2 Úloha 4 technique — telling apart what a text states, what it contradicts, and what it simply doesn't mention.",
+    "vocab": [
+      {
+        "word": "z textu vyplývá, že",
+        "translation": "it follows from the text that",
+        "example": "Z textu vyplývá, že situace se zlepšuje."
+      },
+      {
+        "word": "text neuvádí",
+        "translation": "the text doesn't state",
+        "example": "Text neuvádí, kolik lidí se akce zúčastnilo."
+      },
+      {
+        "word": "je v rozporu s",
+        "translation": "contradicts / is in conflict with",
+        "example": "Tvrzení je v rozporu s tím, co autor napsal dříve."
+      },
+      {
+        "word": "naznačuje, že",
+        "translation": "suggests that",
+        "example": "Autor naznačuje, že řešení existuje."
+      },
+      {
+        "word": "doslova",
+        "translation": "literally / word for word",
+        "example": "Autor to doslova nenapsal, ale je to zřejmé."
+      },
+      {
+        "word": "podle textu",
+        "translation": "according to the text",
+        "example": "Podle textu je problém vážnější, než se zdálo."
+      },
+      {
+        "word": "nelze usoudit",
+        "translation": "one cannot conclude",
+        "example": "Z textu nelze usoudit, kdo za to nese odpovědnost."
+      },
+      {
+        "word": "je zřejmé, že",
+        "translation": "it's clear/evident that",
+        "example": "Je zřejmé, že autor s tímto názorem nesouhlasí."
+      }
+    ],
+    "grammarNote": {
+      "title": "True/false/not-stated: telling contradicted apart from not-stated",
+      "text": "Úloha 4 gives statements about a text and asks whether each is true, false, or (in some versions) not stated at all — and the exam's favorite trap is confusing false (contradicted) with not-stated (simply absent). A statement is false only if the text says the opposite or something logically incompatible with it — you should be able to point to the sentence that clashes with it. A statement is not stated when the text never addresses the topic at all, even if the claim sounds plausible or is common knowledge — no amount of world knowledge should let you mark it true or false, since the task tests reading, not general knowledge. The phrase text neuvádí (the text doesn't state) or z textu nelze usoudit (one cannot conclude from the text) describes this not-stated case precisely. A third pattern to recognize is implicit meaning: some correct statements are never said doslova (literally, word for word) but still follow logically — z textu vyplývá, že… (it follows from the text that…) — and you're expected to draw that inference the way you would in your own language, just more carefully, since B2 passages often bury the implication in a subordinate clause rather than stating it directly."
+    },
+    "check": [
+      {
+        "task": "mc",
+        "prompt": "A statement is „not stated“ (rather than false) when:",
+        "options": [
+          "The text says the exact opposite of the statement",
+          "The text never addresses that topic at all",
+          "The statement uses different words than the text",
+          "The statement is common knowledge"
+        ],
+        "answer": 1,
+        "explanation": "Not-stated means the text is simply silent on that point — false requires an actual contradiction in the text.",
+        "note": "This is the single most common trap in Úloha 4: don't use outside knowledge to mark something true or false if the text itself never raises it."
+      },
+      {
+        "task": "true_false",
+        "prompt": "If a statement is „v rozporu s“ (in contradiction with) the text, it should be marked false, not not-stated.",
+        "options": ["Ano", "Ne"],
+        "answer": 0,
+        "explanation": "Correct — contradiction means the text actively disagrees with the statement, which is exactly what \"false\" means in this task.",
+        "note": "Look for the specific sentence that clashes with the statement before marking anything false — a vague sense of disagreement isn't enough."
+      },
+      {
+        "task": "gap_fill",
+        "prompt": "Autor to ___ nenapsal, ale z kontextu je to jasné. (literally)",
+        "accepted": ["doslova"],
+        "explanation": "Doslova (literally/word for word) marks the contrast between what's explicitly written and what's only implied."
+      },
+      {
+        "task": "transformation",
+        "prompt": "Rewrite to express that a conclusion cannot be drawn from the text: „Víme, kolik lidí přišlo.“ → „Z textu ___, kolik lidí přišlo.“",
+        "accepted": ["nelze usoudit", "nelze vyvodit"],
+        "explanation": "Nelze usoudit (one cannot conclude) is the standard phrase for flagging that information isn't available in the text."
+      }
+    ]
+  }
+]
